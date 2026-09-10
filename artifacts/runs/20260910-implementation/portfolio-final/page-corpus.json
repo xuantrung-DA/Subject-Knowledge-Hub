@@ -1,0 +1,66 @@
+{
+  "subject_id": "115b9a20-5b54-4a64-b48a-a27ae9a1c56d",
+  "email": "portfolio-8e5bfea18e184477a043d603894241a1@example.com",
+  "ingestion": [
+    {
+      "document": "sen.pdf",
+      "job_id": "b74cc3c7-b47c-47a5-a278-f69c819e3635",
+      "seconds": 1.9258784140001808,
+      "chunks": 5
+    },
+    {
+      "document": "cedar.pdf",
+      "job_id": "e903e775-6cc2-416d-ae57-1703e96c1f42",
+      "seconds": 0.6902182119999907,
+      "chunks": 5
+    },
+    {
+      "document": "truc.pdf",
+      "job_id": "ac372fdd-b58a-496c-9cbf-96d35e47699b",
+      "seconds": 1.756076498000084,
+      "chunks": 5
+    },
+    {
+      "document": "maple.pdf",
+      "job_id": "cad5dc54-f532-4ec0-9072-0daac53fad24",
+      "seconds": 0.832423566999978,
+      "chunks": 5
+    },
+    {
+      "document": "lan.pdf",
+      "job_id": "e70def09-413d-4e9d-ac4c-aa96ab7abef4",
+      "seconds": 0.5852727529997992,
+      "chunks": 5
+    },
+    {
+      "document": "birch.pdf",
+      "job_id": "d4336be2-0b00-449f-b239-a77621598325",
+      "seconds": 1.001247094999826,
+      "chunks": 5
+    },
+    {
+      "document": "cuc.pdf",
+      "job_id": "59e7ad47-1203-4256-9ed6-1efc2428400b",
+      "seconds": 0.7268802280000273,
+      "chunks": 5
+    },
+    {
+      "document": "willow.pdf",
+      "job_id": "b2e7c97a-87f7-401d-a72d-49f72f0cd767",
+      "seconds": 0.7880657410000822,
+      "chunks": 5
+    },
+    {
+      "document": "dao.pdf",
+      "job_id": "8fcc8d57-1757-4a3d-b0f2-8c92dc743396",
+      "seconds": 0.8768884470000557,
+      "chunks": 5
+    },
+    {
+      "document": "elm.pdf",
+      "job_id": "fb1d377e-6164-43e8-970b-ee8ec4a13ebd",
+      "seconds": 0.672079647000146,
+      "chunks": 5
+    }
+  ]
+}

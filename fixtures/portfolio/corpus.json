@@ -1,0 +1,342 @@
+[
+  {
+    "document_key": "sen",
+    "name": "Sen",
+    "language": "vi",
+    "split": "dev",
+    "pages": [
+      {
+        "number": 1,
+        "title": "Sen: phạm vi và tiếp nhận",
+        "text": "Sen là dịch vụ giả định phục vụ quan trắc hồ. Mỗi yêu cầu Sen nhận tối đa 24 bản ghi. Định dạng đầu vào là JSON Lines, mã hóa UTF-8. Đây là dữ liệu kiểm thử tổng hợp, không phải thông số của sản phẩm thật."
+      },
+      {
+        "number": 2,
+        "title": "Sen: xử lý",
+        "text": "Thời gian chờ xử lý của Sen là 7 giây. Khi lỗi mạng, Sen thử lại tối đa 3 lần. Khoảng chờ tăng theo cấp số nhân. Lỗi dữ liệu không được thử lại. Yêu cầu trùng bị loại bằng khóa request_id."
+      },
+      {
+        "number": 3,
+        "title": "Sen: lưu trữ",
+        "text": "Sen lưu nhật ký trong 12 ngày. Bản hướng dẫn A ghi TTL cache là 45 giây. Mã bản sao lưu là SEN-SAFE. Dữ liệu lưu ở vùng thử nghiệm local, không có cam kết vùng địa lý thương mại."
+      },
+      {
+        "number": 4,
+        "title": "Sen: bảng đo",
+        "text": "Bảng kết quả thử nghiệm của Sen:\nChỉ số | Giá trị\nAccuracy | 96%\nLatency p95 | 71 ms\nThời gian phục hồi | 18 giây\nCác phép đo dùng đúng 200 yêu cầu, concurrency 1. Những con số này được tác giả bịa để kiểm thử đọc tài liệu, không phải benchmark của Subject Knowledge Hub."
+      },
+      {
+        "number": 5,
+        "title": "Sen: ghi chú chưa thống nhất",
+        "text": "Bản hướng dẫn B của Sen ghi TTL cache là 60 giây, khác bản A. Hai bản không ghi ngày hiệu lực; chưa xác định được bản nào thay thế bản nào. Người vận hành phải xác minh trước khi chọn TTL. Không có thông tin về giá thuê, địa chỉ email hỗ trợ hoặc SLA trong tài liệu."
+      }
+    ],
+    "sha256": "eeeb6125eb36920a0e8287b1262ddca1488af5374f2ef646cc5254b76e5c7cab"
+  },
+  {
+    "document_key": "cedar",
+    "name": "Cedar",
+    "language": "en",
+    "split": "dev",
+    "pages": [
+      {
+        "number": 1,
+        "title": "Cedar: scope and intake",
+        "text": "Cedar is a fictional service for forest sensors. A Cedar request accepts at most 32 records. Input uses JSON Lines encoded as UTF-8. This is original synthetic test material, not the specification of a real product."
+      },
+      {
+        "number": 2,
+        "title": "Cedar: execution",
+        "text": "Cedar has a processing timeout of 9 seconds. Network failures are retried at most 4 times with exponential backoff. Invalid data is never retried. Duplicate requests are rejected using request_id."
+      },
+      {
+        "number": 3,
+        "title": "Cedar: storage",
+        "text": "Cedar retains logs for 14 days. Guide A specifies a cache TTL of 60 seconds. The backup code is CEDAR-SAFE. Storage is in the local test region; no commercial geographic residency is promised."
+      },
+      {
+        "number": 4,
+        "title": "Cedar: measurement table",
+        "text": "Cedar test results:\nMetric | Value\nAccuracy | 94%\nLatency p95 | 73 ms\nRecovery time | 22 seconds\nThe test uses exactly 200 requests at concurrency 1. The author invented these values for document-reading tests. They are not Subject Knowledge Hub benchmark results."
+      },
+      {
+        "number": 5,
+        "title": "Cedar: unresolved disagreement",
+        "text": "Guide B for Cedar specifies a cache TTL of 75 seconds, unlike guide A. Neither guide has an effective date, so their precedence is unknown. Operators must verify the intended TTL. The document contains no rental price, support email address, or SLA."
+      }
+    ],
+    "sha256": "0ccc775e8b182c98131ae31567fd4125177d54fa34a5ae198ae741cf4d1e6aab"
+  },
+  {
+    "document_key": "truc",
+    "name": "Trúc",
+    "language": "vi",
+    "split": "dev",
+    "pages": [
+      {
+        "number": 1,
+        "title": "Trúc: phạm vi và tiếp nhận",
+        "text": "Trúc là dịch vụ giả định phục vụ kiểm kê thư viện. Mỗi yêu cầu Trúc nhận tối đa 48 bản ghi. Định dạng đầu vào là JSON Lines, mã hóa UTF-8. Đây là dữ liệu kiểm thử tổng hợp, không phải thông số của sản phẩm thật."
+      },
+      {
+        "number": 2,
+        "title": "Trúc: xử lý",
+        "text": "Thời gian chờ xử lý của Trúc là 11 giây. Khi lỗi mạng, Trúc thử lại tối đa 5 lần. Khoảng chờ tăng theo cấp số nhân. Lỗi dữ liệu không được thử lại. Yêu cầu trùng bị loại bằng khóa request_id."
+      },
+      {
+        "number": 3,
+        "title": "Trúc: lưu trữ",
+        "text": "Trúc lưu nhật ký trong 16 ngày. Bản hướng dẫn A ghi TTL cache là 90 giây. Mã bản sao lưu là TRUC-SAFE. Dữ liệu lưu ở vùng thử nghiệm local, không có cam kết vùng địa lý thương mại."
+      },
+      {
+        "number": 4,
+        "title": "Trúc: bảng đo",
+        "text": "Bảng kết quả thử nghiệm của Trúc:\nChỉ số | Giá trị\nAccuracy | 92%\nLatency p95 | 75 ms\nThời gian phục hồi | 26 giây\nCác phép đo dùng đúng 200 yêu cầu, concurrency 1. Những con số này được tác giả bịa để kiểm thử đọc tài liệu, không phải benchmark của Subject Knowledge Hub."
+      },
+      {
+        "number": 5,
+        "title": "Trúc: ghi chú chưa thống nhất",
+        "text": "Bản hướng dẫn B của Trúc ghi TTL cache là 105 giây, khác bản A. Hai bản không ghi ngày hiệu lực; chưa xác định được bản nào thay thế bản nào. Người vận hành phải xác minh trước khi chọn TTL. Không có thông tin về giá thuê, địa chỉ email hỗ trợ hoặc SLA trong tài liệu."
+      }
+    ],
+    "sha256": "9a3d17bd9cce95ebc2ee1ddf8d9c41d96c717629939a034dc5ad3f31f1001997"
+  },
+  {
+    "document_key": "maple",
+    "name": "Maple",
+    "language": "en",
+    "split": "test",
+    "pages": [
+      {
+        "number": 1,
+        "title": "Maple: scope and intake",
+        "text": "Maple is a fictional service for warehouse counters. A Maple request accepts at most 64 records. Input uses JSON Lines encoded as UTF-8. This is original synthetic test material, not the specification of a real product."
+      },
+      {
+        "number": 2,
+        "title": "Maple: execution",
+        "text": "Maple has a processing timeout of 13 seconds. Network failures are retried at most 6 times with exponential backoff. Invalid data is never retried. Duplicate requests are rejected using request_id."
+      },
+      {
+        "number": 3,
+        "title": "Maple: storage",
+        "text": "Maple retains logs for 18 days. Guide A specifies a cache TTL of 120 seconds. The backup code is MAPLE-SAFE. Storage is in the local test region; no commercial geographic residency is promised."
+      },
+      {
+        "number": 4,
+        "title": "Maple: measurement table",
+        "text": "Maple test results:\nMetric | Value\nAccuracy | 90%\nLatency p95 | 77 ms\nRecovery time | 30 seconds\nThe test uses exactly 200 requests at concurrency 1. The author invented these values for document-reading tests. They are not Subject Knowledge Hub benchmark results."
+      },
+      {
+        "number": 5,
+        "title": "Maple: unresolved disagreement",
+        "text": "Guide B for Maple specifies a cache TTL of 135 seconds, unlike guide A. Neither guide has an effective date, so their precedence is unknown. Operators must verify the intended TTL. The document contains no rental price, support email address, or SLA."
+      }
+    ],
+    "sha256": "81de22c01cabbf7e758ad14116c5f32286cccfa7696d6bdd9d022804f2ea8046"
+  },
+  {
+    "document_key": "lan",
+    "name": "Lan",
+    "language": "vi",
+    "split": "test",
+    "pages": [
+      {
+        "number": 1,
+        "title": "Lan: phạm vi và tiếp nhận",
+        "text": "Lan là dịch vụ giả định phục vụ lịch phòng thí nghiệm. Mỗi yêu cầu Lan nhận tối đa 80 bản ghi. Định dạng đầu vào là JSON Lines, mã hóa UTF-8. Đây là dữ liệu kiểm thử tổng hợp, không phải thông số của sản phẩm thật."
+      },
+      {
+        "number": 2,
+        "title": "Lan: xử lý",
+        "text": "Thời gian chờ xử lý của Lan là 15 giây. Khi lỗi mạng, Lan thử lại tối đa 7 lần. Khoảng chờ tăng theo cấp số nhân. Lỗi dữ liệu không được thử lại. Yêu cầu trùng bị loại bằng khóa request_id."
+      },
+      {
+        "number": 3,
+        "title": "Lan: lưu trữ",
+        "text": "Lan lưu nhật ký trong 20 ngày. Bản hướng dẫn A ghi TTL cache là 150 giây. Mã bản sao lưu là LAN-SAFE. Dữ liệu lưu ở vùng thử nghiệm local, không có cam kết vùng địa lý thương mại."
+      },
+      {
+        "number": 4,
+        "title": "Lan: bảng đo",
+        "text": "Bảng kết quả thử nghiệm của Lan:\nChỉ số | Giá trị\nAccuracy | 98%\nLatency p95 | 79 ms\nThời gian phục hồi | 34 giây\nCác phép đo dùng đúng 200 yêu cầu, concurrency 1. Những con số này được tác giả bịa để kiểm thử đọc tài liệu, không phải benchmark của Subject Knowledge Hub."
+      },
+      {
+        "number": 5,
+        "title": "Lan: ghi chú chưa thống nhất",
+        "text": "Bản hướng dẫn B của Lan ghi TTL cache là 165 giây, khác bản A. Hai bản không ghi ngày hiệu lực; chưa xác định được bản nào thay thế bản nào. Người vận hành phải xác minh trước khi chọn TTL. Không có thông tin về giá thuê, địa chỉ email hỗ trợ hoặc SLA trong tài liệu."
+      }
+    ],
+    "sha256": "a0dce8601599aeefb3fdf197e6433e0d660a9674987b0dccebc9b1062af25252"
+  },
+  {
+    "document_key": "birch",
+    "name": "Birch",
+    "language": "en",
+    "split": "test",
+    "pages": [
+      {
+        "number": 1,
+        "title": "Birch: scope and intake",
+        "text": "Birch is a fictional service for bus stop displays. A Birch request accepts at most 96 records. Input uses JSON Lines encoded as UTF-8. This is original synthetic test material, not the specification of a real product."
+      },
+      {
+        "number": 2,
+        "title": "Birch: execution",
+        "text": "Birch has a processing timeout of 17 seconds. Network failures are retried at most 8 times with exponential backoff. Invalid data is never retried. Duplicate requests are rejected using request_id."
+      },
+      {
+        "number": 3,
+        "title": "Birch: storage",
+        "text": "Birch retains logs for 22 days. Guide A specifies a cache TTL of 180 seconds. The backup code is BIRCH-SAFE. Storage is in the local test region; no commercial geographic residency is promised."
+      },
+      {
+        "number": 4,
+        "title": "Birch: measurement table",
+        "text": "Birch test results:\nMetric | Value\nAccuracy | 89%\nLatency p95 | 81 ms\nRecovery time | 38 seconds\nThe test uses exactly 200 requests at concurrency 1. The author invented these values for document-reading tests. They are not Subject Knowledge Hub benchmark results."
+      },
+      {
+        "number": 5,
+        "title": "Birch: unresolved disagreement",
+        "text": "Guide B for Birch specifies a cache TTL of 195 seconds, unlike guide A. Neither guide has an effective date, so their precedence is unknown. Operators must verify the intended TTL. The document contains no rental price, support email address, or SLA."
+      }
+    ],
+    "sha256": "046abd94e689eef734cdf67c58bbf20298660977bfb69b8b1f3bc787011d125b"
+  },
+  {
+    "document_key": "cuc",
+    "name": "Cúc",
+    "language": "vi",
+    "split": "test",
+    "pages": [
+      {
+        "number": 1,
+        "title": "Cúc: phạm vi và tiếp nhận",
+        "text": "Cúc là dịch vụ giả định phục vụ theo dõi vườn ươm. Mỗi yêu cầu Cúc nhận tối đa 112 bản ghi. Định dạng đầu vào là JSON Lines, mã hóa UTF-8. Đây là dữ liệu kiểm thử tổng hợp, không phải thông số của sản phẩm thật."
+      },
+      {
+        "number": 2,
+        "title": "Cúc: xử lý",
+        "text": "Thời gian chờ xử lý của Cúc là 19 giây. Khi lỗi mạng, Cúc thử lại tối đa 9 lần. Khoảng chờ tăng theo cấp số nhân. Lỗi dữ liệu không được thử lại. Yêu cầu trùng bị loại bằng khóa request_id."
+      },
+      {
+        "number": 3,
+        "title": "Cúc: lưu trữ",
+        "text": "Cúc lưu nhật ký trong 24 ngày. Bản hướng dẫn A ghi TTL cache là 210 giây. Mã bản sao lưu là CUC-SAFE. Dữ liệu lưu ở vùng thử nghiệm local, không có cam kết vùng địa lý thương mại."
+      },
+      {
+        "number": 4,
+        "title": "Cúc: bảng đo",
+        "text": "Bảng kết quả thử nghiệm của Cúc:\nChỉ số | Giá trị\nAccuracy | 97%\nLatency p95 | 83 ms\nThời gian phục hồi | 42 giây\nCác phép đo dùng đúng 200 yêu cầu, concurrency 1. Những con số này được tác giả bịa để kiểm thử đọc tài liệu, không phải benchmark của Subject Knowledge Hub."
+      },
+      {
+        "number": 5,
+        "title": "Cúc: ghi chú chưa thống nhất",
+        "text": "Bản hướng dẫn B của Cúc ghi TTL cache là 225 giây, khác bản A. Hai bản không ghi ngày hiệu lực; chưa xác định được bản nào thay thế bản nào. Người vận hành phải xác minh trước khi chọn TTL. Không có thông tin về giá thuê, địa chỉ email hỗ trợ hoặc SLA trong tài liệu."
+      }
+    ],
+    "sha256": "6fe56510f8ce8a875ff37a1f7166573d3cfa4f7cd7b702c2f182c2683298a56f"
+  },
+  {
+    "document_key": "willow",
+    "name": "Willow",
+    "language": "en",
+    "split": "test",
+    "pages": [
+      {
+        "number": 1,
+        "title": "Willow: scope and intake",
+        "text": "Willow is a fictional service for water meter readings. A Willow request accepts at most 128 records. Input uses JSON Lines encoded as UTF-8. This is original synthetic test material, not the specification of a real product."
+      },
+      {
+        "number": 2,
+        "title": "Willow: execution",
+        "text": "Willow has a processing timeout of 21 seconds. Network failures are retried at most 10 times with exponential backoff. Invalid data is never retried. Duplicate requests are rejected using request_id."
+      },
+      {
+        "number": 3,
+        "title": "Willow: storage",
+        "text": "Willow retains logs for 26 days. Guide A specifies a cache TTL of 240 seconds. The backup code is WILLOW-SAFE. Storage is in the local test region; no commercial geographic residency is promised."
+      },
+      {
+        "number": 4,
+        "title": "Willow: measurement table",
+        "text": "Willow test results:\nMetric | Value\nAccuracy | 93%\nLatency p95 | 85 ms\nRecovery time | 46 seconds\nThe test uses exactly 200 requests at concurrency 1. The author invented these values for document-reading tests. They are not Subject Knowledge Hub benchmark results."
+      },
+      {
+        "number": 5,
+        "title": "Willow: unresolved disagreement",
+        "text": "Guide B for Willow specifies a cache TTL of 255 seconds, unlike guide A. Neither guide has an effective date, so their precedence is unknown. Operators must verify the intended TTL. The document contains no rental price, support email address, or SLA."
+      }
+    ],
+    "sha256": "1842100f40336c3ab02dd2ed2b5bc953506bd25ebd4fadbceaeefb43009ebd03"
+  },
+  {
+    "document_key": "dao",
+    "name": "Đào",
+    "language": "vi",
+    "split": "test",
+    "pages": [
+      {
+        "number": 1,
+        "title": "Đào: phạm vi và tiếp nhận",
+        "text": "Đào là dịch vụ giả định phục vụ đặt chỗ xe đạp. Mỗi yêu cầu Đào nhận tối đa 144 bản ghi. Định dạng đầu vào là JSON Lines, mã hóa UTF-8. Đây là dữ liệu kiểm thử tổng hợp, không phải thông số của sản phẩm thật."
+      },
+      {
+        "number": 2,
+        "title": "Đào: xử lý",
+        "text": "Thời gian chờ xử lý của Đào là 23 giây. Khi lỗi mạng, Đào thử lại tối đa 11 lần. Khoảng chờ tăng theo cấp số nhân. Lỗi dữ liệu không được thử lại. Yêu cầu trùng bị loại bằng khóa request_id."
+      },
+      {
+        "number": 3,
+        "title": "Đào: lưu trữ",
+        "text": "Đào lưu nhật ký trong 28 ngày. Bản hướng dẫn A ghi TTL cache là 270 giây. Mã bản sao lưu là DAO-SAFE. Dữ liệu lưu ở vùng thử nghiệm local, không có cam kết vùng địa lý thương mại."
+      },
+      {
+        "number": 4,
+        "title": "Đào: bảng đo",
+        "text": "Bảng kết quả thử nghiệm của Đào:\nChỉ số | Giá trị\nAccuracy | 95%\nLatency p95 | 87 ms\nThời gian phục hồi | 50 giây\nCác phép đo dùng đúng 200 yêu cầu, concurrency 1. Những con số này được tác giả bịa để kiểm thử đọc tài liệu, không phải benchmark của Subject Knowledge Hub."
+      },
+      {
+        "number": 5,
+        "title": "Đào: ghi chú chưa thống nhất",
+        "text": "Bản hướng dẫn B của Đào ghi TTL cache là 285 giây, khác bản A. Hai bản không ghi ngày hiệu lực; chưa xác định được bản nào thay thế bản nào. Người vận hành phải xác minh trước khi chọn TTL. Không có thông tin về giá thuê, địa chỉ email hỗ trợ hoặc SLA trong tài liệu."
+      }
+    ],
+    "sha256": "8e96f720ef7c4d1c3d1dc35aa40a24fdecf44cc3f413b7869086c8a34b2548d6"
+  },
+  {
+    "document_key": "elm",
+    "name": "Elm",
+    "language": "en",
+    "split": "test",
+    "pages": [
+      {
+        "number": 1,
+        "title": "Elm: scope and intake",
+        "text": "Elm is a fictional service for museum attendance. A Elm request accepts at most 160 records. Input uses JSON Lines encoded as UTF-8. This is original synthetic test material, not the specification of a real product."
+      },
+      {
+        "number": 2,
+        "title": "Elm: execution",
+        "text": "Elm has a processing timeout of 25 seconds. Network failures are retried at most 12 times with exponential backoff. Invalid data is never retried. Duplicate requests are rejected using request_id."
+      },
+      {
+        "number": 3,
+        "title": "Elm: storage",
+        "text": "Elm retains logs for 30 days. Guide A specifies a cache TTL of 300 seconds. The backup code is ELM-SAFE. Storage is in the local test region; no commercial geographic residency is promised."
+      },
+      {
+        "number": 4,
+        "title": "Elm: measurement table",
+        "text": "Elm test results:\nMetric | Value\nAccuracy | 91%\nLatency p95 | 89 ms\nRecovery time | 54 seconds\nThe test uses exactly 200 requests at concurrency 1. The author invented these values for document-reading tests. They are not Subject Knowledge Hub benchmark results."
+      },
+      {
+        "number": 5,
+        "title": "Elm: unresolved disagreement",
+        "text": "Guide B for Elm specifies a cache TTL of 315 seconds, unlike guide A. Neither guide has an effective date, so their precedence is unknown. Operators must verify the intended TTL. The document contains no rental price, support email address, or SLA."
+      }
+    ],
+    "sha256": "f3cc9127c7e5098d07c0cbffd1f9a83b546f188ac73fa707964fba690db35330"
+  }
+]

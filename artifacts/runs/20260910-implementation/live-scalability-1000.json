@@ -1,0 +1,592 @@
+{
+  "status": "PASS",
+  "started_at": "2026-09-10T04:10:35.215540+00:00",
+  "provider": "live_openai",
+  "corpus": "Project-owned synthetic 1000-page PDF; not representative of arbitrary PDFs",
+  "answers": [
+    {
+      "page": 1,
+      "expected": "17",
+      "passed": true,
+      "response": {
+        "answer": "The calibration value of nebularuby is 17 [1].",
+        "citations": [
+          {
+            "id": 1,
+            "chunk_id": "407e4383-098a-42a7-bcaf-f7009b31da68",
+            "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+            "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+            "document_name": "live-1000.pdf",
+            "version": 1,
+            "page_start": 1,
+            "page_end": 1,
+            "pages": [
+              1
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Independent lesson 1: unique page reference P0001.\nTopic0001 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 11; retain this source provenance.\nTopic0001 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 12; retain this source provenance.\nTopic0001 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 13; retain this source provenance.\nTopic0001 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 14; retain this source provenance.\nTopic0001 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 15; retain this source provenance.\nTopic0001 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 16; retain this source provenance.\nTopic0001 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 17; retain this source provenance.\nTopic0001 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 18; retain this source provenance.\n",
+            "score": 0.4929378409814633,
+            "status": "active",
+            "pdf_url": "/api/subjects/3ae62407-ffa0-4520-8fbb-db6fd67eaa2e/documents/4ecbaa30-60e0-495c-bdd0-1e9998d050ee/pdf?version_id=a07552fe-bcaf-474e-a634-70b81bda5e62#page=1"
+          }
+        ],
+        "debug": {
+          "mode": "direct",
+          "retrieval_mode": "dense",
+          "corpus_revision": 1,
+          "cache_hit": false,
+          "latency_ms": 1859.3,
+          "reserved_tokens": 4045,
+          "reserved_calls": 2,
+          "input_tokens": 2961,
+          "output_tokens": 14,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.0011999600000000001,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "407e4383-098a-42a7-bcaf-f7009b31da68",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 1,
+              "pages": [
+                1
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 1: unique page reference P0001.\nTopic0001 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 11; retain this source provenance.\nTopic0001 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 12; retain this source provenance.\nTopic0001 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 13; retain this source provenance.\nTopic0001 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 14; retain this source provenance.\nTopic0001 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 15; retain this source provenance.\nTopic0001 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 16; retain this source provenance.\nTopic0001 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 17; retain this source provenance.\nTopic0001 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 18; retain this source provenance.\nThe verification fact nebularuby has calibration value 17.",
+              "score": 0.4929378409814633
+            },
+            {
+              "id": 2,
+              "chunk_id": "2026a8ae-30f7-476a-9842-15e736bc5ad8",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 500,
+              "page_end": 500,
+              "pages": [
+                500
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 500: unique page reference P0500.\nTopic0500 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 5500; retain this source provenance.\nTopic0500 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 5501; retain this source provenance.\nTopic0500 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 5502; retain this source provenance.\nTopic0500 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 5503; retain this source provenance.\nTopic0500 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 5504; retain this source provenance.\nTopic0500 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 5505; retain this source provenance.\nTopic0500 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 5506; retain this source provenance.\nTopic0500 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 5507; retain this source provenance.\nThe verification fact tundraopal has calibration value 29.",
+              "score": 0.42628892741103197
+            },
+            {
+              "id": 3,
+              "chunk_id": "01de05c3-ca0d-4933-b894-1cda75600dd1",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 1000,
+              "page_end": 1000,
+              "pages": [
+                1000
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 1000: unique page reference P1000.\nTopic1000 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 11000; retain this source provenance.\nTopic1000 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 11001; retain this source provenance.\nTopic1000 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 11002; retain this source provenance.\nTopic1000 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 11003; retain this source provenance.\nTopic1000 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 11004; retain this source provenance.\nTopic1000 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 11005; retain this source provenance.\nTopic1000 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 11006; retain this source provenance.\nTopic1000 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 11007; retain this source provenance.\nThe verification fact quasaramber has calibration value 43.",
+              "score": 0.39479411655780006
+            },
+            {
+              "id": 4,
+              "chunk_id": "931c964a-b29a-4d9c-9604-f590aa2660bb",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 783,
+              "page_end": 783,
+              "pages": [
+                783
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 783: unique page reference P0783.\nTopic0783 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 8613; retain this source provenance.\nTopic0783 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 8614; retain this source provenance.\nTopic0783 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 8615; retain this source provenance.\nTopic0783 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 8616; retain this source provenance.\nTopic0783 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 8617; retain this source provenance.\nTopic0783 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 8618; retain this source provenance.\nTopic0783 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 8619; retain this source provenance.\nTopic0783 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 8620; retain this source provenance.",
+              "score": 0.3365058875254958
+            },
+            {
+              "id": 5,
+              "chunk_id": "e4b5106b-464a-4132-837b-253e62dfe631",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 425,
+              "page_end": 425,
+              "pages": [
+                425
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 425: unique page reference P0425.\nTopic0425 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 4675; retain this source provenance.\nTopic0425 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 4676; retain this source provenance.\nTopic0425 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 4677; retain this source provenance.\nTopic0425 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 4678; retain this source provenance.\nTopic0425 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 4679; retain this source provenance.\nTopic0425 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 4680; retain this source provenance.\nTopic0425 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 4681; retain this source provenance.\nTopic0425 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 4682; retain this source provenance.",
+              "score": 0.3357050580778078
+            },
+            {
+              "id": 6,
+              "chunk_id": "88259c35-152f-4e4a-8f78-61c3fc5a83bf",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 421,
+              "page_end": 421,
+              "pages": [
+                421
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 421: unique page reference P0421.\nTopic0421 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 4631; retain this source provenance.\nTopic0421 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 4632; retain this source provenance.\nTopic0421 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 4633; retain this source provenance.\nTopic0421 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 4634; retain this source provenance.\nTopic0421 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 4635; retain this source provenance.\nTopic0421 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 4636; retain this source provenance.\nTopic0421 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 4637; retain this source provenance.\nTopic0421 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 4638; retain this source provenance.",
+              "score": 0.3352478605409739
+            }
+          ],
+          "tool_runs": [],
+          "refusal": false
+        },
+        "conversation_id": "49f0f2c0-bf37-4033-a2f9-4020eaf637e4",
+        "message_id": "801ef1fa-f244-43a5-a11c-df89bddb8fce"
+      }
+    },
+    {
+      "page": 500,
+      "expected": "29",
+      "passed": true,
+      "response": {
+        "answer": "The calibration value of tundraopal is 29 [1].",
+        "citations": [
+          {
+            "id": 1,
+            "chunk_id": "2026a8ae-30f7-476a-9842-15e736bc5ad8",
+            "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+            "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+            "document_name": "live-1000.pdf",
+            "version": 1,
+            "page_start": 500,
+            "page_end": 500,
+            "pages": [
+              500
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Independent lesson 500: unique page reference P0500.\nTopic0500 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 5500; retain this source provenance.\nTopic0500 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 5501; retain this source provenance.\nTopic0500 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 5502; retain this source provenance.\nTopic0500 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 5503; retain this source provenance.\nTopic0500 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 5504; retain this source provenance.\nTopic0500 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 5505; retain this source provenance.\nTopic0500 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 5506; retain this source provenance.\nTopic0500 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is ",
+            "score": 0.5247170051760746,
+            "status": "active",
+            "pdf_url": "/api/subjects/3ae62407-ffa0-4520-8fbb-db6fd67eaa2e/documents/4ecbaa30-60e0-495c-bdd0-1e9998d050ee/pdf?version_id=a07552fe-bcaf-474e-a634-70b81bda5e62#page=500"
+          }
+        ],
+        "debug": {
+          "mode": "direct",
+          "retrieval_mode": "dense",
+          "corpus_revision": 1,
+          "cache_hit": false,
+          "latency_ms": 1552.06,
+          "reserved_tokens": 4037,
+          "reserved_calls": 2,
+          "input_tokens": 2953,
+          "output_tokens": 14,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.00119676,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "2026a8ae-30f7-476a-9842-15e736bc5ad8",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 500,
+              "page_end": 500,
+              "pages": [
+                500
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 500: unique page reference P0500.\nTopic0500 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 5500; retain this source provenance.\nTopic0500 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 5501; retain this source provenance.\nTopic0500 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 5502; retain this source provenance.\nTopic0500 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 5503; retain this source provenance.\nTopic0500 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 5504; retain this source provenance.\nTopic0500 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 5505; retain this source provenance.\nTopic0500 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 5506; retain this source provenance.\nTopic0500 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 5507; retain this source provenance.\nThe verification fact tundraopal has calibration value 29.",
+              "score": 0.5247170051760746
+            },
+            {
+              "id": 2,
+              "chunk_id": "407e4383-098a-42a7-bcaf-f7009b31da68",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 1,
+              "pages": [
+                1
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 1: unique page reference P0001.\nTopic0001 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 11; retain this source provenance.\nTopic0001 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 12; retain this source provenance.\nTopic0001 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 13; retain this source provenance.\nTopic0001 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 14; retain this source provenance.\nTopic0001 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 15; retain this source provenance.\nTopic0001 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 16; retain this source provenance.\nTopic0001 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 17; retain this source provenance.\nTopic0001 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 18; retain this source provenance.\nThe verification fact nebularuby has calibration value 17.",
+              "score": 0.4475985512546754
+            },
+            {
+              "id": 3,
+              "chunk_id": "01de05c3-ca0d-4933-b894-1cda75600dd1",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 1000,
+              "page_end": 1000,
+              "pages": [
+                1000
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 1000: unique page reference P1000.\nTopic1000 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 11000; retain this source provenance.\nTopic1000 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 11001; retain this source provenance.\nTopic1000 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 11002; retain this source provenance.\nTopic1000 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 11003; retain this source provenance.\nTopic1000 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 11004; retain this source provenance.\nTopic1000 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 11005; retain this source provenance.\nTopic1000 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 11006; retain this source provenance.\nTopic1000 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 11007; retain this source provenance.\nThe verification fact quasaramber has calibration value 43.",
+              "score": 0.397020097015125
+            },
+            {
+              "id": 4,
+              "chunk_id": "af414537-d3a3-448c-a6d0-8f0e7f7cfc33",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 285,
+              "page_end": 285,
+              "pages": [
+                285
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 285: unique page reference P0285.\nTopic0285 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 3135; retain this source provenance.\nTopic0285 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 3136; retain this source provenance.\nTopic0285 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 3137; retain this source provenance.\nTopic0285 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 3138; retain this source provenance.\nTopic0285 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 3139; retain this source provenance.\nTopic0285 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 3140; retain this source provenance.\nTopic0285 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 3141; retain this source provenance.\nTopic0285 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 3142; retain this source provenance.",
+              "score": 0.34963859650837126
+            },
+            {
+              "id": 5,
+              "chunk_id": "8a02e120-56ba-4309-b909-321d3b30d51f",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 865,
+              "page_end": 865,
+              "pages": [
+                865
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 865: unique page reference P0865.\nTopic0865 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 9515; retain this source provenance.\nTopic0865 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 9516; retain this source provenance.\nTopic0865 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 9517; retain this source provenance.\nTopic0865 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 9518; retain this source provenance.\nTopic0865 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 9519; retain this source provenance.\nTopic0865 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 9520; retain this source provenance.\nTopic0865 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 9521; retain this source provenance.\nTopic0865 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 9522; retain this source provenance.",
+              "score": 0.3496288794806579
+            },
+            {
+              "id": 6,
+              "chunk_id": "0b17b5a4-17b2-4457-aa96-b594b2609952",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 25,
+              "page_end": 25,
+              "pages": [
+                25
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 25: unique page reference P0025.\nTopic0025 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 275; retain this source provenance.\nTopic0025 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 276; retain this source provenance.\nTopic0025 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 277; retain this source provenance.\nTopic0025 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 278; retain this source provenance.\nTopic0025 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 279; retain this source provenance.\nTopic0025 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 280; retain this source provenance.\nTopic0025 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 281; retain this source provenance.\nTopic0025 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 282; retain this source provenance.",
+              "score": 0.3484261922262126
+            }
+          ],
+          "tool_runs": [],
+          "refusal": false
+        },
+        "conversation_id": "85c54045-abd7-4bfb-a079-454be70b7b3f",
+        "message_id": "1a319fcd-ef36-4e10-a5d6-416410402a23"
+      }
+    },
+    {
+      "page": 1000,
+      "expected": "43",
+      "passed": true,
+      "response": {
+        "answer": "The calibration value of quasaramber is 43 [1].",
+        "citations": [
+          {
+            "id": 1,
+            "chunk_id": "01de05c3-ca0d-4933-b894-1cda75600dd1",
+            "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+            "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+            "document_name": "live-1000.pdf",
+            "version": 1,
+            "page_start": 1000,
+            "page_end": 1000,
+            "pages": [
+              1000
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Independent lesson 1000: unique page reference P1000.\nTopic1000 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 11000; retain this source provenance.\nTopic1000 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 11001; retain this source provenance.\nTopic1000 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 11002; retain this source provenance.\nTopic1000 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 11003; retain this source provenance.\nTopic1000 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 11004; retain this source provenance.\nTopic1000 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 11005; retain this source provenance.\nTopic1000 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 11006; retain this source provenance.\nTopic1000 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is",
+            "score": 0.5008750252696167,
+            "status": "active",
+            "pdf_url": "/api/subjects/3ae62407-ffa0-4520-8fbb-db6fd67eaa2e/documents/4ecbaa30-60e0-495c-bdd0-1e9998d050ee/pdf?version_id=a07552fe-bcaf-474e-a634-70b81bda5e62#page=1000"
+          }
+        ],
+        "debug": {
+          "mode": "direct",
+          "retrieval_mode": "dense",
+          "corpus_revision": 1,
+          "cache_hit": false,
+          "latency_ms": 1601.05,
+          "reserved_tokens": 4044,
+          "reserved_calls": 2,
+          "input_tokens": 2960,
+          "output_tokens": 14,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.00119918,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "01de05c3-ca0d-4933-b894-1cda75600dd1",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 1000,
+              "page_end": 1000,
+              "pages": [
+                1000
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 1000: unique page reference P1000.\nTopic1000 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 11000; retain this source provenance.\nTopic1000 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 11001; retain this source provenance.\nTopic1000 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 11002; retain this source provenance.\nTopic1000 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 11003; retain this source provenance.\nTopic1000 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 11004; retain this source provenance.\nTopic1000 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 11005; retain this source provenance.\nTopic1000 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 11006; retain this source provenance.\nTopic1000 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 11007; retain this source provenance.\nThe verification fact quasaramber has calibration value 43.",
+              "score": 0.5008750252696167
+            },
+            {
+              "id": 2,
+              "chunk_id": "407e4383-098a-42a7-bcaf-f7009b31da68",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 1,
+              "pages": [
+                1
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 1: unique page reference P0001.\nTopic0001 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 11; retain this source provenance.\nTopic0001 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 12; retain this source provenance.\nTopic0001 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 13; retain this source provenance.\nTopic0001 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 14; retain this source provenance.\nTopic0001 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 15; retain this source provenance.\nTopic0001 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 16; retain this source provenance.\nTopic0001 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 17; retain this source provenance.\nTopic0001 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 18; retain this source provenance.\nThe verification fact nebularuby has calibration value 17.",
+              "score": 0.4428524074891189
+            },
+            {
+              "id": 3,
+              "chunk_id": "2026a8ae-30f7-476a-9842-15e736bc5ad8",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 500,
+              "page_end": 500,
+              "pages": [
+                500
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 500: unique page reference P0500.\nTopic0500 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 5500; retain this source provenance.\nTopic0500 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 5501; retain this source provenance.\nTopic0500 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 5502; retain this source provenance.\nTopic0500 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 5503; retain this source provenance.\nTopic0500 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 5504; retain this source provenance.\nTopic0500 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 5505; retain this source provenance.\nTopic0500 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 5506; retain this source provenance.\nTopic0500 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 5507; retain this source provenance.\nThe verification fact tundraopal has calibration value 29.",
+              "score": 0.42619718702802645
+            },
+            {
+              "id": 4,
+              "chunk_id": "c270ec9b-ba51-4703-9896-02745f1ca621",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 272,
+              "page_end": 272,
+              "pages": [
+                272
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 272: unique page reference P0272.\nTopic0272 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 2992; retain this source provenance.\nTopic0272 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 2993; retain this source provenance.\nTopic0272 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 2994; retain this source provenance.\nTopic0272 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 2995; retain this source provenance.\nTopic0272 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 2996; retain this source provenance.\nTopic0272 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 2997; retain this source provenance.\nTopic0272 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 2998; retain this source provenance.\nTopic0272 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 2999; retain this source provenance.",
+              "score": 0.3645180509049435
+            },
+            {
+              "id": 5,
+              "chunk_id": "586a749e-0d18-4a8e-8c5e-2f4104585076",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 245,
+              "page_end": 245,
+              "pages": [
+                245
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 245: unique page reference P0245.\nTopic0245 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 2695; retain this source provenance.\nTopic0245 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 2696; retain this source provenance.\nTopic0245 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 2697; retain this source provenance.\nTopic0245 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 2698; retain this source provenance.\nTopic0245 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 2699; retain this source provenance.\nTopic0245 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 2700; retain this source provenance.\nTopic0245 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 2701; retain this source provenance.\nTopic0245 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 2702; retain this source provenance.",
+              "score": 0.36298173473072537
+            },
+            {
+              "id": 6,
+              "chunk_id": "70b8eccd-08b7-468a-a149-6a6b669bf697",
+              "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+              "version_id": "a07552fe-bcaf-474e-a634-70b81bda5e62",
+              "document_name": "live-1000.pdf",
+              "version": 1,
+              "page_start": 250,
+              "page_end": 250,
+              "pages": [
+                250
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Independent lesson 250: unique page reference P0250.\nTopic0250 section 0: experimental records distinguish each physical PDF page.\nThe measured sample at position 0 is 2750; retain this source provenance.\nTopic0250 section 1: experimental records distinguish each physical PDF page.\nThe measured sample at position 1 is 2751; retain this source provenance.\nTopic0250 section 2: experimental records distinguish each physical PDF page.\nThe measured sample at position 2 is 2752; retain this source provenance.\nTopic0250 section 3: experimental records distinguish each physical PDF page.\nThe measured sample at position 3 is 2753; retain this source provenance.\nTopic0250 section 4: experimental records distinguish each physical PDF page.\nThe measured sample at position 4 is 2754; retain this source provenance.\nTopic0250 section 5: experimental records distinguish each physical PDF page.\nThe measured sample at position 5 is 2755; retain this source provenance.\nTopic0250 section 6: experimental records distinguish each physical PDF page.\nThe measured sample at position 6 is 2756; retain this source provenance.\nTopic0250 section 7: experimental records distinguish each physical PDF page.\nThe measured sample at position 7 is 2757; retain this source provenance.",
+              "score": 0.362199195385422
+            }
+          ],
+          "tool_runs": [],
+          "refusal": false
+        },
+        "conversation_id": "4b4eeb4a-503e-4e5b-ac9e-ff91c8149c51",
+        "message_id": "995cebb4-280f-487a-a5c9-7ce82cad0858"
+      }
+    }
+  ],
+  "chunks": 1000,
+  "pages_persisted": 1000,
+  "retrieval_checks": [
+    {
+      "query": "nebularuby",
+      "expected_page": 1,
+      "expected_value": "17",
+      "top_pages": [
+        [
+          1,
+          1
+        ],
+        [
+          500,
+          500
+        ],
+        [
+          720,
+          720
+        ],
+        [
+          421,
+          421
+        ],
+        [
+          737,
+          737
+        ],
+        [
+          921,
+          921
+        ]
+      ],
+      "evidence_found": true
+    },
+    {
+      "query": "tundraopal",
+      "expected_page": 500,
+      "expected_value": "29",
+      "top_pages": [
+        [
+          500,
+          500
+        ],
+        [
+          862,
+          862
+        ],
+        [
+          870,
+          870
+        ],
+        [
+          863,
+          863
+        ],
+        [
+          868,
+          868
+        ],
+        [
+          867,
+          867
+        ]
+      ],
+      "evidence_found": true
+    },
+    {
+      "query": "quasaramber",
+      "expected_page": 1000,
+      "expected_value": "43",
+      "top_pages": [
+        [
+          1000,
+          1000
+        ],
+        [
+          723,
+          723
+        ],
+        [
+          727,
+          727
+        ],
+        [
+          730,
+          730
+        ],
+        [
+          726,
+          726
+        ],
+        [
+          724,
+          724
+        ]
+      ],
+      "evidence_found": true
+    }
+  ],
+  "database_verified": true,
+  "retrieval_implementation": "production ingestion + PostgreSQL exact pgvector + real text-embedding-3-small",
+  "subject_id": "3ae62407-ffa0-4520-8fbb-db6fd67eaa2e",
+  "document_id": "4ecbaa30-60e0-495c-bdd0-1e9998d050ee",
+  "job_id": "ecd087d5-bb76-4c4c-a1d2-1484b442efa9",
+  "ingestion_and_retrieval_seconds": 41.013,
+  "pages": 1000,
+  "embedding_calls": 21,
+  "embedding_inputs": 1003,
+  "max_batch_inputs": 59,
+  "max_batch_tokens": 15824,
+  "incremental": {
+    "status": "PASS",
+    "new_pages": 3,
+    "new_embedding_inputs": 3,
+    "new_embedding_calls": 1,
+    "original_chunks_preserved": 1000,
+    "original_job_extra_usage_events": 0,
+    "seconds": 0.893
+  },
+  "usage": {
+    "input_tokens": 284242,
+    "output_tokens": 42,
+    "provider_calls": 28,
+    "estimated_cost_usd": 0.00910326,
+    "unpriced_events": 0
+  },
+  "finished_at": "2026-09-10T04:11:22.630622+00:00",
+  "process_peak_rss_mb": 263.89,
+  "limitations": [
+    "Single synthetic corpus on this machine.",
+    "Production job functions execute in the measurement process; this is not a Celery throughput benchmark.",
+    "RSS includes parser, tokenizer, SDK and Python runtime."
+  ]
+}

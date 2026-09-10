@@ -1,0 +1,94 @@
+question_id,mode,answer,latency_ms,error,evidence_recall_at_k,evidence_precision_at_k,mrr,answer_token_f1,unanswerable_accuracy,citation_validity,citation_content_support,tool_selection_recall,input_tokens,output_tokens
+willow-06,dense,Chưa tìm thấy đủ thông tin trong tài liệu của môn này để trả lời câu hỏi. Bạn có thể bổ sung tài liệu hoặc nêu rõ phạm vi cần tìm.,5614.45,,1.0,0.05,1.0,0.0,,,,,4899,224
+willow-03,dense,Willow retains its logs for 26 days. This information is found in the Willow document under the storage section [1].,2118.6,,1.0,0.05,1.0,0.09523809523809523,,1.0,,,2340,26
+willow-04,dense,"Willow permits at most 10 repeat attempts after a network failure, using exponential backoff. Invalid data is never retried.[1]",1672.78,,1.0,0.05,1.0,0.09523809523809523,,1.0,,,2350,29
+willow-05,dense,"In the Willow experiment, the response time that covers 95 percent of requests is 85 milliseconds (ms) [1].",2716.81,,1.0,0.05,1.0,0.2,,1.0,,,2355,26
+maple-01,dense,"The maximum number of records in one Maple request is 64. This is stated clearly in the document for Maple scope and intake: ""A Maple request accepts at most 64 records"" [1].",2374.82,,1.0,0.05,1.0,0.06060606060606061,,1.0,,,2356,41
+maple-02,dense,"Maple uses a processing timeout of 13 seconds. This information is stated clearly under the ""Maple: execution"" section in the provided document [1].",1576.84,,1.0,0.05,1.0,0.08333333333333333,,1.0,,,2336,33
+maple-03,dense,"Maple retains its logs for 18 days. This information is found under the ""Maple: storage"" section in the Maple document [1].",2042.99,,1.0,0.05,1.0,0.09090909090909091,,1.0,,,2333,31
+maple-04,dense,"Maple permits at most 6 repeat attempts after a network failure, with exponential backoff. Invalid data is never retried. Duplicate requests are rejected using request_id [1].",1751.29,,1.0,0.05,1.0,0.07407407407407407,,1.0,,,2358,37
+maple-05,dense,"In the Maple experiment, the response time that covers 95 percent of requests (Latency p95) is 77 milliseconds. This means 95% of the requests complete within 77 ms [1].",1743.22,,1.0,0.05,1.0,0.12903225806451613,,1.0,,,2348,42
+maple-06,dense,Chưa tìm thấy đủ thông tin trong tài liệu của môn này để trả lời câu hỏi. Bạn có thể bổ sung tài liệu hoặc nêu rõ phạm vi cần tìm.,4312.69,,1.0,0.05,1.0,0.0,,,,,4891,198
+maple-07,dense,The per-request record limit for Maple is at most 64 records. The measured recovery time for Maple is 30 seconds [1].,1696.61,,1.0,0.1,1.0,0.3076923076923077,,1.0,,,2358,28
+maple-08,dense,"The Maple guides do not agree on the cache TTL. Guide A specifies a cache TTL of 120 seconds, while Guide B specifies a cache TTL of 135 seconds. Neither guide has an effective date, so it is not possible to identify which is newer. Operators must verify the intended TTL themselves [1].",2268.29,,1.0,0.1,1.0,0.12903225806451613,,1.0,,,2361,63
+maple-09,dense,Chưa tìm thấy đủ thông tin trong tài liệu của môn này để trả lời câu hỏi. Bạn có thể bổ sung tài liệu hoặc nêu rõ phạm vi cần tìm.,2397.81,,,,,0.0,1.0,,,,2350,46
+maple-10,dense,"The documents state that the Maple document contains no support email address. Therefore, the support email address for Maple is not provided in the available materials [1].",2119.77,,,,,0.1875,1.0,1.0,,,2335,32
+lan-01,dense,"Lan nhận tối đa 80 bản ghi trong một yêu cầu. Định dạng đầu vào là JSON Lines, mã hóa UTF-8. Đây là dữ liệu kiểm thử tổng hợp, không phải thông số của sản phẩm thật [1].",3986.6,,1.0,0.06666666666666667,1.0,0.05,,1.0,,,2129,49
+lan-02,dense,Thời gian chờ xử lý của Lan là 15 giây. Thông tin này được nêu rõ trong phần xử lý của tài liệu Lan [1].,2156.16,,1.0,0.06666666666666667,1.0,0.07692307692307693,,1.0,,,2126,35
+lan-03,dense,"Nhật ký của Lan được lưu trong 20 ngày. Thông tin này được nêu rõ trong phần ""Lan: lưu trữ"" của tài liệu Lan.pdf [1].",2289.42,,1.0,0.06666666666666667,1.0,0.07407407407407407,,1.0,,,2112,38
+lan-04,dense,"Lan cho phép thử lại tối đa 7 lần khi gặp lỗi mạng (mất kết nối). Khoảng chờ giữa các lần thử tăng theo cấp số nhân. Lỗi do dữ liệu không được thử lại, và các yêu cầu trùng bị loại bằng khóa request_id[1].",2136.62,,1.0,0.06666666666666667,1.0,0.0425531914893617,,1.0,,,2129,60
+lan-05,dense,Độ trễ mà 95% yêu cầu của Lan không vượt quá là 79 ms theo bảng kết quả thử nghiệm của Lan[1].,1555.03,,1.0,0.06666666666666667,1.0,0.16,,1.0,,,2155,31
+lan-06,dense,"Dữ liệu đầu vào của dịch vụ Lan dùng định dạng JSON Lines và mã hóa UTF-8. Đây là dữ liệu kiểm thử tổng hợp, không phải thông số của sản phẩm thật [1].",5802.47,,1.0,0.06666666666666667,1.0,0.20512820512820512,,1.0,,,4481,305
+lan-07,dense,"Với Lan, mỗi yêu cầu nhận tối đa 80 bản ghi. Thời gian phục hồi đo được là 34 giây. Thời gian chờ xử lý của Lan là 15 giây [1].",2775.22,,1.0,0.13333333333333333,1.0,0.2777777777777778,,1.0,,,2138,46
+lan-08,dense,"Các hướng dẫn Lan không thống nhất về TTL cache. Cụ thể:
+
+- Bản hướng dẫn A ghi TTL cache là 150 giây.
+- Bản hướng dẫn B ghi TTL cache là 165 giây, khác bản A.
+
+Hai bản này không ghi ngày hiệu lực và chưa xác định được bản nào thay thế bản nào. Người vận hành phải xác minh trước khi chọn TTL. Vì vậy, có thể chọn giá trị bản mới hơn sau khi xác minh, nhưng tài liệu không rõ ràng về việc ưu tiên bản nào hơn [1].",2579.91,,1.0,0.13333333333333333,1.0,0.2777777777777778,,1.0,,,2151,114
+lan-09,dense,"Trong tài liệu về dịch vụ Lan, không có thông tin nào về giá thuê dịch vụ Lan mỗi tháng. Các phần ghi chú đều nêu rõ không có thông tin về giá thuê, địa chỉ email hỗ trợ hay SLA trong tài liệu này [1].",1942.54,,,,,0.2641509433962264,1.0,1.0,,,2107,53
+lan-10,dense,"Tài liệu về Lan không cung cấp thông tin về địa chỉ email hỗ trợ. Cụ thể, phần ghi chú của Lan cho biết: ""Không có thông tin về giá thuê, địa chỉ email hỗ trợ hoặc SLA trong tài liệu"" [1]. Vì vậy, không có địa chỉ email hỗ trợ của Lan trong các tài liệu hiện có.",4990.27,,,,,0.21212121212121213,1.0,1.0,,,2097,72
+birch-01,dense,"The maximum number of records in one Birch request is 96 records. This is specified in the Birch scope and intake description, which states: ""A Birch request accepts at most 96 records"" [1].",1741.42,,1.0,0.05,1.0,0.058823529411764705,,1.0,,,2342,43
+birch-02,dense,Birch uses a processing timeout of 17 seconds. This is explicitly stated in the Birch execution details. [1],1546.57,,1.0,0.05,1.0,0.10526315789473684,,1.0,,,2335,25
+birch-03,dense,Birch keeps its logs for 22 days. This information is explicitly stated in the Birch storage section of the document [1].,1423.72,,1.0,0.05,1.0,0.09090909090909091,,1.0,,,2334,27
+birch-04,dense,"Birch permits at most 8 repeat attempts after a network failure, using exponential backoff. Invalid data is never retried.[1]",1427.18,,1.0,0.05,1.0,0.09523809523809523,,1.0,,,2349,29
+birch-05,dense,Chưa tìm thấy đủ thông tin trong tài liệu của môn này để trả lời câu hỏi. Bạn có thể bổ sung tài liệu hoặc nêu rõ phạm vi cần tìm.,2397.07,,1.0,0.05,1.0,0.0,,,,,2348,38
+birch-06,dense,Chưa tìm thấy đủ thông tin trong tài liệu của môn này để trả lời câu hỏi. Bạn có thể bổ sung tài liệu hoặc nêu rõ phạm vi cần tìm.,5311.4,,1.0,0.05,1.0,0.0,,,,,4832,153
+birch-07,dense,"For Birch, the per-request record limit is 96 records. The measured recovery time is 38 seconds [1].",1643.54,,1.0,0.1,1.0,0.36363636363636365,,1.0,,,2350,25
+birch-08,dense,"The Birch guides do not agree on the cache TTL. Guide A specifies a cache TTL of 180 seconds, while Guide B specifies a cache TTL of 195 seconds. The documents note that neither guide has an effective date, so it is unknown which guide is newer or has precedence. Operators must verify the intended TTL themselves [1].",2422.52,,1.0,0.1,1.0,0.1791044776119403,,1.0,,,2362,68
+birch-09,dense,"The documents do not contain any information about the monthly rental cost of Birch. Specifically, the Birch document states it contains no rental price, support email address, or SLA [1].",1792.99,,,,,0.11428571428571428,1.0,1.0,,,2341,37
+birch-10,dense,Chưa tìm thấy đủ thông tin trong tài liệu của môn này để trả lời câu hỏi. Bạn có thể bổ sung tài liệu hoặc nêu rõ phạm vi cần tìm.,1597.24,,,,,0.0,1.0,,,,2336,31
+cuc-01,dense,"Cúc nhận tối đa 112 bản ghi trong một yêu cầu. Đây là dữ liệu kiểm thử tổng hợp, định dạng đầu vào là JSON Lines, mã hóa UTF-8, và không phải thông số của sản phẩm thật[1].",2234.34,,1.0,0.06666666666666667,1.0,0.04878048780487805,,1.0,,,2149,50
+cuc-02,dense,Thời gian chờ xử lý của Cúc là 19 giây. Đây là thông tin được nêu rõ trong phần xử lý của dịch vụ Cúc [1].,1892.14,,1.0,0.06666666666666667,1.0,0.07407407407407407,,1.0,,,2147,37
+cuc-03,dense,"Nhật ký của Cúc được lưu trong 24 ngày. Thông tin này được ghi rõ trong phần ""Cúc: lưu trữ"" của tài liệu, kèm theo là bản hướng dẫn A ghi TTL cache là 210 giây và mã bản sao lưu là CUC-SAFE. Dữ liệu được lưu ở vùng thử nghiệm local, không có cam kết vùng địa lý thương mại [1].",2056.26,,1.0,0.06666666666666667,1.0,0.03125,,1.0,,,2133,85
+cuc-04,dense,"Nếu mất kết nối (lỗi mạng), Cúc cho phép thử lại tối đa 9 lần với khoảng chờ tăng theo cấp số nhân. Lỗi dữ liệu thì không được thử lại và yêu cầu trùng bị loại bằng khóa request_id [1].",2415.6,,1.0,0.06666666666666667,1.0,0.047619047619047616,,1.0,,,2135,54
+cuc-05,dense,"Trong bảng thử nghiệm của Cúc, độ trễ mà 95% yêu cầu không vượt quá là 83 ms [1].",1902.39,,1.0,0.06666666666666667,1.0,0.19047619047619047,,1.0,,,2159,28
+cuc-06,dense,"Dữ liệu đầu vào của dịch vụ Cúc dùng định dạng JSON Lines và mã hóa UTF-8. Đây là dữ liệu kiểm thử tổng hợp, không phải thông số của sản phẩm thật [1].",5706.13,,1.0,0.06666666666666667,1.0,0.20512820512820512,,1.0,,,4569,322
+cuc-07,dense,"Với Cúc:
+- Giới hạn bản ghi mỗi yêu cầu là tối đa 112 bản ghi.
+- Thời gian phục hồi đo được là 42 giây.
+
+Thông tin này được lấy từ bảng kết quả thử nghiệm của Cúc trong tài liệu [1].",2176.72,,1.0,0.13333333333333333,1.0,0.21739130434782608,,1.0,,,2159,57
+cuc-08,dense,"Các hướng dẫn Cúc không thống nhất về giá trị TTL cache. Cụ thể:
+
+- Bản hướng dẫn A ghi TTL cache là 210 giây.
+- Bản hướng dẫn B ghi TTL cache là 225 giây, khác bản A.
+
+Hai bản không ghi ngày hiệu lực và chưa xác định được bản nào thay thế bản nào. Do đó, người vận hành phải xác minh trước khi chọn TTL cache. Không có thông tin về việc chọn bản mới hơn hay quy tắc ưu tiên nào trong tài liệu [1].",2525.37,,1.0,0.13333333333333333,1.0,0.28846153846153844,,1.0,,,2172,110
+cuc-09,dense,"Tài liệu về dịch vụ Cúc không chứa thông tin về giá thuê dịch vụ mỗi tháng. Trong tài liệu chỉ có mô tả về phạm vi, xử lý, lưu trữ, bảng đo và ghi chú chưa thống nhất về TTL cache, nhưng không có bất kỳ dữ liệu nào liên quan đến giá thuê, địa chỉ email hỗ trợ hoặc SLA [1].",2159.23,,,,,0.2,1.0,1.0,,,2143,76
+cuc-10,dense,"Tài liệu về dịch vụ Cúc không chứa thông tin về địa chỉ email hỗ trợ. Cụ thể, tài liệu ghi rõ: ""Không có thông tin về giá thuê, địa chỉ email hỗ trợ hoặc SLA trong tài liệu""[1].",1745.63,,,,,0.2978723404255319,1.0,1.0,,,2133,51
+willow-01,dense,"The maximum number of records in one Willow request is 128. This is stated in the Willow scope and intake section: ""A Willow request accepts at most 128 records"" [1].",1812.07,,1.0,0.05,1.0,0.06451612903225806,,1.0,,,2348,39
+willow-02,dense,Willow uses a processing timeout of 21 seconds. This is explicitly stated in the Willow document under execution details. [1],1575.07,,1.0,0.05,1.0,0.09523809523809523,,1.0,,,2342,27
+willow-07,dense,"For Willow, the per-request record limit is 128 records. The measured recovery time is 46 seconds [1].",1960.8,,1.0,0.1,1.0,0.36363636363636365,,1.0,,,2349,25
+willow-08,dense,"The Willow guides disagree on cache TTL:
+
+- Guide A specifies a cache TTL of 240 seconds.
+- Guide B specifies a cache TTL of 255 seconds.
+
+Neither guide has an effective date, so the newer guide cannot be identified from the documents. Operators must verify the intended TTL [1].",2240.9,,1.0,0.1,1.0,0.14035087719298245,,1.0,,,2375,60
+willow-09,dense,"The documents for Willow do not contain any information about the rental price or the monthly cost of renting Willow. Specifically, page 5 of the Willow document states it contains no rental price or SLA details[1].",1819.1,,,,,0.09523809523809523,1.0,1.0,,,2341,43
+willow-10,dense,"The documents do not contain a support email address for Willow. Specifically, the Willow document states that it contains no support email address or SLA [1].",1653.64,,,,,0.12903225806451613,1.0,1.0,,,2342,31
+dao-01,dense,Dịch vụ Đào nhận tối đa 144 bản ghi trong một yêu cầu. Thông tin này được nêu rõ trong tài liệu Đào ở phần phạm vi và tiếp nhận [1].,1578.18,,1.0,0.06666666666666667,1.0,0.0625,,1.0,,,2140,41
+dao-02,dense,"Thời gian chờ xử lý của Đào là 23 giây. Đây là thời gian chờ xử lý quy định cho dịch vụ Đào, theo tài liệu kiểm thử tổng hợp. Khi lỗi mạng, Đào sẽ thử lại tối đa 11 lần với khoảng chờ tăng theo cấp số nhân, còn lỗi dữ liệu thì không được thử lại [1].",2009.3,,1.0,0.06666666666666667,1.0,0.03333333333333333,,1.0,,,2129,77
+dao-03,dense,Nhật ký của Đào được lưu trong 28 ngày theo thông tin trong tài liệu [1].,1651.64,,1.0,0.06666666666666667,1.0,0.11764705882352941,,1.0,,,2114,22
+dao-04,dense,"Khi mất kết nối, Đào cho phép gửi lại tối đa 11 lần. Khoảng chờ giữa các lần gửi lại tăng theo cấp số nhân. Lỗi dữ liệu không được thử lại, và yêu cầu trùng bị loại bằng khóa request_id[1].",1792.75,,1.0,0.06666666666666667,1.0,0.046511627906976744,,1.0,,,2132,57
+dao-05,dense,"Trong bảng thử nghiệm của Đào, độ trễ mà 95% yêu cầu không vượt quá là 87 ms. Thông tin này được ghi rõ trong phần ""Đào: bảng đo"" với chỉ số Latency p95 là 87 ms [1].",1801.59,,1.0,0.06666666666666667,1.0,0.1,,1.0,,,2150,56
+dao-06,dense,"Dữ liệu đầu vào của dịch vụ Đào sử dụng định dạng JSON Lines và được mã hóa bằng UTF-8. Đây là dữ liệu kiểm thử tổng hợp, không phải thông số của sản phẩm thật [1].",5863.39,,1.0,0.06666666666666667,1.0,0.19047619047619047,,1.0,,,4482,287
+dao-07,dense,"Với Đào:
+- Giới hạn bản ghi mỗi yêu cầu là tối đa 144 bản ghi.
+- Thời gian phục hồi đo được là 50 giây.
+
+Thông tin này được lấy từ bảng đo thử nghiệm của Đào trong tài liệu, số liệu dựa trên 200 yêu cầu với concurrency 1 [1].",1991.23,,1.0,0.13333333333333333,1.0,0.18181818181818182,,1.0,,,2156,70
+dao-08,dense,"Các hướng dẫn Đào không thống nhất về TTL cache. Hai bản hướng dẫn đưa ra hai giá trị khác nhau: bản A ghi TTL cache là 270 giây, còn bản B ghi TTL cache là 285 giây. Hai bản này không ghi ngày hiệu lực và chưa xác định được bản nào thay thế bản nào. Do đó, người vận hành phải xác minh trước khi chọn TTL cache phù hợp. Không có thông tin về việc có thể chọn bản mới hơn hay không trong tài liệu [1].",2579.25,,1.0,0.13333333333333333,1.0,0.2830188679245283,,1.0,,,2171,105
+dao-09,dense,"Tài liệu về dịch vụ Đào không cung cấp thông tin về giá thuê dịch vụ Đào mỗi tháng. Trong ghi chú chưa thống nhất của Đào có nói rõ: ""Không có thông tin về giá thuê, địa chỉ email hỗ trợ hoặc SLA trong tài liệu"" [1]. Do đó, không có dữ liệu cụ thể về mức giá thuê dịch vụ Đào hằng tháng trong tài liệu này.",2248.18,,,,,0.18421052631578946,1.0,1.0,,,2143,85
+dao-10,dense,"Tài liệu về Đào không có thông tin về địa chỉ email hỗ trợ. Cụ thể, trang ghi chú của Đào nêu rõ: ""Không có thông tin về giá thuê, địa chỉ email hỗ trợ hoặc SLA trong tài liệu"" [1].",1620.27,,,,,0.2916666666666667,1.0,1.0,,,2109,55
+elm-01,dense,The maximum number of records in one Elm request is 160. This request accepts input using JSON Lines encoded as UTF-8 [1].,1696.9,,1.0,0.05,1.0,0.08333333333333333,,1.0,,,2348,29
+elm-02,dense,"Elm uses a processing timeout of 25 seconds. This is explicitly stated under the ""Elm: execution"" section in the document [1].",1772.91,,1.0,0.05,1.0,0.09090909090909091,,1.0,,,2345,29
+elm-03,dense,"Elm keeps its logs for 30 days. This information comes from the Elm: storage section, which states: ""Elm retains logs for 30 days"" [1].",1958.12,,1.0,0.05,1.0,0.08,,1.0,,,2340,35
+elm-04,dense,"Elm permits at most 12 repeat attempts after a network failure, using exponential backoff. Invalid data is never retried. Duplicate requests are rejected using request_id [1].",1934.82,,1.0,0.05,1.0,0.07407407407407407,,1.0,,,2350,36
+elm-05,dense,"In the Elm experiment, the response time that covers 95 percent of the requests (Latency p95) is 89 milliseconds. This means 95% of the requests completed within 89 ms [1].",1973.4,,1.0,0.05,1.0,0.125,,1.0,,,2358,43
+elm-06,dense,Chưa tìm thấy đủ thông tin trong tài liệu của môn này để trả lời câu hỏi. Bạn có thể bổ sung tài liệu hoặc nêu rõ phạm vi cần tìm.,5059.45,,1.0,0.05,1.0,0.0,,,,,4880,201
+elm-07,dense,The per-request record limit for Elm is at most 160 records. The measured recovery time for Elm is 54 seconds [1].,1599.28,,1.0,0.1,1.0,0.3076923076923077,,1.0,,,2350,28
+elm-08,dense,"The Elm guides do not agree on cache TTL values. Guide A specifies a cache TTL of 300 seconds, while Guide B specifies 315 seconds. Neither guide has an effective date, so it is not possible to identify the newer guide from the document. Operators must verify the intended TTL [1].",1914.92,,1.0,0.1,1.0,0.13333333333333333,,1.0,,,2361,61
+elm-09,dense,The documents related to Elm do not contain any information about the rental price or monthly cost for renting Elm. The Elm document explicitly states it contains no rental price information [1].,1783.63,,,,,0.10810810810810811,1.0,1.0,,,2342,36
+elm-10,dense,The documents do not contain a support email address for Elm. The Elm document explicitly states that it contains no support email address or SLA [1].,1539.82,,,,,0.12903225806451613,1.0,1.0,,,2342,30

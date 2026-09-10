@@ -1,0 +1,30 @@
+{
+  "name": "subject-knowledge-hub-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b",
+    "preview": "vite preview --host 0.0.0.0",
+    "test:browser": "playwright test",
+    "format:check": "prettier --check src tests/acceptance.spec.ts playwright.config.ts vite.config.ts tsconfig.json package.json index.html",
+    "format": "prettier --write src tests/acceptance.spec.ts playwright.config.ts vite.config.ts tsconfig.json package.json index.html"
+  },
+  "dependencies": {
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "react-markdown": "10.1.0",
+    "remark-gfm": "4.0.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.55.1",
+    "@types/react": "19.1.12",
+    "@types/react-dom": "19.1.9",
+    "@vitejs/plugin-react": "4.7.0",
+    "prettier": "3.6.2",
+    "typescript": "5.9.2",
+    "vite": "6.4.3"
+  }
+}

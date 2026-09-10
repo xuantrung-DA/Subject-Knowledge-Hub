@@ -1,0 +1,56 @@
+server {
+    listen 80;
+    server_name _;
+    root /usr/share/nginx/html;
+    index index.html;
+    server_tokens off;
+
+    client_max_body_size ${MAX_REQUEST_BODY_BYTES};
+    client_body_timeout 180s;
+    add_header X-Content-Type-Options nosniff always;
+    add_header Referrer-Policy same-origin always;
+    add_header X-Frame-Options SAMEORIGIN always;
+
+    location = /healthz {
+        access_log off;
+        default_type text/plain;
+        return 200 'ok';
+    }
+
+    location /api/ {
+        proxy_pass http://api:8000;
+        proxy_http_version 1.1;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Connection '';
+        proxy_request_buffering off;
+        proxy_buffering off;
+        proxy_connect_timeout 10s;
+        proxy_send_timeout 180s;
+        proxy_read_timeout 600s;
+        error_page 502 503 504 = @api_unavailable;
+    }
+
+    location @api_unavailable {
+        default_type application/json;
+        return 503 '{"error":{"code":"API_UNAVAILABLE","message":"Máy chủ chưa sẵn sàng hoặc đã quá thời gian chờ. Hãy thử lại."}}';
+    }
+
+    error_page 413 = @upload_too_large;
+    location @upload_too_large {
+        default_type application/json;
+        return 413 '{"error":{"code":"UPLOAD_TOO_LARGE","message":"Tệp vượt giới hạn tải lên đã cấu hình."}}';
+    }
+
+    location /assets/ {
+        expires 1y;
+        add_header Cache-Control 'public, immutable';
+        try_files $uri =404;
+    }
+    location / {
+        add_header Cache-Control 'no-cache';
+        try_files $uri $uri/ /index.html;
+    }
+}

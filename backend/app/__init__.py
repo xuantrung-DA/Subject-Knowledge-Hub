@@ -1,0 +1,1 @@
+"""Subject Knowledge Hub application."""

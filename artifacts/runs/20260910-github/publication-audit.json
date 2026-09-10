@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-09-10T05:09:38.246Z",
+  "files": 234,
+  "total_bytes": 13524106,
+  "secret_and_generated_findings": [],
+  "broken_documentation_links": [],
+  "largest_files": [
+    {
+      "file": "artifacts/runs/20260910-implementation/qasper-results.json",
+      "bytes": 1837990
+    },
+    {
+      "file": "artifacts/runs/20260910-implementation/portfolio-final/baseline-test-answers.json",
+      "bytes": 1424291
+    },
+    {
+      "file": "artifacts/runs/20260910-implementation/portfolio-final/baseline-test-retrieval.json",
+      "bytes": 1364054
+    },
+    {
+      "file": "artifacts/runs/20260910-implementation/portfolio-final/page-test-answers.json",
+      "bytes": 988212
+    },
+    {
+      "file": "artifacts/runs/20260910-implementation/portfolio-final/page-test-retrieval.json",
+      "bytes": 972830
+    },
+    {
+      "file": "artifacts/runs/20260910-implementation/portfolio-final/baseline-dev-answers.json",
+      "bytes": 594401
+    },
+    {
+      "file": "artifacts/runs/20260910-implementation/portfolio/baseline-dev-answers.json",
+      "bytes": 580188
+    },
+    {
+      "file": "artifacts/runs/20260910-implementation/portfolio/baseline-dev-retrieval.json",
+      "bytes": 570490
+    }
+  ],
+  "note": "Scans publication candidates, including binary bytes for the exact local API key; no secret value is written to this report."
+}

@@ -1,0 +1,181 @@
+{
+  "status": "PASS",
+  "provider": "live_openai",
+  "scope": "Follow-up after concise/read-page prompt repair; summary confirmation is completed by the separate browser lifecycle test.",
+  "results": [
+    {
+      "expected_tool": "read_document_pages",
+      "passed": true,
+      "response": {
+        "answer": "Nội dung chính trang 1 đến 2 của tài liệu gồm:\n\n- Phân chia dữ liệu: Bộ dữ liệu Sao Mai có 1000 mẫu, chia thành tập huấn luyện 70%, tập validation 15%, và tập kiểm tra 15%. Random seed được đặt là 42 và tập kiểm tra không dùng để chọn siêu tham số. [1]\n\n- Cấu hình huấn luyện: Thí nghiệm dùng learning rate 0.01, batch size 32, tối đa 20 epochs, optimizer Adam, và hàm mất mát cross entropy. [2]",
+        "citations": [
+          {
+            "id": 1,
+            "chunk_id": "page:74a66e10-6482-4dd6-a6d0-092cb613007c",
+            "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+            "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+            "document_name": "fixture_vi.pdf",
+            "version": 1,
+            "page_start": 1,
+            "page_end": 1,
+            "pages": [
+              1
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture",
+            "score": 1.0,
+            "truncated": false,
+            "status": "active",
+            "pdf_url": "/api/subjects/75fb2ff9-91fe-4c58-955a-26e0bd094393/documents/1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd/pdf?version_id=0db92566-37f3-4329-b0d5-d3491b146c9e#page=1"
+          },
+          {
+            "id": 2,
+            "chunk_id": "page:aed17347-52a2-4740-b81a-7ac752a70545",
+            "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+            "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+            "document_name": "fixture_vi.pdf",
+            "version": 1,
+            "page_start": 2,
+            "page_end": 2,
+            "pages": [
+              2
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Cấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture",
+            "score": 1.0,
+            "truncated": false,
+            "status": "active",
+            "pdf_url": "/api/subjects/75fb2ff9-91fe-4c58-955a-26e0bd094393/documents/1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd/pdf?version_id=0db92566-37f3-4329-b0d5-d3491b146c9e#page=2"
+          }
+        ],
+        "debug": {
+          "mode": "assistant",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 4703.05,
+          "reserved_tokens": 3998,
+          "reserved_calls": 2,
+          "input_tokens": 1674,
+          "output_tokens": 176,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.0009511999999999999,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "page:74a66e10-6482-4dd6-a6d0-092cb613007c",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 1,
+              "pages": [
+                1
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture",
+              "score": 1.0,
+              "truncated": false
+            },
+            {
+              "id": 2,
+              "chunk_id": "page:aed17347-52a2-4740-b81a-7ac752a70545",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 2,
+              "page_end": 2,
+              "pages": [
+                2
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Cấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture",
+              "score": 1.0,
+              "truncated": false
+            }
+          ],
+          "tool_runs": [
+            {
+              "name": "read_document_pages",
+              "arguments": {
+                "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+                "page_start": 1,
+                "page_end": 2
+              },
+              "status": "success",
+              "latency_ms": 12.2,
+              "result": {
+                "keys": [
+                  "evidence",
+                  "note"
+                ],
+                "evidence_count": 2,
+                "job_id": null,
+                "requires_confirmation": false
+              }
+            }
+          ],
+          "refusal": false
+        },
+        "conversation_id": "31413b92-bc8f-46df-aeff-72cb4946d944",
+        "message_id": "da4cf4ad-85b9-4ce1-b13d-9adbc454aa94"
+      }
+    },
+    {
+      "expected_tool": "summarize_document",
+      "passed": true,
+      "response": {
+        "answer": "Tôi đã ước tính tóm tắt nội dung trang 1 đến 2 của tài liệu với document_id 1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd và cần xác nhận của bạn để tiếp tục. Bạn có muốn tôi thực hiện tóm tắt không?",
+        "citations": [],
+        "debug": {
+          "mode": "assistant",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 4074.95,
+          "reserved_tokens": 3640,
+          "reserved_calls": 2,
+          "input_tokens": 1334,
+          "output_tokens": 128,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.0007384000000000001,
+          "retrieved_evidence": [],
+          "tool_runs": [
+            {
+              "name": "summarize_document",
+              "arguments": {
+                "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+                "page_start": 1,
+                "page_end": 2
+              },
+              "status": "success",
+              "latency_ms": 7.24,
+              "result": {
+                "keys": [
+                  "requires_confirmation",
+                  "estimate",
+                  "document_id",
+                  "version_id",
+                  "page_start",
+                  "page_end"
+                ],
+                "evidence_count": 0,
+                "job_id": null,
+                "requires_confirmation": true
+              }
+            }
+          ],
+          "refusal": false
+        },
+        "conversation_id": "c749dfb0-ee78-402f-ac22-c900c79666f7",
+        "message_id": "801cb747-7354-4afd-a2a6-624e3c9608a1"
+      }
+    }
+  ]
+}

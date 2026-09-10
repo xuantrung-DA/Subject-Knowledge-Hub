@@ -1,0 +1,361 @@
+{
+  "reviewer": "AI assistant that authored the synthetic corpus; not independent human review",
+  "method": "Read all 70 final answers against the reference and source runbook facts; full intended source text separately verified on all 50 PDF pages. Score 2 = requested facts correct and complete; 1 = partial; 0 = wrong or false refusal. Claim-by-claim support has not been exhaustively scored.",
+  "correct_answerable": 53,
+  "answerable_total": 56,
+  "correct_abstentions": 14,
+  "unanswerable_total": 14,
+  "claim_support_score": null,
+  "rows": [
+    {
+      "question_id": "birch-01",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "birch-02",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "birch-03",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "birch-04",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "birch-05",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "birch-06",
+      "correctness_0_1_2": 2,
+      "note": "Correct requested format/encoding; adds a general JSON Lines definition beyond the runbook wording."
+    },
+    {
+      "question_id": "birch-07",
+      "correctness_0_1_2": 0,
+      "note": "False refusal despite expected evidence retrieved."
+    },
+    {
+      "question_id": "birch-08",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "birch-09",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "birch-10",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "cuc-01",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "cuc-02",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "cuc-03",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "cuc-04",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "cuc-05",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "cuc-06",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "cuc-07",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "cuc-08",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "cuc-09",
+      "correctness_0_1_2": 2,
+      "note": "Correct abstention in content; phrase proxy missed Vietnamese wording khong chua thong tin."
+    },
+    {
+      "question_id": "cuc-10",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "dao-01",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "dao-02",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "dao-03",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "dao-04",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "dao-05",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "dao-06",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "dao-07",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "dao-08",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "dao-09",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "dao-10",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "elm-01",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "elm-02",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "elm-03",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "elm-04",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "elm-05",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "elm-06",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "elm-07",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "elm-08",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "elm-09",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "elm-10",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "lan-01",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "lan-02",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "lan-03",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "lan-04",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "lan-05",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "lan-06",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "lan-07",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "lan-08",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "lan-09",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "lan-10",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "maple-01",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "maple-02",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "maple-03",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "maple-04",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "maple-05",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "maple-06",
+      "correctness_0_1_2": 0,
+      "note": "False refusal despite expected evidence retrieved."
+    },
+    {
+      "question_id": "maple-07",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "maple-08",
+      "correctness_0_1_2": 0,
+      "note": "False refusal despite expected evidence retrieved."
+    },
+    {
+      "question_id": "maple-09",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "maple-10",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "willow-01",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "willow-02",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "willow-03",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "willow-04",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "willow-05",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "willow-06",
+      "correctness_0_1_2": 2,
+      "note": "Correct requested format/encoding; adds a general JSON Lines definition beyond the runbook wording."
+    },
+    {
+      "question_id": "willow-07",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "willow-08",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "willow-09",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    },
+    {
+      "question_id": "willow-10",
+      "correctness_0_1_2": 2,
+      "note": "Requested facts agree with reference/source, or correctly reports missing information."
+    }
+  ]
+}

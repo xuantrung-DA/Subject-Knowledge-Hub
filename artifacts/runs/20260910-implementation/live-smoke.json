@@ -1,0 +1,2025 @@
+{
+  "started_at": "2026-09-10T03:34:18.458012+00:00",
+  "provider": "live_openai",
+  "status": "HTTP_COMPLETE_REVIEW_REQUIRED",
+  "results": [
+    {
+      "index": 1,
+      "expected_tool": null,
+      "question": "Tỷ lệ chia tập train, validation và test là bao nhiêu?",
+      "latency_ms": 7205,
+      "response": {
+        "answer": "Tỷ lệ chia tập dữ liệu cho bộ dữ liệu Sao Mai như sau:\n- Tập huấn luyện (train): 70%\n- Tập validation: 15%\n- Tập kiểm tra (test): 15%\n\nRandom seed sử dụng là 42. Tập kiểm tra không được sử dụng để chọn siêu tham số [1].",
+        "citations": [
+          {
+            "id": 1,
+            "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+            "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+            "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+            "document_name": "fixture_vi.pdf",
+            "version": 1,
+            "page_start": 1,
+            "page_end": 6,
+            "pages": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.",
+            "score": 0.531928965979026,
+            "status": "active",
+            "pdf_url": "/api/subjects/75fb2ff9-91fe-4c58-955a-26e0bd094393/documents/1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd/pdf?version_id=0db92566-37f3-4329-b0d5-d3491b146c9e#page=1"
+          }
+        ],
+        "debug": {
+          "mode": "direct",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 7160.62,
+          "reserved_tokens": 1935,
+          "reserved_calls": 2,
+          "input_tokens": 1454,
+          "output_tokens": 73,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.0006900400000000002,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.86\nvà F1 là 0.88. Confusion matrix được tính trên tập kiểm tra. Các con số này là\ndữ liệu giả lập do project tự tạo để kiểm thử.\nPhysical PDF page 4 | Original synthetic project fixture\n\nQuy định lớp học\nQuy định lớp Sao Mai ngày 2026-09-01: sức chứa tối đa 30 sinh viên. Buổi thực\nhành diễn ra vào thứ Tư lúc 14:00 tại phòng L204. Giảng viên phụ trách là cô\nAn. Tài liệu khác có thể mâu thuẫn; cần trích cả hai nguồn.\nPhysical PDF page 5 | Original synthetic project fixture\n\nDừng sớm và lưu mô hình\nEarly stopping theo dõi validation loss với patience 5 epochs. Lưu checkpoint\ncó validation loss nhỏ nhất. Tên tệp checkpoint là sao_mai_best.pt. Dropout\nbằng 0.2. Không chọn checkpoint theo test loss.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.531928965979026
+            },
+            {
+              "id": 2,
+              "chunk_id": "78bbee4b-c031-4b07-852b-0898b349e17c",
+              "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+              "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+              "document_name": "fixture_en.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Dataset protocol\nThe Aurora dataset contains 2400 examples and 12 input features. The split is\n80% training, 10% validation, and 10% test. The split random seed is 17. The\ntarget has three classes: red, green, and blue.\nPhysical PDF page 1 | Original synthetic project fixture\n\nTraining configuration\nAurora uses logistic regression with L2 regularization. The regularization\nparameter C is 0.5. The maximum number of solver iterations is 200. The solver\nis lbfgs. No GPU is required for this fixture experiment.\nPhysical PDF page 2 | Original synthetic project fixture\n\nData cleaning\nDuplicate Aurora examples are removed by sample_id before splitting. Missing\nnumeric values use the training median. Missing categorical values use the\nlabel unknown. Never fit preprocessing on validation or test examples.\nPhysical PDF page 3 | Original synthetic project fixture\n\nEvaluation protocol\nAurora reports macro F1 as its primary metric because its classes are\nimbalanced. Macro F1 is 0.81 and balanced accuracy is 0.84. The held-out test\nsplit is evaluated once after model selection.\nPhysical PDF page 4 | Original synthetic project fixture\n\nService limits\nThe Aurora inference API accepts at most 16 rows per request. Requests time\nout after 8 seconds. Feature names must match the twelve training columns. The\nhealth endpoint is /health. The request schema version is v2.\nPhysical PDF page 5 | Original synthetic project fixture\n\nReproducibility\nThe Aurora artifact checksum prefix is a17c9e. The experiment seed is 17 and\nthe project release is 1.2.0. Prediction logs are retained for 7 days. The\nmodel must be revalidated whenever the data schema changes.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.247945402387574
+            }
+          ],
+          "tool_runs": [],
+          "refusal": false
+        },
+        "conversation_id": "a16ed1ba-e7fb-4d91-820d-016ffdd3b8a2",
+        "message_id": "509bb10b-7c6f-4cea-bb44-5f7f249322da"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    },
+    {
+      "index": 2,
+      "expected_tool": null,
+      "question": "Learning rate và batch size trong tài liệu là bao nhiêu?",
+      "latency_ms": 3372,
+      "response": {
+        "answer": "Learning rate và batch size trong tài liệu cho thí nghiệm Sao Mai lần lượt là 0.01 và 32. Cấu hình huấn luyện sử dụng learning rate 0.01, batch size 32 và tối đa 20 epochs. Optimizer được dùng là Adam còn hàm mất mát là cross entropy [1].",
+        "citations": [
+          {
+            "id": 1,
+            "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+            "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+            "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+            "document_name": "fixture_vi.pdf",
+            "version": 1,
+            "page_start": 1,
+            "page_end": 6,
+            "pages": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.",
+            "score": 0.45656597805070986,
+            "status": "active",
+            "pdf_url": "/api/subjects/75fb2ff9-91fe-4c58-955a-26e0bd094393/documents/1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd/pdf?version_id=0db92566-37f3-4329-b0d5-d3491b146c9e#page=1"
+          }
+        ],
+        "debug": {
+          "mode": "direct",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 3332.9,
+          "reserved_tokens": 1930,
+          "reserved_calls": 2,
+          "input_tokens": 1449,
+          "output_tokens": 70,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.0006851400000000001,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.86\nvà F1 là 0.88. Confusion matrix được tính trên tập kiểm tra. Các con số này là\ndữ liệu giả lập do project tự tạo để kiểm thử.\nPhysical PDF page 4 | Original synthetic project fixture\n\nQuy định lớp học\nQuy định lớp Sao Mai ngày 2026-09-01: sức chứa tối đa 30 sinh viên. Buổi thực\nhành diễn ra vào thứ Tư lúc 14:00 tại phòng L204. Giảng viên phụ trách là cô\nAn. Tài liệu khác có thể mâu thuẫn; cần trích cả hai nguồn.\nPhysical PDF page 5 | Original synthetic project fixture\n\nDừng sớm và lưu mô hình\nEarly stopping theo dõi validation loss với patience 5 epochs. Lưu checkpoint\ncó validation loss nhỏ nhất. Tên tệp checkpoint là sao_mai_best.pt. Dropout\nbằng 0.2. Không chọn checkpoint theo test loss.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.45656597805070986
+            },
+            {
+              "id": 2,
+              "chunk_id": "78bbee4b-c031-4b07-852b-0898b349e17c",
+              "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+              "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+              "document_name": "fixture_en.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Dataset protocol\nThe Aurora dataset contains 2400 examples and 12 input features. The split is\n80% training, 10% validation, and 10% test. The split random seed is 17. The\ntarget has three classes: red, green, and blue.\nPhysical PDF page 1 | Original synthetic project fixture\n\nTraining configuration\nAurora uses logistic regression with L2 regularization. The regularization\nparameter C is 0.5. The maximum number of solver iterations is 200. The solver\nis lbfgs. No GPU is required for this fixture experiment.\nPhysical PDF page 2 | Original synthetic project fixture\n\nData cleaning\nDuplicate Aurora examples are removed by sample_id before splitting. Missing\nnumeric values use the training median. Missing categorical values use the\nlabel unknown. Never fit preprocessing on validation or test examples.\nPhysical PDF page 3 | Original synthetic project fixture\n\nEvaluation protocol\nAurora reports macro F1 as its primary metric because its classes are\nimbalanced. Macro F1 is 0.81 and balanced accuracy is 0.84. The held-out test\nsplit is evaluated once after model selection.\nPhysical PDF page 4 | Original synthetic project fixture\n\nService limits\nThe Aurora inference API accepts at most 16 rows per request. Requests time\nout after 8 seconds. Feature names must match the twelve training columns. The\nhealth endpoint is /health. The request schema version is v2.\nPhysical PDF page 5 | Original synthetic project fixture\n\nReproducibility\nThe Aurora artifact checksum prefix is a17c9e. The experiment seed is 17 and\nthe project release is 1.2.0. Prediction logs are retained for 7 days. The\nmodel must be revalidated whenever the data schema changes.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.22692954868137705
+            }
+          ],
+          "tool_runs": [],
+          "refusal": false
+        },
+        "conversation_id": "102e1937-c7a3-41c4-8200-9c042e34780a",
+        "message_id": "ecced83c-887e-4af5-ac89-594ae6c3bc2c"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    },
+    {
+      "index": 3,
+      "expected_tool": null,
+      "question": "Sau đó mô hình được huấn luyện bao nhiêu epochs?",
+      "latency_ms": 2460,
+      "response": {
+        "answer": "Mô hình trong thí nghiệm Sao Mai được huấn luyện tối đa 20 epochs. Điều này được nêu rõ trong phần cấu hình huấn luyện của tài liệu: \"Thí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20 epochs\" [1].",
+        "citations": [
+          {
+            "id": 1,
+            "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+            "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+            "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+            "document_name": "fixture_vi.pdf",
+            "version": 1,
+            "page_start": 1,
+            "page_end": 6,
+            "pages": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.",
+            "score": 0.4680666411265486,
+            "status": "active",
+            "pdf_url": "/api/subjects/75fb2ff9-91fe-4c58-955a-26e0bd094393/documents/1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd/pdf?version_id=0db92566-37f3-4329-b0d5-d3491b146c9e#page=1"
+          }
+        ],
+        "debug": {
+          "mode": "direct",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 2421.86,
+          "reserved_tokens": 2047,
+          "reserved_calls": 2,
+          "input_tokens": 1560,
+          "output_tokens": 66,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.0007144,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.86\nvà F1 là 0.88. Confusion matrix được tính trên tập kiểm tra. Các con số này là\ndữ liệu giả lập do project tự tạo để kiểm thử.\nPhysical PDF page 4 | Original synthetic project fixture\n\nQuy định lớp học\nQuy định lớp Sao Mai ngày 2026-09-01: sức chứa tối đa 30 sinh viên. Buổi thực\nhành diễn ra vào thứ Tư lúc 14:00 tại phòng L204. Giảng viên phụ trách là cô\nAn. Tài liệu khác có thể mâu thuẫn; cần trích cả hai nguồn.\nPhysical PDF page 5 | Original synthetic project fixture\n\nDừng sớm và lưu mô hình\nEarly stopping theo dõi validation loss với patience 5 epochs. Lưu checkpoint\ncó validation loss nhỏ nhất. Tên tệp checkpoint là sao_mai_best.pt. Dropout\nbằng 0.2. Không chọn checkpoint theo test loss.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.4680666411265486
+            },
+            {
+              "id": 2,
+              "chunk_id": "78bbee4b-c031-4b07-852b-0898b349e17c",
+              "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+              "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+              "document_name": "fixture_en.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Dataset protocol\nThe Aurora dataset contains 2400 examples and 12 input features. The split is\n80% training, 10% validation, and 10% test. The split random seed is 17. The\ntarget has three classes: red, green, and blue.\nPhysical PDF page 1 | Original synthetic project fixture\n\nTraining configuration\nAurora uses logistic regression with L2 regularization. The regularization\nparameter C is 0.5. The maximum number of solver iterations is 200. The solver\nis lbfgs. No GPU is required for this fixture experiment.\nPhysical PDF page 2 | Original synthetic project fixture\n\nData cleaning\nDuplicate Aurora examples are removed by sample_id before splitting. Missing\nnumeric values use the training median. Missing categorical values use the\nlabel unknown. Never fit preprocessing on validation or test examples.\nPhysical PDF page 3 | Original synthetic project fixture\n\nEvaluation protocol\nAurora reports macro F1 as its primary metric because its classes are\nimbalanced. Macro F1 is 0.81 and balanced accuracy is 0.84. The held-out test\nsplit is evaluated once after model selection.\nPhysical PDF page 4 | Original synthetic project fixture\n\nService limits\nThe Aurora inference API accepts at most 16 rows per request. Requests time\nout after 8 seconds. Feature names must match the twelve training columns. The\nhealth endpoint is /health. The request schema version is v2.\nPhysical PDF page 5 | Original synthetic project fixture\n\nReproducibility\nThe Aurora artifact checksum prefix is a17c9e. The experiment seed is 17 and\nthe project release is 1.2.0. Prediction logs are retained for 7 days. The\nmodel must be revalidated whenever the data schema changes.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.23175951173284293
+            }
+          ],
+          "tool_runs": [],
+          "refusal": false
+        },
+        "conversation_id": "102e1937-c7a3-41c4-8200-9c042e34780a",
+        "message_id": "b00e955b-8e97-4d3c-bcc8-5d67b9e003db"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    },
+    {
+      "index": 4,
+      "expected_tool": null,
+      "question": "What are the mean and standard deviation used for normalization?",
+      "latency_ms": 3754,
+      "response": {
+        "answer": "Mean and standard deviation used for normalization are given for the Sao Mai dataset's temperature feature:  \n- Mean = 10  \n- Standard deviation = 2  \n\nNormalization formula: z = (x - 10) / 2, applied to validation and test sets as well, with the scaler fitted only on the training data [2]. \n\nThe documents do not provide mean and standard deviation values for normalization in the Aurora dataset.",
+        "citations": [
+          {
+            "id": 2,
+            "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+            "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+            "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+            "document_name": "fixture_vi.pdf",
+            "version": 1,
+            "page_start": 1,
+            "page_end": 6,
+            "pages": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.",
+            "score": 0.18456615409572863,
+            "status": "active",
+            "pdf_url": "/api/subjects/75fb2ff9-91fe-4c58-955a-26e0bd094393/documents/1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd/pdf?version_id=0db92566-37f3-4329-b0d5-d3491b146c9e#page=1"
+          }
+        ],
+        "debug": {
+          "mode": "direct",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 3714.34,
+          "reserved_tokens": 1922,
+          "reserved_calls": 2,
+          "input_tokens": 1441,
+          "output_tokens": 87,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.00071142,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "78bbee4b-c031-4b07-852b-0898b349e17c",
+              "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+              "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+              "document_name": "fixture_en.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Dataset protocol\nThe Aurora dataset contains 2400 examples and 12 input features. The split is\n80% training, 10% validation, and 10% test. The split random seed is 17. The\ntarget has three classes: red, green, and blue.\nPhysical PDF page 1 | Original synthetic project fixture\n\nTraining configuration\nAurora uses logistic regression with L2 regularization. The regularization\nparameter C is 0.5. The maximum number of solver iterations is 200. The solver\nis lbfgs. No GPU is required for this fixture experiment.\nPhysical PDF page 2 | Original synthetic project fixture\n\nData cleaning\nDuplicate Aurora examples are removed by sample_id before splitting. Missing\nnumeric values use the training median. Missing categorical values use the\nlabel unknown. Never fit preprocessing on validation or test examples.\nPhysical PDF page 3 | Original synthetic project fixture\n\nEvaluation protocol\nAurora reports macro F1 as its primary metric because its classes are\nimbalanced. Macro F1 is 0.81 and balanced accuracy is 0.84. The held-out test\nsplit is evaluated once after model selection.\nPhysical PDF page 4 | Original synthetic project fixture\n\nService limits\nThe Aurora inference API accepts at most 16 rows per request. Requests time\nout after 8 seconds. Feature names must match the twelve training columns. The\nhealth endpoint is /health. The request schema version is v2.\nPhysical PDF page 5 | Original synthetic project fixture\n\nReproducibility\nThe Aurora artifact checksum prefix is a17c9e. The experiment seed is 17 and\nthe project release is 1.2.0. Prediction logs are retained for 7 days. The\nmodel must be revalidated whenever the data schema changes.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.24933168393799887
+            },
+            {
+              "id": 2,
+              "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.86\nvà F1 là 0.88. Confusion matrix được tính trên tập kiểm tra. Các con số này là\ndữ liệu giả lập do project tự tạo để kiểm thử.\nPhysical PDF page 4 | Original synthetic project fixture\n\nQuy định lớp học\nQuy định lớp Sao Mai ngày 2026-09-01: sức chứa tối đa 30 sinh viên. Buổi thực\nhành diễn ra vào thứ Tư lúc 14:00 tại phòng L204. Giảng viên phụ trách là cô\nAn. Tài liệu khác có thể mâu thuẫn; cần trích cả hai nguồn.\nPhysical PDF page 5 | Original synthetic project fixture\n\nDừng sớm và lưu mô hình\nEarly stopping theo dõi validation loss với patience 5 epochs. Lưu checkpoint\ncó validation loss nhỏ nhất. Tên tệp checkpoint là sao_mai_best.pt. Dropout\nbằng 0.2. Không chọn checkpoint theo test loss.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.18456615409572863
+            }
+          ],
+          "tool_runs": [],
+          "refusal": false
+        },
+        "conversation_id": "037568e7-08fb-4cf4-a0d0-2a7c9933729c",
+        "message_id": "8ac09d82-4488-4f9a-98be-91e06c1704c9"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    },
+    {
+      "index": 5,
+      "expected_tool": null,
+      "question": "Accuracy và F1 được ghi là bao nhiêu?",
+      "latency_ms": 3736,
+      "response": {
+        "answer": "Accuracy và F1 được ghi như sau:\n\n- Đối với bộ dữ liệu Sao Mai:  \n  - Accuracy là 0.92  \n  - F1 là 0.88  \n  Các số liệu này tính trên tập kiểm tra Sao Mai [1].\n\n- Đối với bộ dữ liệu Aurora:  \n  - Macro F1 là 0.81  \n  - Balanced accuracy là 0.84  \n  Các số liệu này cũng tính trên tập kiểm tra của Aurora [2].",
+        "citations": [
+          {
+            "id": 1,
+            "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+            "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+            "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+            "document_name": "fixture_vi.pdf",
+            "version": 1,
+            "page_start": 1,
+            "page_end": 6,
+            "pages": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.",
+            "score": 0.3929973753950535,
+            "status": "active",
+            "pdf_url": "/api/subjects/75fb2ff9-91fe-4c58-955a-26e0bd094393/documents/1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd/pdf?version_id=0db92566-37f3-4329-b0d5-d3491b146c9e#page=1"
+          },
+          {
+            "id": 2,
+            "chunk_id": "78bbee4b-c031-4b07-852b-0898b349e17c",
+            "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+            "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+            "document_name": "fixture_en.pdf",
+            "version": 1,
+            "page_start": 1,
+            "page_end": 6,
+            "pages": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Dataset protocol\nThe Aurora dataset contains 2400 examples and 12 input features. The split is\n80% training, 10% validation, and 10% test. The split random seed is 17. The\ntarget has three classes: red, green, and blue.\nPhysical PDF page 1 | Original synthetic project fixture\n\nTraining configuration\nAurora uses logistic regression with L2 regularization. The regularization\nparameter C is 0.5. The maximum number of solver iterations is 200. The solver\nis lbfgs. No GPU is required for this fixture experiment.\nPhysical PDF page 2 | Original synthetic project fixture\n\nData cleaning\nDuplicate Aurora examples are removed by sample_id before splitting. Missing\nnumeric values use the training median. Missing categorical values use the\nlabel unknown. Never fit preprocessing on validation or test examples.\nPhysical PDF page 3 | Original synthetic project fixture\n\nEvaluation protocol\nAurora reports macro F1 as its primary metric because its classes are\nimbalanced. Macro F1 is 0.81 and balanced accuracy is 0.84. The held-out test\nsplit is evaluated once after model selection.\nPhysical PDF page 4 | Original synthetic project fixture\n\nService limits\nThe Aurora inference API accepts at most 16 rows",
+            "score": 0.20472198171423295,
+            "status": "active",
+            "pdf_url": "/api/subjects/75fb2ff9-91fe-4c58-955a-26e0bd094393/documents/afd647a4-b8e6-413c-ae9a-3a3de724e91d/pdf?version_id=93df93da-90a4-4c69-aec0-45cc6e81a3d8#page=1"
+          }
+        ],
+        "debug": {
+          "mode": "direct",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 3683.63,
+          "reserved_tokens": 1926,
+          "reserved_calls": 2,
+          "input_tokens": 1445,
+          "output_tokens": 102,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.0007355,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.86\nvà F1 là 0.88. Confusion matrix được tính trên tập kiểm tra. Các con số này là\ndữ liệu giả lập do project tự tạo để kiểm thử.\nPhysical PDF page 4 | Original synthetic project fixture\n\nQuy định lớp học\nQuy định lớp Sao Mai ngày 2026-09-01: sức chứa tối đa 30 sinh viên. Buổi thực\nhành diễn ra vào thứ Tư lúc 14:00 tại phòng L204. Giảng viên phụ trách là cô\nAn. Tài liệu khác có thể mâu thuẫn; cần trích cả hai nguồn.\nPhysical PDF page 5 | Original synthetic project fixture\n\nDừng sớm và lưu mô hình\nEarly stopping theo dõi validation loss với patience 5 epochs. Lưu checkpoint\ncó validation loss nhỏ nhất. Tên tệp checkpoint là sao_mai_best.pt. Dropout\nbằng 0.2. Không chọn checkpoint theo test loss.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.3929973753950535
+            },
+            {
+              "id": 2,
+              "chunk_id": "78bbee4b-c031-4b07-852b-0898b349e17c",
+              "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+              "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+              "document_name": "fixture_en.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Dataset protocol\nThe Aurora dataset contains 2400 examples and 12 input features. The split is\n80% training, 10% validation, and 10% test. The split random seed is 17. The\ntarget has three classes: red, green, and blue.\nPhysical PDF page 1 | Original synthetic project fixture\n\nTraining configuration\nAurora uses logistic regression with L2 regularization. The regularization\nparameter C is 0.5. The maximum number of solver iterations is 200. The solver\nis lbfgs. No GPU is required for this fixture experiment.\nPhysical PDF page 2 | Original synthetic project fixture\n\nData cleaning\nDuplicate Aurora examples are removed by sample_id before splitting. Missing\nnumeric values use the training median. Missing categorical values use the\nlabel unknown. Never fit preprocessing on validation or test examples.\nPhysical PDF page 3 | Original synthetic project fixture\n\nEvaluation protocol\nAurora reports macro F1 as its primary metric because its classes are\nimbalanced. Macro F1 is 0.81 and balanced accuracy is 0.84. The held-out test\nsplit is evaluated once after model selection.\nPhysical PDF page 4 | Original synthetic project fixture\n\nService limits\nThe Aurora inference API accepts at most 16 rows per request. Requests time\nout after 8 seconds. Feature names must match the twelve training columns. The\nhealth endpoint is /health. The request schema version is v2.\nPhysical PDF page 5 | Original synthetic project fixture\n\nReproducibility\nThe Aurora artifact checksum prefix is a17c9e. The experiment seed is 17 and\nthe project release is 1.2.0. Prediction logs are retained for 7 days. The\nmodel must be revalidated whenever the data schema changes.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.20472198171423295
+            }
+          ],
+          "tool_runs": [],
+          "refusal": false
+        },
+        "conversation_id": "f579473f-aedf-4e3a-baf5-7a56eb98bac4",
+        "message_id": "82eb2da0-a6d0-405b-8ccf-53a0651ba742"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    },
+    {
+      "index": 6,
+      "expected_tool": null,
+      "question": "Lớp học có tối đa bao nhiêu chỗ và lịch thực hành vào ngày nào?",
+      "latency_ms": 3888,
+      "response": {
+        "answer": "Lớp học có sức chứa tối đa 30 chỗ. Buổi thực hành diễn ra vào thứ Tư lúc 14:00 tại phòng L204. Giảng viên phụ trách là cô An [1].",
+        "citations": [
+          {
+            "id": 1,
+            "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+            "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+            "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+            "document_name": "fixture_vi.pdf",
+            "version": 1,
+            "page_start": 1,
+            "page_end": 6,
+            "pages": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.",
+            "score": 0.3368243006397962,
+            "status": "active",
+            "pdf_url": "/api/subjects/75fb2ff9-91fe-4c58-955a-26e0bd094393/documents/1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd/pdf?version_id=0db92566-37f3-4329-b0d5-d3491b146c9e#page=1"
+          }
+        ],
+        "debug": {
+          "mode": "direct",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 3846.46,
+          "reserved_tokens": 1953,
+          "reserved_calls": 2,
+          "input_tokens": 1472,
+          "output_tokens": 46,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.00064986,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.86\nvà F1 là 0.88. Confusion matrix được tính trên tập kiểm tra. Các con số này là\ndữ liệu giả lập do project tự tạo để kiểm thử.\nPhysical PDF page 4 | Original synthetic project fixture\n\nQuy định lớp học\nQuy định lớp Sao Mai ngày 2026-09-01: sức chứa tối đa 30 sinh viên. Buổi thực\nhành diễn ra vào thứ Tư lúc 14:00 tại phòng L204. Giảng viên phụ trách là cô\nAn. Tài liệu khác có thể mâu thuẫn; cần trích cả hai nguồn.\nPhysical PDF page 5 | Original synthetic project fixture\n\nDừng sớm và lưu mô hình\nEarly stopping theo dõi validation loss với patience 5 epochs. Lưu checkpoint\ncó validation loss nhỏ nhất. Tên tệp checkpoint là sao_mai_best.pt. Dropout\nbằng 0.2. Không chọn checkpoint theo test loss.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.3368243006397962
+            },
+            {
+              "id": 2,
+              "chunk_id": "78bbee4b-c031-4b07-852b-0898b349e17c",
+              "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+              "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+              "document_name": "fixture_en.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Dataset protocol\nThe Aurora dataset contains 2400 examples and 12 input features. The split is\n80% training, 10% validation, and 10% test. The split random seed is 17. The\ntarget has three classes: red, green, and blue.\nPhysical PDF page 1 | Original synthetic project fixture\n\nTraining configuration\nAurora uses logistic regression with L2 regularization. The regularization\nparameter C is 0.5. The maximum number of solver iterations is 200. The solver\nis lbfgs. No GPU is required for this fixture experiment.\nPhysical PDF page 2 | Original synthetic project fixture\n\nData cleaning\nDuplicate Aurora examples are removed by sample_id before splitting. Missing\nnumeric values use the training median. Missing categorical values use the\nlabel unknown. Never fit preprocessing on validation or test examples.\nPhysical PDF page 3 | Original synthetic project fixture\n\nEvaluation protocol\nAurora reports macro F1 as its primary metric because its classes are\nimbalanced. Macro F1 is 0.81 and balanced accuracy is 0.84. The held-out test\nsplit is evaluated once after model selection.\nPhysical PDF page 4 | Original synthetic project fixture\n\nService limits\nThe Aurora inference API accepts at most 16 rows per request. Requests time\nout after 8 seconds. Feature names must match the twelve training columns. The\nhealth endpoint is /health. The request schema version is v2.\nPhysical PDF page 5 | Original synthetic project fixture\n\nReproducibility\nThe Aurora artifact checksum prefix is a17c9e. The experiment seed is 17 and\nthe project release is 1.2.0. Prediction logs are retained for 7 days. The\nmodel must be revalidated whenever the data schema changes.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.03809287936517303
+            }
+          ],
+          "tool_runs": [],
+          "refusal": false
+        },
+        "conversation_id": "8839cb15-a913-43e4-8fa9-2902d1547efe",
+        "message_id": "c398490d-7f47-4318-a03a-ace32c7d3abc"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    },
+    {
+      "index": 7,
+      "expected_tool": null,
+      "question": "Early stopping patience được đặt là bao nhiêu?",
+      "latency_ms": 1888,
+      "response": {
+        "answer": "Early stopping patience được đặt là 5 epochs, theo dõi validation loss. Khi validation loss không cải thiện trong 5 epochs liên tiếp, quá trình huấn luyện sẽ dừng sớm. Checkpoint được lưu khi có validation loss nhỏ nhất với tên tệp là sao_mai_best.pt [1].",
+        "citations": [
+          {
+            "id": 1,
+            "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+            "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+            "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+            "document_name": "fixture_vi.pdf",
+            "version": 1,
+            "page_start": 1,
+            "page_end": 6,
+            "pages": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.",
+            "score": 0.41432159931430856,
+            "status": "active",
+            "pdf_url": "/api/subjects/75fb2ff9-91fe-4c58-955a-26e0bd094393/documents/1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd/pdf?version_id=0db92566-37f3-4329-b0d5-d3491b146c9e#page=1"
+          }
+        ],
+        "debug": {
+          "mode": "direct",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 1852.13,
+          "reserved_tokens": 1925,
+          "reserved_calls": 2,
+          "input_tokens": 1444,
+          "output_tokens": 64,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.0006743,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.86\nvà F1 là 0.88. Confusion matrix được tính trên tập kiểm tra. Các con số này là\ndữ liệu giả lập do project tự tạo để kiểm thử.\nPhysical PDF page 4 | Original synthetic project fixture\n\nQuy định lớp học\nQuy định lớp Sao Mai ngày 2026-09-01: sức chứa tối đa 30 sinh viên. Buổi thực\nhành diễn ra vào thứ Tư lúc 14:00 tại phòng L204. Giảng viên phụ trách là cô\nAn. Tài liệu khác có thể mâu thuẫn; cần trích cả hai nguồn.\nPhysical PDF page 5 | Original synthetic project fixture\n\nDừng sớm và lưu mô hình\nEarly stopping theo dõi validation loss với patience 5 epochs. Lưu checkpoint\ncó validation loss nhỏ nhất. Tên tệp checkpoint là sao_mai_best.pt. Dropout\nbằng 0.2. Không chọn checkpoint theo test loss.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.41432159931430856
+            },
+            {
+              "id": 2,
+              "chunk_id": "78bbee4b-c031-4b07-852b-0898b349e17c",
+              "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+              "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+              "document_name": "fixture_en.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Dataset protocol\nThe Aurora dataset contains 2400 examples and 12 input features. The split is\n80% training, 10% validation, and 10% test. The split random seed is 17. The\ntarget has three classes: red, green, and blue.\nPhysical PDF page 1 | Original synthetic project fixture\n\nTraining configuration\nAurora uses logistic regression with L2 regularization. The regularization\nparameter C is 0.5. The maximum number of solver iterations is 200. The solver\nis lbfgs. No GPU is required for this fixture experiment.\nPhysical PDF page 2 | Original synthetic project fixture\n\nData cleaning\nDuplicate Aurora examples are removed by sample_id before splitting. Missing\nnumeric values use the training median. Missing categorical values use the\nlabel unknown. Never fit preprocessing on validation or test examples.\nPhysical PDF page 3 | Original synthetic project fixture\n\nEvaluation protocol\nAurora reports macro F1 as its primary metric because its classes are\nimbalanced. Macro F1 is 0.81 and balanced accuracy is 0.84. The held-out test\nsplit is evaluated once after model selection.\nPhysical PDF page 4 | Original synthetic project fixture\n\nService limits\nThe Aurora inference API accepts at most 16 rows per request. Requests time\nout after 8 seconds. Feature names must match the twelve training columns. The\nhealth endpoint is /health. The request schema version is v2.\nPhysical PDF page 5 | Original synthetic project fixture\n\nReproducibility\nThe Aurora artifact checksum prefix is a17c9e. The experiment seed is 17 and\nthe project release is 1.2.0. Prediction logs are retained for 7 days. The\nmodel must be revalidated whenever the data schema changes.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.1127683004935055
+            }
+          ],
+          "tool_runs": [],
+          "refusal": false
+        },
+        "conversation_id": "1657e1fd-25af-41d3-82b1-f19db5685f21",
+        "message_id": "89463581-c62b-4749-8d35-8f33da6e70e5"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    },
+    {
+      "index": 8,
+      "expected_tool": null,
+      "question": "What protocol is described in the English document?",
+      "latency_ms": 4979,
+      "response": {
+        "answer": "The English document describes the \"Aurora\" protocol. Key points of the Aurora protocol include:\n\n- Dataset protocol: Aurora dataset has 2400 examples and 12 input features, split as 80% training, 10% validation, and 10% test, with random seed 17. The target has three classes: red, green, and blue.\n- Training configuration: Logistic regression with L2 regularization (parameter C=0.5), solver lbfgs, max iterations 200, no GPU required.\n- Data cleaning: Duplicate examples removed by sample_id before splitting. Missing numeric values replaced by training median; missing categorical values labeled as unknown. Preprocessing not fit on validation or test sets.\n- Evaluation protocol: Uses macro F1 as primary metric due to class imbalance; macro F1 is 0.81, balanced accuracy 0.84. Test split evaluated once after model selection.\n- Service limits: Inference API accepts at most 16 rows per request, 8-second timeout, feature names must match training columns, health endpoint /health, request schema version v2.\n- Reproducibility: Artifact checksum prefix a17c9e, experiment seed 17, project release 1.2.0, logs retained for 7 days, model revalidated when data schema changes.\n\nThis is the protocol described in the English document [1].",
+        "citations": [
+          {
+            "id": 1,
+            "chunk_id": "78bbee4b-c031-4b07-852b-0898b349e17c",
+            "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+            "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+            "document_name": "fixture_en.pdf",
+            "version": 1,
+            "page_start": 1,
+            "page_end": 6,
+            "pages": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Dataset protocol\nThe Aurora dataset contains 2400 examples and 12 input features. The split is\n80% training, 10% validation, and 10% test. The split random seed is 17. The\ntarget has three classes: red, green, and blue.\nPhysical PDF page 1 | Original synthetic project fixture\n\nTraining configuration\nAurora uses logistic regression with L2 regularization. The regularization\nparameter C is 0.5. The maximum number of solver iterations is 200. The solver\nis lbfgs. No GPU is required for this fixture experiment.\nPhysical PDF page 2 | Original synthetic project fixture\n\nData cleaning\nDuplicate Aurora examples are removed by sample_id before splitting. Missing\nnumeric values use the training median. Missing categorical values use the\nlabel unknown. Never fit preprocessing on validation or test examples.\nPhysical PDF page 3 | Original synthetic project fixture\n\nEvaluation protocol\nAurora reports macro F1 as its primary metric because its classes are\nimbalanced. Macro F1 is 0.81 and balanced accuracy is 0.84. The held-out test\nsplit is evaluated once after model selection.\nPhysical PDF page 4 | Original synthetic project fixture\n\nService limits\nThe Aurora inference API accepts at most 16 rows",
+            "score": 0.2543667258230644,
+            "status": "active",
+            "pdf_url": "/api/subjects/75fb2ff9-91fe-4c58-955a-26e0bd094393/documents/afd647a4-b8e6-413c-ae9a-3a3de724e91d/pdf?version_id=93df93da-90a4-4c69-aec0-45cc6e81a3d8#page=1"
+          }
+        ],
+        "debug": {
+          "mode": "direct",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 4935.8,
+          "reserved_tokens": 1918,
+          "reserved_calls": 2,
+          "input_tokens": 1437,
+          "output_tokens": 280,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.00101938,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "78bbee4b-c031-4b07-852b-0898b349e17c",
+              "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+              "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+              "document_name": "fixture_en.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Dataset protocol\nThe Aurora dataset contains 2400 examples and 12 input features. The split is\n80% training, 10% validation, and 10% test. The split random seed is 17. The\ntarget has three classes: red, green, and blue.\nPhysical PDF page 1 | Original synthetic project fixture\n\nTraining configuration\nAurora uses logistic regression with L2 regularization. The regularization\nparameter C is 0.5. The maximum number of solver iterations is 200. The solver\nis lbfgs. No GPU is required for this fixture experiment.\nPhysical PDF page 2 | Original synthetic project fixture\n\nData cleaning\nDuplicate Aurora examples are removed by sample_id before splitting. Missing\nnumeric values use the training median. Missing categorical values use the\nlabel unknown. Never fit preprocessing on validation or test examples.\nPhysical PDF page 3 | Original synthetic project fixture\n\nEvaluation protocol\nAurora reports macro F1 as its primary metric because its classes are\nimbalanced. Macro F1 is 0.81 and balanced accuracy is 0.84. The held-out test\nsplit is evaluated once after model selection.\nPhysical PDF page 4 | Original synthetic project fixture\n\nService limits\nThe Aurora inference API accepts at most 16 rows per request. Requests time\nout after 8 seconds. Feature names must match the twelve training columns. The\nhealth endpoint is /health. The request schema version is v2.\nPhysical PDF page 5 | Original synthetic project fixture\n\nReproducibility\nThe Aurora artifact checksum prefix is a17c9e. The experiment seed is 17 and\nthe project release is 1.2.0. Prediction logs are retained for 7 days. The\nmodel must be revalidated whenever the data schema changes.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.2543667258230644
+            },
+            {
+              "id": 2,
+              "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.86\nvà F1 là 0.88. Confusion matrix được tính trên tập kiểm tra. Các con số này là\ndữ liệu giả lập do project tự tạo để kiểm thử.\nPhysical PDF page 4 | Original synthetic project fixture\n\nQuy định lớp học\nQuy định lớp Sao Mai ngày 2026-09-01: sức chứa tối đa 30 sinh viên. Buổi thực\nhành diễn ra vào thứ Tư lúc 14:00 tại phòng L204. Giảng viên phụ trách là cô\nAn. Tài liệu khác có thể mâu thuẫn; cần trích cả hai nguồn.\nPhysical PDF page 5 | Original synthetic project fixture\n\nDừng sớm và lưu mô hình\nEarly stopping theo dõi validation loss với patience 5 epochs. Lưu checkpoint\ncó validation loss nhỏ nhất. Tên tệp checkpoint là sao_mai_best.pt. Dropout\nbằng 0.2. Không chọn checkpoint theo test loss.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.12430510547930917
+            }
+          ],
+          "tool_runs": [],
+          "refusal": false
+        },
+        "conversation_id": "f95d1a7d-63b5-4874-bf11-7c4359109f13",
+        "message_id": "e413e9e2-a684-495c-9874-b6506fb03269"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    },
+    {
+      "index": 9,
+      "expected_tool": null,
+      "question": "Giá vé máy bay từ Hà Nội đến Paris hôm nay là bao nhiêu?",
+      "latency_ms": 2001,
+      "response": {
+        "answer": "Chưa tìm thấy đủ thông tin trong tài liệu của môn này để trả lời câu hỏi. Bạn có thể bổ sung tài liệu hoặc nêu rõ phạm vi cần tìm.",
+        "citations": [],
+        "debug": {
+          "mode": "direct",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 1975.21,
+          "reserved_tokens": 1944,
+          "reserved_calls": 2,
+          "input_tokens": 1463,
+          "output_tokens": 71,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.0006885400000000001,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.86\nvà F1 là 0.88. Confusion matrix được tính trên tập kiểm tra. Các con số này là\ndữ liệu giả lập do project tự tạo để kiểm thử.\nPhysical PDF page 4 | Original synthetic project fixture\n\nQuy định lớp học\nQuy định lớp Sao Mai ngày 2026-09-01: sức chứa tối đa 30 sinh viên. Buổi thực\nhành diễn ra vào thứ Tư lúc 14:00 tại phòng L204. Giảng viên phụ trách là cô\nAn. Tài liệu khác có thể mâu thuẫn; cần trích cả hai nguồn.\nPhysical PDF page 5 | Original synthetic project fixture\n\nDừng sớm và lưu mô hình\nEarly stopping theo dõi validation loss với patience 5 epochs. Lưu checkpoint\ncó validation loss nhỏ nhất. Tên tệp checkpoint là sao_mai_best.pt. Dropout\nbằng 0.2. Không chọn checkpoint theo test loss.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.21923924963611885
+            },
+            {
+              "id": 2,
+              "chunk_id": "78bbee4b-c031-4b07-852b-0898b349e17c",
+              "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+              "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+              "document_name": "fixture_en.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Dataset protocol\nThe Aurora dataset contains 2400 examples and 12 input features. The split is\n80% training, 10% validation, and 10% test. The split random seed is 17. The\ntarget has three classes: red, green, and blue.\nPhysical PDF page 1 | Original synthetic project fixture\n\nTraining configuration\nAurora uses logistic regression with L2 regularization. The regularization\nparameter C is 0.5. The maximum number of solver iterations is 200. The solver\nis lbfgs. No GPU is required for this fixture experiment.\nPhysical PDF page 2 | Original synthetic project fixture\n\nData cleaning\nDuplicate Aurora examples are removed by sample_id before splitting. Missing\nnumeric values use the training median. Missing categorical values use the\nlabel unknown. Never fit preprocessing on validation or test examples.\nPhysical PDF page 3 | Original synthetic project fixture\n\nEvaluation protocol\nAurora reports macro F1 as its primary metric because its classes are\nimbalanced. Macro F1 is 0.81 and balanced accuracy is 0.84. The held-out test\nsplit is evaluated once after model selection.\nPhysical PDF page 4 | Original synthetic project fixture\n\nService limits\nThe Aurora inference API accepts at most 16 rows per request. Requests time\nout after 8 seconds. Feature names must match the twelve training columns. The\nhealth endpoint is /health. The request schema version is v2.\nPhysical PDF page 5 | Original synthetic project fixture\n\nReproducibility\nThe Aurora artifact checksum prefix is a17c9e. The experiment seed is 17 and\nthe project release is 1.2.0. Prediction logs are retained for 7 days. The\nmodel must be revalidated whenever the data schema changes.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": -0.03410582311043653
+            }
+          ],
+          "tool_runs": [],
+          "refusal": true
+        },
+        "conversation_id": "f8badc7a-bc74-44c4-b8d6-543701e84f39",
+        "message_id": "beb3d8bd-e956-49e3-8873-3fcb6aa4bdc4"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    },
+    {
+      "index": 10,
+      "expected_tool": null,
+      "question": "What is the private password of the course instructor?",
+      "latency_ms": 2253,
+      "response": {
+        "answer": "Chưa tìm thấy đủ thông tin trong tài liệu của môn này để trả lời câu hỏi. Bạn có thể bổ sung tài liệu hoặc nêu rõ phạm vi cần tìm.",
+        "citations": [],
+        "debug": {
+          "mode": "direct",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 2230.48,
+          "reserved_tokens": 1920,
+          "reserved_calls": 2,
+          "input_tokens": 1439,
+          "output_tokens": 44,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.0006422,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.86\nvà F1 là 0.88. Confusion matrix được tính trên tập kiểm tra. Các con số này là\ndữ liệu giả lập do project tự tạo để kiểm thử.\nPhysical PDF page 4 | Original synthetic project fixture\n\nQuy định lớp học\nQuy định lớp Sao Mai ngày 2026-09-01: sức chứa tối đa 30 sinh viên. Buổi thực\nhành diễn ra vào thứ Tư lúc 14:00 tại phòng L204. Giảng viên phụ trách là cô\nAn. Tài liệu khác có thể mâu thuẫn; cần trích cả hai nguồn.\nPhysical PDF page 5 | Original synthetic project fixture\n\nDừng sớm và lưu mô hình\nEarly stopping theo dõi validation loss với patience 5 epochs. Lưu checkpoint\ncó validation loss nhỏ nhất. Tên tệp checkpoint là sao_mai_best.pt. Dropout\nbằng 0.2. Không chọn checkpoint theo test loss.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.1978604586417113
+            },
+            {
+              "id": 2,
+              "chunk_id": "78bbee4b-c031-4b07-852b-0898b349e17c",
+              "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+              "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+              "document_name": "fixture_en.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Dataset protocol\nThe Aurora dataset contains 2400 examples and 12 input features. The split is\n80% training, 10% validation, and 10% test. The split random seed is 17. The\ntarget has three classes: red, green, and blue.\nPhysical PDF page 1 | Original synthetic project fixture\n\nTraining configuration\nAurora uses logistic regression with L2 regularization. The regularization\nparameter C is 0.5. The maximum number of solver iterations is 200. The solver\nis lbfgs. No GPU is required for this fixture experiment.\nPhysical PDF page 2 | Original synthetic project fixture\n\nData cleaning\nDuplicate Aurora examples are removed by sample_id before splitting. Missing\nnumeric values use the training median. Missing categorical values use the\nlabel unknown. Never fit preprocessing on validation or test examples.\nPhysical PDF page 3 | Original synthetic project fixture\n\nEvaluation protocol\nAurora reports macro F1 as its primary metric because its classes are\nimbalanced. Macro F1 is 0.81 and balanced accuracy is 0.84. The held-out test\nsplit is evaluated once after model selection.\nPhysical PDF page 4 | Original synthetic project fixture\n\nService limits\nThe Aurora inference API accepts at most 16 rows per request. Requests time\nout after 8 seconds. Feature names must match the twelve training columns. The\nhealth endpoint is /health. The request schema version is v2.\nPhysical PDF page 5 | Original synthetic project fixture\n\nReproducibility\nThe Aurora artifact checksum prefix is a17c9e. The experiment seed is 17 and\nthe project release is 1.2.0. Prediction logs are retained for 7 days. The\nmodel must be revalidated whenever the data schema changes.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.18695667457459642
+            }
+          ],
+          "tool_runs": [],
+          "refusal": true
+        },
+        "conversation_id": "68009883-6c84-41fd-a191-e21127eab760",
+        "message_id": "010c90f5-7d06-47db-9218-4a8a1ef22d58"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    },
+    {
+      "index": 11,
+      "expected_tool": "list_documents",
+      "question": "Liệt kê các tài liệu hiện có trong môn này.",
+      "latency_ms": 2832,
+      "response": {
+        "answer": "Hiện có 2 tài liệu trong môn này:\n1. fixture_vi.pdf (6 trang)\n2. fixture_en.pdf (6 trang)",
+        "citations": [],
+        "debug": {
+          "mode": "assistant",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 2808.82,
+          "reserved_tokens": 2275,
+          "reserved_calls": 2,
+          "input_tokens": 1059,
+          "output_tokens": 42,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.0004908,
+          "retrieved_evidence": [],
+          "tool_runs": [
+            {
+              "name": "list_documents",
+              "arguments": {},
+              "status": "success",
+              "latency_ms": 4.73,
+              "result": {
+                "keys": [
+                  "documents",
+                  "limit"
+                ],
+                "evidence_count": 0,
+                "job_id": null,
+                "requires_confirmation": false
+              }
+            }
+          ],
+          "refusal": false
+        },
+        "conversation_id": "657c7b5f-b352-4242-b636-d0cb8adc53e6",
+        "message_id": "db0007c4-3bad-45cf-bf55-761ca10a835a"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    },
+    {
+      "index": 12,
+      "expected_tool": "search_documents",
+      "question": "Dùng search_documents tìm evidence về learning rate.",
+      "latency_ms": 3898,
+      "response": {
+        "answer": "Có một bằng chứng liên quan đến learning rate trong tài liệu \"fixture_vi.pdf\" trang 2, nêu rõ:\n\n- Thí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20 epochs. Optimizer là Adam. Hàm mất mát là cross entropy.\n\nThông tin này cho thấy learning rate được đặt là 0.01 trong thí nghiệm này [1]. \n\nNếu bạn cần thêm chi tiết hoặc tìm kiếm ví dụ khác, tôi có thể giúp tiếp.",
+        "citations": [
+          {
+            "id": 1,
+            "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+            "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+            "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+            "document_name": "fixture_vi.pdf",
+            "version": 1,
+            "page_start": 1,
+            "page_end": 6,
+            "pages": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "paragraph_ids": null,
+            "source_type": "pdf",
+            "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.",
+            "score": 0.2792974164419637,
+            "status": "active",
+            "pdf_url": "/api/subjects/75fb2ff9-91fe-4c58-955a-26e0bd094393/documents/1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd/pdf?version_id=0db92566-37f3-4329-b0d5-d3491b146c9e#page=1"
+          }
+        ],
+        "debug": {
+          "mode": "assistant",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 3868.09,
+          "reserved_tokens": 3476,
+          "reserved_calls": 3,
+          "input_tokens": 2171,
+          "output_tokens": 129,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.00107404,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "a064ecb9-c152-4307-ac72-8d12cbb90005",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture\n\nCấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture\n\nChuẩn hóa đặc trưng\nĐặc trưng nhiệt độ của tập huấn luyện có trung bình 10 và độ lệch chuẩn 2. Áp\ndụng z = (x - 10) / 2 cho cả validation và test. Giá trị đầu vào 14 có giá trị\nchuẩn hóa 2. Chỉ fit bộ chuẩn hóa trên tập huấn luyện.\nPhysical PDF page 3 | Original synthetic project fixture\n\nKết quả và đánh giá\nTrên tập kiểm tra Sao Mai, accuracy là 0.92, precision là 0.90, recall là 0.86\nvà F1 là 0.88. Confusion matrix được tính trên tập kiểm tra. Các con số này là\ndữ liệu giả lập do project tự tạo để kiểm thử.\nPhysical PDF page 4 | Original synthetic project fixture\n\nQuy định lớp học\nQuy định lớp Sao Mai ngày 2026-09-01: sức chứa tối đa 30 sinh viên. Buổi thực\nhành diễn ra vào thứ Tư lúc 14:00 tại phòng L204. Giảng viên phụ trách là cô\nAn. Tài liệu khác có thể mâu thuẫn; cần trích cả hai nguồn.\nPhysical PDF page 5 | Original synthetic project fixture\n\nDừng sớm và lưu mô hình\nEarly stopping theo dõi validation loss với patience 5 epochs. Lưu checkpoint\ncó validation loss nhỏ nhất. Tên tệp checkpoint là sao_mai_best.pt. Dropout\nbằng 0.2. Không chọn checkpoint theo test loss.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.2792974164419637
+            },
+            {
+              "id": 2,
+              "chunk_id": "78bbee4b-c031-4b07-852b-0898b349e17c",
+              "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+              "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+              "document_name": "fixture_en.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 6,
+              "pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Dataset protocol\nThe Aurora dataset contains 2400 examples and 12 input features. The split is\n80% training, 10% validation, and 10% test. The split random seed is 17. The\ntarget has three classes: red, green, and blue.\nPhysical PDF page 1 | Original synthetic project fixture\n\nTraining configuration\nAurora uses logistic regression with L2 regularization. The regularization\nparameter C is 0.5. The maximum number of solver iterations is 200. The solver\nis lbfgs. No GPU is required for this fixture experiment.\nPhysical PDF page 2 | Original synthetic project fixture\n\nData cleaning\nDuplicate Aurora examples are removed by sample_id before splitting. Missing\nnumeric values use the training median. Missing categorical values use the\nlabel unknown. Never fit preprocessing on validation or test examples.\nPhysical PDF page 3 | Original synthetic project fixture\n\nEvaluation protocol\nAurora reports macro F1 as its primary metric because its classes are\nimbalanced. Macro F1 is 0.81 and balanced accuracy is 0.84. The held-out test\nsplit is evaluated once after model selection.\nPhysical PDF page 4 | Original synthetic project fixture\n\nService limits\nThe Aurora inference API accepts at most 16 rows per request. Requests time\nout after 8 seconds. Feature names must match the twelve training columns. The\nhealth endpoint is /health. The request schema version is v2.\nPhysical PDF page 5 | Original synthetic project fixture\n\nReproducibility\nThe Aurora artifact checksum prefix is a17c9e. The experiment seed is 17 and\nthe project release is 1.2.0. Prediction logs are retained for 7 days. The\nmodel must be revalidated whenever the data schema changes.\nPhysical PDF page 6 | Original synthetic project fixture",
+              "score": 0.19982076280361616
+            }
+          ],
+          "tool_runs": [
+            {
+              "name": "search_documents",
+              "arguments": {
+                "query": "learning rate",
+                "limit": 5
+              },
+              "status": "success",
+              "latency_ms": 510.01,
+              "result": {
+                "keys": [
+                  "evidence"
+                ],
+                "evidence_count": 2,
+                "job_id": null,
+                "requires_confirmation": false
+              }
+            }
+          ],
+          "refusal": false
+        },
+        "conversation_id": "c2295547-a345-4368-850c-ad9b04a31b07",
+        "message_id": "4aebc4da-1820-4b34-8bd9-7264481a7685"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    },
+    {
+      "index": 13,
+      "expected_tool": "read_document_pages",
+      "question": "Dùng read_document_pages đọc trang 1 đến 2 của document_id 1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd.",
+      "latency_ms": 3451,
+      "response": {
+        "answer": "Chưa tìm thấy đủ thông tin trong tài liệu của môn này để trả lời câu hỏi. Bạn có thể bổ sung tài liệu hoặc nêu rõ phạm vi cần tìm.",
+        "citations": [],
+        "debug": {
+          "mode": "assistant",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 3426.81,
+          "reserved_tokens": 2735,
+          "reserved_calls": 2,
+          "input_tokens": 1522,
+          "output_tokens": 183,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.0009016,
+          "retrieved_evidence": [
+            {
+              "id": 1,
+              "chunk_id": "page:74a66e10-6482-4dd6-a6d0-092cb613007c",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 1,
+              "page_end": 1,
+              "pages": [
+                1
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Phân chia dữ liệu\nBộ dữ liệu Sao Mai gồm 1000 mẫu. Tập huấn luyện chiếm 70%, validation chiếm\n15%, và tập kiểm tra chiếm 15%. Random seed là 42. Không sử dụng tập kiểm tra\nđể chọn siêu tham số.\nPhysical PDF page 1 | Original synthetic project fixture",
+              "score": 1.0,
+              "truncated": false
+            },
+            {
+              "id": 2,
+              "chunk_id": "page:aed17347-52a2-4740-b81a-7ac752a70545",
+              "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+              "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+              "document_name": "fixture_vi.pdf",
+              "version": 1,
+              "page_start": 2,
+              "page_end": 2,
+              "pages": [
+                2
+              ],
+              "paragraph_ids": null,
+              "source_type": "pdf",
+              "text": "Cấu hình huấn luyện\nThí nghiệm Sao Mai sử dụng learning rate 0.01, batch size 32 và tối đa 20\nepochs. Optimizer là Adam. Hàm mất mát là cross entropy.\nPhysical PDF page 2 | Original synthetic project fixture",
+              "score": 1.0,
+              "truncated": false
+            }
+          ],
+          "tool_runs": [
+            {
+              "name": "read_document_pages",
+              "arguments": {
+                "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+                "page_start": 1,
+                "page_end": 2
+              },
+              "status": "success",
+              "latency_ms": 4.88,
+              "result": {
+                "keys": [
+                  "evidence",
+                  "note"
+                ],
+                "evidence_count": 2,
+                "job_id": null,
+                "requires_confirmation": false
+              }
+            }
+          ],
+          "refusal": true
+        },
+        "conversation_id": "9e5cb7f5-1cb2-4106-955e-b2cb36f096e8",
+        "message_id": "61b99c9b-41a4-43ea-8a11-919e9ae90f34"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    },
+    {
+      "index": 14,
+      "expected_tool": "summarize_document",
+      "question": "Dùng summarize_document tóm tắt trang 1 đến 2 của document_id afd647a4-b8e6-413c-ae9a-3a3de724e91d.",
+      "latency_ms": 2578,
+      "response": {
+        "answer": "Tôi có thể tiến hành tóm tắt trang 1 đến 2 của tài liệu với ước lượng chi phí nhỏ. Bạn có muốn tôi tiếp tục không?",
+        "citations": [],
+        "debug": {
+          "mode": "assistant",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 2556.22,
+          "reserved_tokens": 2396,
+          "reserved_calls": 2,
+          "input_tokens": 1196,
+          "output_tokens": 88,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.0006192,
+          "retrieved_evidence": [],
+          "tool_runs": [
+            {
+              "name": "summarize_document",
+              "arguments": {
+                "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+                "page_start": 1,
+                "page_end": 2
+              },
+              "status": "success",
+              "latency_ms": 8.59,
+              "result": {
+                "keys": [
+                  "requires_confirmation",
+                  "estimate",
+                  "document_id",
+                  "version_id",
+                  "page_start",
+                  "page_end"
+                ],
+                "evidence_count": 0,
+                "job_id": null,
+                "requires_confirmation": true
+              }
+            }
+          ],
+          "refusal": false
+        },
+        "conversation_id": "b663c477-0a15-4e66-8eba-9ed4873a2ed6",
+        "message_id": "606ba34e-4f0d-4223-817e-0da45be92db8"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    },
+    {
+      "index": 15,
+      "expected_tool": "get_job_status",
+      "question": "Dùng get_job_status kiểm tra job_id 922ab608-7538-4ef6-9ea7-d4ab0ec9759f.",
+      "latency_ms": 3704,
+      "response": {
+        "answer": "Công việc với job_id 922ab608-7538-4ef6-9ea7-d4ab0ec9759f đã hoàn thành và trạng thái hiện là \"ready\". Tổng cộng đã xử lý 6 trang, không có lỗi phát sinh. Bạn cần tôi hỗ trợ gì tiếp theo với công việc này không?",
+        "citations": [],
+        "debug": {
+          "mode": "assistant",
+          "retrieval_mode": "dense",
+          "corpus_revision": 2,
+          "cache_hit": false,
+          "latency_ms": 3674.96,
+          "reserved_tokens": 2327,
+          "reserved_calls": 2,
+          "input_tokens": 1110,
+          "output_tokens": 109,
+          "cached_tokens": 0,
+          "estimated_cost_usd": 0.0006184000000000001,
+          "retrieved_evidence": [],
+          "tool_runs": [
+            {
+              "name": "get_job_status",
+              "arguments": {
+                "job_id": "922ab608-7538-4ef6-9ea7-d4ab0ec9759f"
+              },
+              "status": "success",
+              "latency_ms": 2.86,
+              "result": {
+                "keys": [
+                  "job_id",
+                  "kind",
+                  "status",
+                  "progress",
+                  "error_code",
+                  "error_message"
+                ],
+                "evidence_count": 0,
+                "job_id": "922ab608-7538-4ef6-9ea7-d4ab0ec9759f",
+                "requires_confirmation": false
+              }
+            }
+          ],
+          "refusal": false
+        },
+        "conversation_id": "a7c7ed51-35af-4211-97b0-b65133299abc",
+        "message_id": "2791d3a0-b897-4966-b7e0-07943f5cd45d"
+      },
+      "citation_mechanical": "PASS",
+      "answer_support": "REQUIRES_MANUAL_REVIEW"
+    }
+  ],
+  "reported_tokens": 24121,
+  "reserved_tokens": 170000,
+  "errors": [],
+  "planned_token_ceiling": 170000,
+  "email": "live-b941954f7dace09a@example.com",
+  "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+  "config": {
+    "max_upload_mb": 100,
+    "max_pdf_pages": 1200,
+    "openai_configured": true,
+    "chat_model": "gpt-4.1-mini",
+    "embedding_model": "text-embedding-3-small",
+    "retrieval_mode": "dense",
+    "retrieval_top_k": 6,
+    "page_numbering": "physical_1_based",
+    "max_user_jobs": 10,
+    "max_question_tokens": 8000,
+    "max_question_calls": 5,
+    "max_output_tokens": 350,
+    "max_ingestion_tokens": 25000,
+    "max_ingestion_calls": 20,
+    "max_summary_tokens": 25000,
+    "max_summary_calls": 12
+  },
+  "ingestion": [
+    {
+      "id": "922ab608-7538-4ef6-9ea7-d4ab0ec9759f",
+      "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+      "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+      "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+      "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+      "kind": "ingestion",
+      "status": "ready",
+      "progress": {
+        "pages_processed": 6,
+        "pages_total": 6,
+        "text_pages": 6,
+        "chunks_processed": 1,
+        "chunks_total": 1,
+        "chunks_embedded": 1,
+        "embedding_token_estimate": 629
+      },
+      "checkpoint": {
+        "parsed_pages": 6,
+        "parse_complete": true,
+        "chunks_written": 1,
+        "chunk_complete": true,
+        "reserved_embedding_tokens": 629,
+        "reserved_embedding_calls": 1,
+        "embedded_chunks": 1,
+        "complete": true
+      },
+      "result": {
+        "document_id": "1b7ab9ea-2b6a-47c5-8a99-45edd9de72cd",
+        "version_id": "0db92566-37f3-4329-b0d5-d3491b146c9e",
+        "pages": 6,
+        "text_pages": 6,
+        "chunks": 1,
+        "activated": true
+      },
+      "error_code": null,
+      "error_message": null,
+      "attempts": 1,
+      "heartbeat_at": "2026-09-10T03:34:22.820426+00:00",
+      "enqueued_at": "2026-09-10T03:34:18.607474+00:00",
+      "created_at": "2026-09-10T03:34:18.602505+00:00",
+      "updated_at": "2026-09-10T03:34:22.822610+00:00"
+    },
+    {
+      "id": "1f4213ae-7bdc-4356-9de0-569e1b1488f5",
+      "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+      "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+      "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+      "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+      "kind": "ingestion",
+      "status": "ready",
+      "progress": {
+        "pages_processed": 6,
+        "pages_total": 6,
+        "text_pages": 6,
+        "chunks_processed": 1,
+        "chunks_total": 1,
+        "chunks_embedded": 1,
+        "embedding_token_estimate": 376
+      },
+      "checkpoint": {
+        "parsed_pages": 6,
+        "parse_complete": true,
+        "chunks_written": 1,
+        "chunk_complete": true,
+        "reserved_embedding_tokens": 376,
+        "reserved_embedding_calls": 1,
+        "embedded_chunks": 1,
+        "complete": true
+      },
+      "result": {
+        "document_id": "afd647a4-b8e6-413c-ae9a-3a3de724e91d",
+        "version_id": "93df93da-90a4-4c69-aec0-45cc6e81a3d8",
+        "pages": 6,
+        "text_pages": 6,
+        "chunks": 1,
+        "activated": true
+      },
+      "error_code": null,
+      "error_message": null,
+      "attempts": 1,
+      "heartbeat_at": "2026-09-10T03:34:25.847951+00:00",
+      "enqueued_at": "2026-09-10T03:34:24.687868+00:00",
+      "created_at": "2026-09-10T03:34:24.681891+00:00",
+      "updated_at": "2026-09-10T03:34:25.849674+00:00"
+    }
+  ],
+  "usage": {
+    "totals": {
+      "events_count": 33,
+      "calls": 33,
+      "input_tokens": 22667,
+      "output_tokens": 1454,
+      "cached_tokens": 0,
+      "estimated_cost_usd": 0.01093492
+    },
+    "events": [
+      {
+        "id": "5b6ce5e9-2585-4132-b543-3a8cf64f2980",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "2791d3a0-b897-4966-b7e0-07943f5cd45d",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 631,
+        "output_tokens": 71,
+        "cached_tokens": 0,
+        "latency_ms": 1489.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.000366,
+        "created_at": "2026-09-10T03:35:18.755220+00:00"
+      },
+      {
+        "id": "722bd7ce-d06a-4b20-a85e-742dd7fe1e86",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "2791d3a0-b897-4966-b7e0-07943f5cd45d",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 479,
+        "output_tokens": 38,
+        "cached_tokens": 0,
+        "latency_ms": 2149.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0002524,
+        "created_at": "2026-09-10T03:35:17.254930+00:00"
+      },
+      {
+        "id": "eec9659d-5bcf-4c51-b1cf-828b44d67f41",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "606ba34e-4f0d-4223-817e-0da45be92db8",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 708,
+        "output_tokens": 37,
+        "cached_tokens": 0,
+        "latency_ms": 1154.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0003424,
+        "created_at": "2026-09-10T03:35:15.053355+00:00"
+      },
+      {
+        "id": "6920f331-2cfe-40e8-9527-ee290fea822b",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "606ba34e-4f0d-4223-817e-0da45be92db8",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 488,
+        "output_tokens": 51,
+        "cached_tokens": 0,
+        "latency_ms": 1364.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0002768,
+        "created_at": "2026-09-10T03:35:13.885026+00:00"
+      },
+      {
+        "id": "0d06f48c-2c86-4489-91b2-6c0fb6b4e52e",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "61b99c9b-41a4-43ea-8a11-919e9ae90f34",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 1033,
+        "output_tokens": 131,
+        "cached_tokens": 0,
+        "latency_ms": 1914.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0006228000000000001,
+        "created_at": "2026-09-10T03:35:12.466998+00:00"
+      },
+      {
+        "id": "4be830e3-1a6f-4112-b444-1e7b2c1d0c6f",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "61b99c9b-41a4-43ea-8a11-919e9ae90f34",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 489,
+        "output_tokens": 52,
+        "cached_tokens": 0,
+        "latency_ms": 1478.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0002788,
+        "created_at": "2026-09-10T03:35:10.543013+00:00"
+      },
+      {
+        "id": "2cc31b09-ce7a-4342-85bb-861f4c3e0f19",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "4aebc4da-1820-4b34-8bd9-7264481a7685",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 1713,
+        "output_tokens": 109,
+        "cached_tokens": 0,
+        "latency_ms": 2040.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0008596,
+        "created_at": "2026-09-10T03:35:09.002483+00:00"
+      },
+      {
+        "id": "4a1a2a2b-6268-4112-b3a8-0c1cd2ad6159",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "4aebc4da-1820-4b34-8bd9-7264481a7685",
+        "kind": "embedding",
+        "model": "text-embedding-3-small",
+        "input_tokens": 2,
+        "output_tokens": 0,
+        "cached_tokens": 0,
+        "latency_ms": 487.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 4e-08,
+        "created_at": "2026-09-10T03:35:06.942831+00:00"
+      },
+      {
+        "id": "3600749c-d4e1-4d10-866b-5daf99830b2e",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "4aebc4da-1820-4b34-8bd9-7264481a7685",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 456,
+        "output_tokens": 20,
+        "cached_tokens": 0,
+        "latency_ms": 1287.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0002144,
+        "created_at": "2026-09-10T03:35:06.447621+00:00"
+      },
+      {
+        "id": "a9a7cc3c-efbd-4cd4-ae46-137ec55a7ce3",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "db0007c4-3bad-45cf-bf55-761ca10a835a",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 601,
+        "output_tokens": 31,
+        "cached_tokens": 0,
+        "latency_ms": 1356.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.00029,
+        "created_at": "2026-09-10T03:35:05.109879+00:00"
+      },
+      {
+        "id": "dc58050b-9830-48f5-b0e8-63d7a741cf70",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "db0007c4-3bad-45cf-bf55-761ca10a835a",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 458,
+        "output_tokens": 11,
+        "cached_tokens": 0,
+        "latency_ms": 1416.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0002008,
+        "created_at": "2026-09-10T03:35:03.743223+00:00"
+      },
+      {
+        "id": "6085a3de-ad39-4887-9a98-398aaeb764a0",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "010c90f5-7d06-47db-9218-4a8a1ef22d58",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 1429,
+        "output_tokens": 44,
+        "cached_tokens": 0,
+        "latency_ms": 1670.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.000642,
+        "created_at": "2026-09-10T03:35:02.274559+00:00"
+      },
+      {
+        "id": "3b87aacd-25e0-4138-8424-229f00f8cbe4",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "010c90f5-7d06-47db-9218-4a8a1ef22d58",
+        "kind": "embedding",
+        "model": "text-embedding-3-small",
+        "input_tokens": 10,
+        "output_tokens": 0,
+        "cached_tokens": 0,
+        "latency_ms": 513.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 2.0000000000000002e-07,
+        "created_at": "2026-09-10T03:35:00.583860+00:00"
+      },
+      {
+        "id": "36145c37-9872-4626-a8b1-bde9e3d2e0e3",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "beb3d8bd-e956-49e3-8873-3fcb6aa4bdc4",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 1436,
+        "output_tokens": 71,
+        "cached_tokens": 0,
+        "latency_ms": 1442.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.000688,
+        "created_at": "2026-09-10T03:35:00.014526+00:00"
+      },
+      {
+        "id": "d6169b8e-4c73-4d82-9ba0-3d208b32487d",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "beb3d8bd-e956-49e3-8873-3fcb6aa4bdc4",
+        "kind": "embedding",
+        "model": "text-embedding-3-small",
+        "input_tokens": 27,
+        "output_tokens": 0,
+        "cached_tokens": 0,
+        "latency_ms": 470.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 5.4e-07,
+        "created_at": "2026-09-10T03:34:58.560808+00:00"
+      },
+      {
+        "id": "be7b5e67-87c6-49bb-a586-ad5451afbdea",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "e413e9e2-a684-495c-9874-b6506fb03269",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 1428,
+        "output_tokens": 280,
+        "cached_tokens": 0,
+        "latency_ms": 4205.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0010192,
+        "created_at": "2026-09-10T03:34:57.978802+00:00"
+      },
+      {
+        "id": "c3643475-8cd4-49e7-bdba-8d7ba5dfab47",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "e413e9e2-a684-495c-9874-b6506fb03269",
+        "kind": "embedding",
+        "model": "text-embedding-3-small",
+        "input_tokens": 9,
+        "output_tokens": 0,
+        "cached_tokens": 0,
+        "latency_ms": 686.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 1.8e-07,
+        "created_at": "2026-09-10T03:34:53.760984+00:00"
+      },
+      {
+        "id": "360ef710-7a0f-4237-a9ff-3c43cd962191",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "89463581-c62b-4749-8d35-8f33da6e70e5",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 1429,
+        "output_tokens": 64,
+        "cached_tokens": 0,
+        "latency_ms": 1282.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.000674,
+        "created_at": "2026-09-10T03:34:53.004399+00:00"
+      },
+      {
+        "id": "6e290de2-3e07-419a-8861-5ba723827484",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "89463581-c62b-4749-8d35-8f33da6e70e5",
+        "kind": "embedding",
+        "model": "text-embedding-3-small",
+        "input_tokens": 15,
+        "output_tokens": 0,
+        "cached_tokens": 0,
+        "latency_ms": 527.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 3e-07,
+        "created_at": "2026-09-10T03:34:51.708741+00:00"
+      },
+      {
+        "id": "94f28166-fb68-4cd6-92de-4d0d7c97cac9",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "c398490d-7f47-4318-a03a-ace32c7d3abc",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 1439,
+        "output_tokens": 46,
+        "cached_tokens": 0,
+        "latency_ms": 3333.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0006492000000000001,
+        "created_at": "2026-09-10T03:34:51.108133+00:00"
+      },
+      {
+        "id": "8bf787d1-b1dd-460c-90f6-6d2725761adc",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "c398490d-7f47-4318-a03a-ace32c7d3abc",
+        "kind": "embedding",
+        "model": "text-embedding-3-small",
+        "input_tokens": 33,
+        "output_tokens": 0,
+        "cached_tokens": 0,
+        "latency_ms": 462.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 6.6e-07,
+        "created_at": "2026-09-10T03:34:47.760765+00:00"
+      },
+      {
+        "id": "5722961a-3cae-4bbc-a5e5-c715fb14ba8e",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "82eb2da0-a6d0-405b-8ccf-53a0651ba742",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 1430,
+        "output_tokens": 102,
+        "cached_tokens": 0,
+        "latency_ms": 3167.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0007352000000000001,
+        "created_at": "2026-09-10T03:34:47.196516+00:00"
+      },
+      {
+        "id": "06429863-53a4-4bed-9e47-75c40b4f1a37",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "82eb2da0-a6d0-405b-8ccf-53a0651ba742",
+        "kind": "embedding",
+        "model": "text-embedding-3-small",
+        "input_tokens": 15,
+        "output_tokens": 0,
+        "cached_tokens": 0,
+        "latency_ms": 469.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 3e-07,
+        "created_at": "2026-09-10T03:34:44.017541+00:00"
+      },
+      {
+        "id": "6e5764d8-7f04-4802-ab1c-8f28aca35121",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "8ac09d82-4488-4f9a-98be-91e06c1704c9",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 1430,
+        "output_tokens": 87,
+        "cached_tokens": 0,
+        "latency_ms": 3204.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0007112,
+        "created_at": "2026-09-10T03:34:43.476772+00:00"
+      },
+      {
+        "id": "eb3f5026-44fa-4fa3-b90a-524685b08d7c",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "8ac09d82-4488-4f9a-98be-91e06c1704c9",
+        "kind": "embedding",
+        "model": "text-embedding-3-small",
+        "input_tokens": 11,
+        "output_tokens": 0,
+        "cached_tokens": 0,
+        "latency_ms": 466.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 2.2e-07,
+        "created_at": "2026-09-10T03:34:40.258254+00:00"
+      },
+      {
+        "id": "f775b5de-b195-4bef-9df4-3edc0bcead68",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "b00e955b-8e97-4d3c-bcc8-5d67b9e003db",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 1520,
+        "output_tokens": 66,
+        "cached_tokens": 0,
+        "latency_ms": 1520.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0007136,
+        "created_at": "2026-09-10T03:34:39.720832+00:00"
+      },
+      {
+        "id": "7da77a8a-ccae-49b2-8fe4-74f988c5474e",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "b00e955b-8e97-4d3c-bcc8-5d67b9e003db",
+        "kind": "embedding",
+        "model": "text-embedding-3-small",
+        "input_tokens": 40,
+        "output_tokens": 0,
+        "cached_tokens": 0,
+        "latency_ms": 856.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 8.000000000000001e-07,
+        "created_at": "2026-09-10T03:34:38.187897+00:00"
+      },
+      {
+        "id": "ddc57b6a-2c5c-4b49-bc0f-e7997903a5d2",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "ecced83c-887e-4af5-ac89-594ae6c3bc2c",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 1432,
+        "output_tokens": 70,
+        "cached_tokens": 0,
+        "latency_ms": 2703.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0006848000000000001,
+        "created_at": "2026-09-10T03:34:37.252332+00:00"
+      },
+      {
+        "id": "a40bc54b-fa9c-4944-ba75-76be589115bb",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "ecced83c-887e-4af5-ac89-594ae6c3bc2c",
+        "kind": "embedding",
+        "model": "text-embedding-3-small",
+        "input_tokens": 17,
+        "output_tokens": 0,
+        "cached_tokens": 0,
+        "latency_ms": 580.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 3.4000000000000003e-07,
+        "created_at": "2026-09-10T03:34:34.534792+00:00"
+      },
+      {
+        "id": "537e6852-1e8c-40f4-98b4-9e1ba1dd2cd4",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "509bb10b-7c6f-4cea-bb44-5f7f249322da",
+        "kind": "generation",
+        "model": "gpt-4.1-mini-2025-04-14",
+        "input_tokens": 1432,
+        "output_tokens": 73,
+        "cached_tokens": 0,
+        "latency_ms": 5888.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 0.0006896000000000002,
+        "created_at": "2026-09-10T03:34:33.871812+00:00"
+      },
+      {
+        "id": "469d986e-4a49-4390-9398-7832cfc41f6f",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": null,
+        "message_id": "509bb10b-7c6f-4cea-bb44-5f7f249322da",
+        "kind": "embedding",
+        "model": "text-embedding-3-small",
+        "input_tokens": 22,
+        "output_tokens": 0,
+        "cached_tokens": 0,
+        "latency_ms": 734.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 4.4e-07,
+        "created_at": "2026-09-10T03:34:27.965501+00:00"
+      },
+      {
+        "id": "72a6802f-55ea-4a54-a5bd-6300dc754dee",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": "1f4213ae-7bdc-4356-9de0-569e1b1488f5",
+        "message_id": null,
+        "kind": "embedding",
+        "model": "text-embedding-3-small",
+        "input_tokens": 376,
+        "output_tokens": 0,
+        "cached_tokens": 0,
+        "latency_ms": 1045.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 7.520000000000001e-06,
+        "created_at": "2026-09-10T03:34:25.826455+00:00"
+      },
+      {
+        "id": "845084e7-1a54-42de-8592-57e33f4aa9b1",
+        "user_id": "7be264ca-fbed-43d6-9215-69c73403ac98",
+        "subject_id": "75fb2ff9-91fe-4c58-955a-26e0bd094393",
+        "job_id": "922ab608-7538-4ef6-9ea7-d4ab0ec9759f",
+        "message_id": null,
+        "kind": "embedding",
+        "model": "text-embedding-3-small",
+        "input_tokens": 629,
+        "output_tokens": 0,
+        "cached_tokens": 0,
+        "latency_ms": 3111.0,
+        "retries": 0,
+        "cache_hit": false,
+        "estimated_cost_usd": 1.258e-05,
+        "created_at": "2026-09-10T03:34:22.794778+00:00"
+      }
+    ],
+    "pricing_updated_at": "2026-09-10"
+  },
+  "finished_at": "2026-09-10T03:35:18.786171+00:00"
+}

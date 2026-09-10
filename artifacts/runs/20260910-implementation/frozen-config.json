@@ -1,0 +1,9 @@
+{
+  "frozen_at": "2026-09-10 before any held-out evaluation",
+  "selected": {"retrieval_mode": "dense", "chunk_page_boundaries": true, "top_k": 6, "candidates": 20, "chunk_tokens": 600, "overlap_tokens": 80, "context_tokens": 1800, "max_output_tokens": 350, "history_tokens": 400, "query_cache_ttl": 0, "answer_cache": "disabled for benchmark", "chat_model": "gpt-4.1-mini", "embedding_model": "text-embedding-3-small", "embedding_dimensions": 1536, "prompt_version": "v2"},
+  "baseline_difference": "chunk_page_boundaries=false only; both use the same final prompt, evaluation fixes and serving limits",
+  "development_repairs": ["Added concise-answer guidance after broad introductions exceeded 350 output tokens.", "Removed evaluation's redundant pre-answer retrieval.", "Expanded the bilingual refusal phrase proxy; it remains a heuristic, not human-judged accuracy."],
+  "final_dev": {"baseline_answer_errors": 0, "page_answer_errors": 0, "answer_samples_each": 30, "answerable_each": 24, "unanswerable_each": 6, "recall_each": 1.0, "precision_before": 0.0763888888888889, "precision_after": 0.20833333333333331, "mrr_before": 0.9791666666666666, "mrr_after": 0.8993055555555556, "input_tokens_before": 73561, "input_tokens_after": 57126},
+  "decision": "Keep page boundaries: exact-page browser and lifecycle tests pass, dev recall unchanged and context more precise. MRR decreases; report this tradeoff.",
+  "held_out_policy": "Run both frozen configurations once on the same 70 questions. Report every error and negative outcome; no tuning from held-out answers. QASPER remains a separate external paragraph benchmark."
+}

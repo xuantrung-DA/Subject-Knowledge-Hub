@@ -1,0 +1,257 @@
+{
+  "status": "PASS",
+  "pages_checked": 50,
+  "checks": [
+    {
+      "document": "sen",
+      "page": 1,
+      "valid": true
+    },
+    {
+      "document": "sen",
+      "page": 2,
+      "valid": true
+    },
+    {
+      "document": "sen",
+      "page": 3,
+      "valid": true
+    },
+    {
+      "document": "sen",
+      "page": 4,
+      "valid": true
+    },
+    {
+      "document": "sen",
+      "page": 5,
+      "valid": true
+    },
+    {
+      "document": "cedar",
+      "page": 1,
+      "valid": true
+    },
+    {
+      "document": "cedar",
+      "page": 2,
+      "valid": true
+    },
+    {
+      "document": "cedar",
+      "page": 3,
+      "valid": true
+    },
+    {
+      "document": "cedar",
+      "page": 4,
+      "valid": true
+    },
+    {
+      "document": "cedar",
+      "page": 5,
+      "valid": true
+    },
+    {
+      "document": "truc",
+      "page": 1,
+      "valid": true
+    },
+    {
+      "document": "truc",
+      "page": 2,
+      "valid": true
+    },
+    {
+      "document": "truc",
+      "page": 3,
+      "valid": true
+    },
+    {
+      "document": "truc",
+      "page": 4,
+      "valid": true
+    },
+    {
+      "document": "truc",
+      "page": 5,
+      "valid": true
+    },
+    {
+      "document": "maple",
+      "page": 1,
+      "valid": true
+    },
+    {
+      "document": "maple",
+      "page": 2,
+      "valid": true
+    },
+    {
+      "document": "maple",
+      "page": 3,
+      "valid": true
+    },
+    {
+      "document": "maple",
+      "page": 4,
+      "valid": true
+    },
+    {
+      "document": "maple",
+      "page": 5,
+      "valid": true
+    },
+    {
+      "document": "lan",
+      "page": 1,
+      "valid": true
+    },
+    {
+      "document": "lan",
+      "page": 2,
+      "valid": true
+    },
+    {
+      "document": "lan",
+      "page": 3,
+      "valid": true
+    },
+    {
+      "document": "lan",
+      "page": 4,
+      "valid": true
+    },
+    {
+      "document": "lan",
+      "page": 5,
+      "valid": true
+    },
+    {
+      "document": "birch",
+      "page": 1,
+      "valid": true
+    },
+    {
+      "document": "birch",
+      "page": 2,
+      "valid": true
+    },
+    {
+      "document": "birch",
+      "page": 3,
+      "valid": true
+    },
+    {
+      "document": "birch",
+      "page": 4,
+      "valid": true
+    },
+    {
+      "document": "birch",
+      "page": 5,
+      "valid": true
+    },
+    {
+      "document": "cuc",
+      "page": 1,
+      "valid": true
+    },
+    {
+      "document": "cuc",
+      "page": 2,
+      "valid": true
+    },
+    {
+      "document": "cuc",
+      "page": 3,
+      "valid": true
+    },
+    {
+      "document": "cuc",
+      "page": 4,
+      "valid": true
+    },
+    {
+      "document": "cuc",
+      "page": 5,
+      "valid": true
+    },
+    {
+      "document": "willow",
+      "page": 1,
+      "valid": true
+    },
+    {
+      "document": "willow",
+      "page": 2,
+      "valid": true
+    },
+    {
+      "document": "willow",
+      "page": 3,
+      "valid": true
+    },
+    {
+      "document": "willow",
+      "page": 4,
+      "valid": true
+    },
+    {
+      "document": "willow",
+      "page": 5,
+      "valid": true
+    },
+    {
+      "document": "dao",
+      "page": 1,
+      "valid": true
+    },
+    {
+      "document": "dao",
+      "page": 2,
+      "valid": true
+    },
+    {
+      "document": "dao",
+      "page": 3,
+      "valid": true
+    },
+    {
+      "document": "dao",
+      "page": 4,
+      "valid": true
+    },
+    {
+      "document": "dao",
+      "page": 5,
+      "valid": true
+    },
+    {
+      "document": "elm",
+      "page": 1,
+      "valid": true
+    },
+    {
+      "document": "elm",
+      "page": 2,
+      "valid": true
+    },
+    {
+      "document": "elm",
+      "page": 3,
+      "valid": true
+    },
+    {
+      "document": "elm",
+      "page": 4,
+      "valid": true
+    },
+    {
+      "document": "elm",
+      "page": 5,
+      "valid": true
+    }
+  ],
+  "limitations": "Checks PDF text provenance; does not establish independent human validation of labels."
+}

@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-09-10T04:34:30.719Z",
+  "host": {
+    "platform": "win32",
+    "release": "10.0.26200",
+    "architecture": "x64",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "logical_cpus": 12,
+    "total_memory_bytes": 16886784000
+  },
+  "host_node": "v24.12.0",
+  "backend_image_python": "3.12.11",
+  "frontend_build_image_node": "22.18.0",
+  "note": "Host resources are not Docker resource limits or measured application memory. Process RSS is recorded by each benchmark.",
+  "frontend_lock_sha256": "73aacff3d865dfd361fe4d539e518c5e489fdd4d6c7a36849b6a11bb7a748205",
+  "backend_lock_sha256": "3548f47f7e664eb05afb41884ea418a32fe5b748e2123e49e89a09c2aac10c64"
+}

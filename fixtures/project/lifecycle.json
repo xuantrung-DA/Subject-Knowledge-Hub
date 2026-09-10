@@ -1,0 +1,64 @@
+[
+  {
+    "id": "new_document",
+    "action": "upload",
+    "document_key": "new_document",
+    "file": "new_document.pdf",
+    "question": "Mã thí nghiệm mới của lớp Sao Mai là gì?",
+    "reference_answer": "LOTUS-2026",
+    "evidence": [
+      {
+        "document_key": "new_document",
+        "page_start": 1,
+        "page_end": 1
+      }
+    ],
+    "assertions": [
+      "old version IDs and chunk counts unchanged",
+      "subject revision increases"
+    ]
+  },
+  {
+    "id": "replace_success",
+    "action": "replace",
+    "target_document_key": "fixture_vi",
+    "file": "replacement.pdf",
+    "question": "Phòng học mới của Sao Mai ở đâu?",
+    "reference_answer": "L305",
+    "evidence": [
+      {
+        "document_key": "fixture_vi",
+        "page_start": 1,
+        "page_end": 1
+      }
+    ],
+    "assertions": [
+      "new version active only after ready",
+      "previous version absent from new retrieval"
+    ]
+  },
+  {
+    "id": "replace_failure",
+    "action": "replace",
+    "target_document_key": "fixture_en",
+    "file": "corrupt.pdf",
+    "question": "What is Aurora regularization C?",
+    "reference_answer": "0.5",
+    "assertions": [
+      "failed replacement retains old ready active version"
+    ]
+  },
+  {
+    "id": "delete",
+    "action": "upload_then_delete",
+    "document_key": "temporary",
+    "file": "temporary.pdf",
+    "question": "What is the tool-cabinet access code?",
+    "reference_answer": "Not found in the current subject documents.",
+    "answerable": false,
+    "assertions": [
+      "old conversation cannot reuse deleted evidence",
+      "cached answer invalidated by corpus revision"
+    ]
+  }
+]

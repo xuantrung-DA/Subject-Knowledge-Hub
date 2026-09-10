@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "source_project": "subject-knowledge-hub",
+  "restored_project": "subject-hub-restore-20260910",
+  "database_tables": 17,
+  "all_database_row_fingerprints_match": true,
+  "pdf_files": 35,
+  "all_pdf_sha256_match": true,
+  "backup": "backups/portfolio-20260910/subject-hub-20260910T041819Z.tar.gz",
+  "backup_sha256": "4f33aac5d9c1d9cd67fa84d3ed4cbafadda2a2d55fd184eb351870fac396af3b",
+  "main_application_restarted": true
+}

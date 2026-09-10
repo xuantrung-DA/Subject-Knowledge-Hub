@@ -1,0 +1,109 @@
+name: subject-knowledge-hub
+
+x-backend: &backend
+  image: subject-knowledge-hub-backend:local
+  build:
+    context: .
+    dockerfile: backend/Dockerfile
+  env_file: .env
+  environment:
+    DATABASE_URL: postgresql+psycopg://hub:${POSTGRES_PASSWORD:-hub_local_dev}@postgres:5432/hub
+    REDIS_URL: redis://redis:6379/0
+    STORAGE_DIR: /data/pdfs
+  volumes:
+    - pdf-data:/data/pdfs
+  init: true
+  restart: unless-stopped
+
+services:
+  postgres:
+    image: pgvector/pgvector:0.8.0-pg17
+    environment:
+      POSTGRES_USER: hub
+      POSTGRES_DB: hub
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-hub_local_dev}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U hub -d hub']
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 20s
+    restart: unless-stopped
+
+  redis:
+    image: redis:7.4.5-alpine
+    command: [redis-server, --appendonly, 'yes', --maxmemory, 256mb, --maxmemory-policy, noeviction]
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  migrate:
+    <<: *backend
+    command: [alembic, upgrade, head]
+    restart: 'no'
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  api:
+    <<: *backend
+    command: [uvicorn, app.main:app, --host, 0.0.0.0, --port, '8000', --proxy-headers]
+    ports:
+      - '127.0.0.1:${API_PORT:-8000}:8000'
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health/ready', timeout=5)"]
+      interval: 10s
+      timeout: 8s
+      retries: 12
+      start_period: 30s
+
+  worker:
+    <<: *backend
+    command: [celery, -A, 'app.worker:celery_app', worker, --loglevel=INFO, --concurrency=1, '--hostname=worker@%h']
+    stop_grace_period: 45s
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD-SHELL, 'celery -A app.worker:celery_app inspect ping --destination worker@$$HOSTNAME --timeout 8']
+      interval: 30s
+      timeout: 12s
+      retries: 5
+      start_period: 45s
+
+  web:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    environment:
+      MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-100}
+    ports:
+      - '127.0.0.1:${WEB_PORT:-3000}:80'
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, wget, -q, --spider, 'http://127.0.0.1/healthz']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
+  pdf-data:
+  redis-data:

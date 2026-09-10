@@ -1,0 +1,101 @@
+export type User = { id: string; email: string };
+export type Auth = { user: User; csrf_token: string };
+export type Config = {
+  max_upload_mb: number;
+  max_pdf_pages: number;
+  openai_configured: boolean;
+  chat_model: string;
+  retrieval_mode: "dense" | "lexical" | "hybrid";
+  retrieval_top_k: number;
+};
+export type Subject = { id: string; name: string; corpus_revision: number };
+export type Version = {
+  id: string;
+  version: number;
+  status: string;
+  page_count: number | null;
+  text_page_count: number | null;
+  chunk_count: number | null;
+  warning: unknown;
+  error_code?: string;
+  error_message?: string;
+  created_at?: string;
+};
+export type Job = {
+  id: string;
+  document_id?: string;
+  version_id?: string;
+  kind: string;
+  status: string;
+  progress: Record<string, unknown>;
+  result: Record<string, unknown>;
+  error_code?: string;
+  error_message?: string;
+  created_at: string;
+  updated_at: string;
+  source?: {
+    document_name: string | null;
+    version: number | null;
+    state: "active" | "replaced" | "deleted";
+    page_start?: number;
+    page_end?: number;
+  };
+};
+export type Doc = {
+  id: string;
+  name: string;
+  document_key?: string;
+  source_type?: "pdf" | "fulltext" | "paragraph";
+  active_version_id?: string;
+  created_at: string;
+  versions: Version[];
+  latest_version: Version;
+  job?: Job;
+};
+export type Conversation = { id: string; title: string; created_at: string };
+export type Citation = {
+  id: number | string;
+  document_id: string;
+  version_id: string;
+  document_name: string;
+  version: number;
+  page_start: number;
+  page_end: number;
+  source_type?: "pdf" | "fulltext" | "paragraph";
+  paragraph_ids?: string[];
+  text?: string;
+  excerpt?: string;
+  status?: string;
+  state?: string;
+  is_deleted?: boolean;
+  is_active?: boolean;
+};
+export type Message = {
+  id: string;
+  role: string;
+  content: string;
+  citations: Citation[];
+  debug: Record<string, unknown>;
+  created_at?: string;
+};
+export type Answer = {
+  answer: string;
+  citations: Citation[];
+  debug: Record<string, unknown>;
+  conversation_id: string;
+  message_id: string;
+};
+export type EvalRun = {
+  id: string;
+  name: string;
+  status: string;
+  job_id?: string;
+  created_at: string;
+  question_count?: number;
+  dataset?: unknown[];
+  config?: Record<string, unknown>;
+  mapping?: Record<string, unknown>;
+  report?: Record<string, unknown>;
+  results?: unknown[];
+  job?: Job;
+};

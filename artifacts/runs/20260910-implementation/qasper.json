@@ -1,0 +1,1574 @@
+{
+  "status": "ready",
+  "provider": "live_openai_embeddings",
+  "generation": false,
+  "started_at": "2026-09-10T04:11:25.487668+00:00",
+  "dataset": "QASPER fixed eligible test100, 95 papers",
+  "source": "https://huggingface.co/datasets/allenai/qasper",
+  "license": "CC-BY-4.0",
+  "subject_id": "c40603f3-6fb9-4ae9-b572-a5524411d885",
+  "ingestion": {
+    "ready": 95
+  },
+  "run_id": "4451e4c1-3ed0-40e7-9532-c4492e6ff5fd",
+  "job_id": "6d47ee4f-1532-45bf-a9b0-bfaa46f1fd63",
+  "report": {
+    "dataset_sha256": "14ea0e784842d794eb29eadcf590f2994901040ec52ecf62c1af6cbe8736736a",
+    "question_count": 100,
+    "config": {
+      "modes": [
+        "lexical",
+        "dense",
+        "hybrid"
+      ],
+      "generate_answers": false,
+      "limit": 100,
+      "top_k": 6,
+      "max_tokens": 30000,
+      "max_calls": 400,
+      "corpus_revision": 95,
+      "chat_model": "gpt-4.1-mini",
+      "context_budget": 4500,
+      "history_budget": 1500,
+      "output_budget": 900,
+      "prompt_version": "v2"
+    },
+    "environment": {
+      "python": "3.12.11",
+      "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+      "git_revision": null
+    },
+    "generated_at": "2026-09-10T04:15:34.277726+00:00",
+    "summary": {
+      "lexical": {
+        "sample_size": 100,
+        "successful_samples": 100,
+        "errors": 0,
+        "evidence_recall_at_k": 0.0,
+        "evidence_recall_at_k_n": 96,
+        "evidence_precision_at_k": 0.0,
+        "evidence_precision_at_k_n": 96,
+        "mrr": 0.0,
+        "mrr_n": 96,
+        "answer_token_f1": null,
+        "answer_token_f1_n": 0,
+        "unanswerable_accuracy": null,
+        "unanswerable_accuracy_n": 0,
+        "citation_validity": null,
+        "citation_validity_n": 0,
+        "citation_marker_validity": null,
+        "citation_marker_validity_n": 0,
+        "tool_selection_recall": null,
+        "tool_selection_recall_n": 0,
+        "tool_error_rate": null,
+        "tool_error_rate_n": 0,
+        "latency_p50_ms": 4.295,
+        "latency_p95_ms": 10.437499999999995,
+        "latency_sample_size": 100,
+        "latency_reliable": true,
+        "total_input_tokens": 0,
+        "total_output_tokens": 0,
+        "total_cached_tokens": 0,
+        "total_provider_calls": 0,
+        "total_cost_usd": null
+      },
+      "dense": {
+        "sample_size": 100,
+        "successful_samples": 100,
+        "errors": 0,
+        "evidence_recall_at_k": 0.5835069444444444,
+        "evidence_recall_at_k_n": 96,
+        "evidence_precision_at_k": 0.1753472222222222,
+        "evidence_precision_at_k_n": 96,
+        "mrr": 0.49461805555555555,
+        "mrr_n": 96,
+        "answer_token_f1": null,
+        "answer_token_f1_n": 0,
+        "unanswerable_accuracy": null,
+        "unanswerable_accuracy_n": 0,
+        "citation_validity": null,
+        "citation_validity_n": 0,
+        "citation_marker_validity": null,
+        "citation_marker_validity_n": 0,
+        "tool_selection_recall": null,
+        "tool_selection_recall_n": 0,
+        "tool_error_rate": null,
+        "tool_error_rate_n": 0,
+        "latency_p50_ms": 417.175,
+        "latency_p95_ms": 643.1800000000001,
+        "latency_sample_size": 100,
+        "latency_reliable": true,
+        "total_input_tokens": 935,
+        "total_output_tokens": 0,
+        "total_cached_tokens": 0,
+        "total_provider_calls": 100,
+        "total_cost_usd": 1.87e-05
+      },
+      "hybrid": {
+        "sample_size": 100,
+        "successful_samples": 100,
+        "errors": 0,
+        "evidence_recall_at_k": 0.5835069444444444,
+        "evidence_recall_at_k_n": 96,
+        "evidence_precision_at_k": 0.1753472222222222,
+        "evidence_precision_at_k_n": 96,
+        "mrr": 0.49461805555555555,
+        "mrr_n": 96,
+        "answer_token_f1": null,
+        "answer_token_f1_n": 0,
+        "unanswerable_accuracy": null,
+        "unanswerable_accuracy_n": 0,
+        "citation_validity": null,
+        "citation_validity_n": 0,
+        "citation_marker_validity": null,
+        "citation_marker_validity_n": 0,
+        "tool_selection_recall": null,
+        "tool_selection_recall_n": 0,
+        "tool_error_rate": null,
+        "tool_error_rate_n": 0,
+        "latency_p50_ms": 413.02,
+        "latency_p95_ms": 645.9535,
+        "latency_sample_size": 100,
+        "latency_reliable": true,
+        "total_input_tokens": 935,
+        "total_output_tokens": 0,
+        "total_cached_tokens": 0,
+        "total_provider_calls": 100,
+        "total_cost_usd": 1.87e-05
+      }
+    },
+    "failures": [
+      {
+        "question_id": "1a419468d255d40ae82ed7777618072a48f0091b",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "a3705b53c6710b41154c65327b7bbec175bdfae7",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "a3705b53c6710b41154c65327b7bbec175bdfae7",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "a3705b53c6710b41154c65327b7bbec175bdfae7",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "6b1a6517b343fdb79f246955091ff25e440b9511",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "a064d01d45a33814947161ff208abb88d4353b26",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "27d7a30e42921e77cfffafac5cb0d16ce5a7df99",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "27d7a30e42921e77cfffafac5cb0d16ce5a7df99",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "27d7a30e42921e77cfffafac5cb0d16ce5a7df99",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "cfdd583d01abaca923f5c466bb20e1d4b8c749ff",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "a0197894ee94b01766fa2051f50f84e16b5c9370",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "d4cb704e93086a2246a8caa5c1035e8297b8f4c0",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "c0dbf3f1957f3bff3ced5b48aff60097f3eac7bb",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "c0dbf3f1957f3bff3ced5b48aff60097f3eac7bb",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "c0dbf3f1957f3bff3ced5b48aff60097f3eac7bb",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "a24b2269b292fd0ee81d50303d1315383c594382",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "7748c072e07d6c6db5a34be38b4a5e97ac6d7999",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "02a5acb484bda77ef32a13f5d93d336472cf8cd4",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "02a5acb484bda77ef32a13f5d93d336472cf8cd4",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "02a5acb484bda77ef32a13f5d93d336472cf8cd4",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "f741d32b92630328df30f674af16fbbefcad3f93",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "d3cfbe497a30b750a8de3ea7f2cecf4753a4e1f9",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "1d263356692ed8cdee2a13f103a82d98f43d66eb",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "ebb33f3871b8c2ffd2c451bc06480263b8e870e0",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "65c7a2b734dab51c4c81f722527424ff33b023f8",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "65c7a2b734dab51c4c81f722527424ff33b023f8",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "65c7a2b734dab51c4c81f722527424ff33b023f8",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "b065c2846817f3969b39e355d5d017e326d6f42e",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "eaae11ffd4ff955de2cd6389b888f5fd2c660a32",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "2ae66798333b905172e2c0954e9808662ab7f221",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "2ae66798333b905172e2c0954e9808662ab7f221",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "2ae66798333b905172e2c0954e9808662ab7f221",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "0fee37ebe0a010cf8bd665fa566306d8e7d12631",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "0fee37ebe0a010cf8bd665fa566306d8e7d12631",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "0fee37ebe0a010cf8bd665fa566306d8e7d12631",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "99f898eb91538cb82bc9a00892d54ae2a740961e",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "2a9c7243744b42f1e9fed9ff2ab17c6f156b1ba4",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "b10388e343868ca8e5c7c601ebb903f52e756e61",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "a8cc891bb8dccf0d32c1c9cd1699d5ead0eed711",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "a8cc891bb8dccf0d32c1c9cd1699d5ead0eed711",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "a8cc891bb8dccf0d32c1c9cd1699d5ead0eed711",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "c135e1f8ecaf7965f6a6d3e30b537eb37ad74230",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "3cc9a820c4a2cd2ff61da920c41ed09f3c0135be",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "61e96abdc924c34c6b82a587168ea3d14fe792d1",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "dd81f58c782169886235c48b8f9a08e0954dd3ae",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "5695908a8c6beb0e3863a1458a1b93aab508fd34",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "9133a85730c4090fe8b8d08eb3d9146efe7d7037",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "a398c9b061f28543bc77c2951d0dfc5d1bee9e87",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "ae89eed483c11ccd70a34795e9fe416af8a35da2",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "3d662fb442d5fc332194770aac835f401c2148d9",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "3699927c6c1146f5057576034d226a99946d52cb",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "3699927c6c1146f5057576034d226a99946d52cb",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "3699927c6c1146f5057576034d226a99946d52cb",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "f40e23adc8245562c8677f0f86fa5175179b5422",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "1efaf3bcd66d1b6bdfb124f0cec0cfeee27e6124",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "1efaf3bcd66d1b6bdfb124f0cec0cfeee27e6124",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "1efaf3bcd66d1b6bdfb124f0cec0cfeee27e6124",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "6883767bbdf14e124c61df4f76335d3e91bfcb03",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "1ec0be667a6594eb2e07c50258b120e693e040a8",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "1ec0be667a6594eb2e07c50258b120e693e040a8",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "1ec0be667a6594eb2e07c50258b120e693e040a8",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "fc62549a8f0922c09996a119b2b6a8b5e829e989",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "4288621e960ffbfce59ef1c740d30baac1588b9b",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "95646d0ac798dcfc15b43fa97a1908df9f7b9681",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "6d17dc00f7e5331128b6b585e78cac0b9082e13d",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "e6bc11bd6cfd4b2138c29602b9b56fc5378a4293",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "578add9d3dadf86cd0876d42b03bf0114f83d0e7",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "90dde59e1857a0d2b1ee4615ab017fee0741f29f",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "2d5d0b0c54105717bf48559b914fefd0c94964a6",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "4e106b03cc2f54373e73d5922e97f7e5e9bf03e4",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "a1ac4463031bbc42c80893b57c0055b860f12e10",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "dc473819b196c0ea922773e173a6b283fa778791",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "68aa460ad357b4228b16b31b2cbec986215813bf",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "036c400424357457e42b22df477b7c3cdc2eefe9",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "97708d93bccc832ea671dc31a76dad6a121fcd60",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "97708d93bccc832ea671dc31a76dad6a121fcd60",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "97708d93bccc832ea671dc31a76dad6a121fcd60",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "a837dcbd339e27a974e28944178c790a5b0b37c0",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "71fd0efea1b441d86d9a75255815ba3efe09779b",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "3ccc4ccebc3b0de5546b1208e8094a839fd4a4ab",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "8c872236e4475d5d0969fb90d2df94589c7ab1c4",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "8c872236e4475d5d0969fb90d2df94589c7ab1c4",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "4999da863ecbd40378505bfb1f4e395061a3f559",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "157de5175259d6f25db703efb299f948dae597b7",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "c97306c1be5d59cf27b1054adfa8f1da47d292ce",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "43729be0effb5defc62bae930ceacf7219934f1e",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "7caeb5ef6f2985b2cf383cd01765d247c936605f",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "2929e92f9b4939297b4d0f799d464d46e8d52063",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "6371c6863fe9a14bf67560e754ce531d70de10ab",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "088d42ecb1e15515f6a97a0da2fed81b61d61a23",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "200c37060d037dee33f3b7c8b1a2aaa58376566e",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "200c37060d037dee33f3b7c8b1a2aaa58376566e",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "200c37060d037dee33f3b7c8b1a2aaa58376566e",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "3e5162e6399c7d03ecc7007efd21d06c04cf2843",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "31a3ec8d550054465e55a26b0136f4d50d72d354",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "31a3ec8d550054465e55a26b0136f4d50d72d354",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "31a3ec8d550054465e55a26b0136f4d50d72d354",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "7d503b3d4d415cf3e91ab08bd5a1a2474dd1047b",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "7d503b3d4d415cf3e91ab08bd5a1a2474dd1047b",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "7d503b3d4d415cf3e91ab08bd5a1a2474dd1047b",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "fea9b4d136156f23a88e5c7841874a467f2ba86d",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "641fe5dc93611411582e6a4a0ea2d5773eaf0310",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "b537832bba2eb6d34702a9d71138e661c05a7c3a",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "8c872236e4475d5d0969fb90d2df94589c7ab1c4",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "c5ea4da3c760ba89194ad807bc1ef60e1761429f",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "c5ea4da3c760ba89194ad807bc1ef60e1761429f",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "c5ea4da3c760ba89194ad807bc1ef60e1761429f",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "909ecf675f874421eecc926a9f7486475aa1423c",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "65b39676db60f914f29f74b7c1264422ee42ad5c",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "0aca0a208a1e28857fab44e397dc7880e010dbca",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "9f065e787a0d40bb4550be1e0d64796925459005",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "9f065e787a0d40bb4550be1e0d64796925459005",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "9f065e787a0d40bb4550be1e0d64796925459005",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "d98148f65d893101fa9e18aaf549058712485436",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "d98148f65d893101fa9e18aaf549058712485436",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "d98148f65d893101fa9e18aaf549058712485436",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "5102dc911913e9ca0311253e44fd31c73eed0a57",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "ecaa10a2d9927fa6ab6a954488f12aa6b42ddc1a",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "1a6156189297b2fe17f174ef55cbd20341bb7dbf",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "df01e98095ba8765d9ab0d40c9e8ef34b64d3700",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "4d887ce7dc43528098e7a3d9cd13c6c36f158c53",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "4d887ce7dc43528098e7a3d9cd13c6c36f158c53",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "4d887ce7dc43528098e7a3d9cd13c6c36f158c53",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "9eec16e560f9ccafd7ba6f1e0db742b330b42ba9",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "c845110efee2f633d47f5682573bc6091e8f5023",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "c845110efee2f633d47f5682573bc6091e8f5023",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "c845110efee2f633d47f5682573bc6091e8f5023",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "556782bb96f8fc07d14865f122362ebcc79134ec",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "556782bb96f8fc07d14865f122362ebcc79134ec",
+        "mode": "dense",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "556782bb96f8fc07d14865f122362ebcc79134ec",
+        "mode": "hybrid",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "d38b3e0896b105d171e69ce34c689e4a7e934522",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "ce23849e9e9a22626965f1ca8ca948a5c87280e9",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "732bd97ae34541f215c436e2a1b98db1649cba27",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "eb653a5c59851eda313ece0bcd8c589b6155d73e",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "c3ce95658eea1e62193570955f105839de3d7e2d",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "f7ee48dd32c666ef83a4ae4aa06bcde85dd8ec4b",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "a994cc18046912a8c9328dc572f4e4310736c0e2",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "cc8bcea4052bf92f249dda276acc5fd16cac6fb4",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "5cc5e2db82f5d40a5244224dad94da50b4f673db",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      },
+      {
+        "question_id": "961a97149127e1123c94fbf7e2021eb1aa580ecb",
+        "mode": "lexical",
+        "error": null,
+        "metrics": {
+          "evidence_recall_at_k": 0.0,
+          "evidence_precision_at_k": 0.0,
+          "mrr": 0.0
+        }
+      }
+    ],
+    "limitations": [
+      "Project fixture regression is not an independent benchmark or expert-reviewed evaluation.",
+      "Answer token F1 is a deterministic lexical proxy, not semantic relevance, correctness, or faithfulness.",
+      "Citation validity checks supplied source membership and location, not whether the claim is supported; inspect result samples manually.",
+      "Refusal detection is a text heuristic; unanswerable accuracy needs manual verification.",
+      "No LLM judge is run; faithfulness and semantic content support are unmeasured (null).",
+      "Latency p50/p95 are descriptive; fewer than 20 successful samples are flagged as insufficient for a reliable performance conclusion.",
+      "Usage is provider-reported where available. Retries after a crash may incur unobservable provider charges; no zero-cost claim is made.",
+      "QASPER paragraph evaluation does not exercise the PDF parser or Vietnamese QA."
+    ],
+    "budget_reservations": {
+      "reserved_tokens": 8270,
+      "reserved_calls": 200
+    },
+    "job_usage": {
+      "input_tokens": 1870,
+      "output_tokens": 0,
+      "cached_tokens": 0,
+      "successful_provider_responses": 200,
+      "cache_hits": 0,
+      "retries_reported": 0,
+      "estimated_cost_usd": 3.74e-05,
+      "note": "Includes events for interrupted questions; reservations also count attempts whose usage was not returned."
+    }
+  },
+  "finished_at": "2026-09-10T04:15:34.363988+00:00",
+  "usage": {
+    "input_tokens": 448693,
+    "output_tokens": 0,
+    "provider_calls": 315,
+    "estimated_cost_usd": 0.00897386
+  }
+}

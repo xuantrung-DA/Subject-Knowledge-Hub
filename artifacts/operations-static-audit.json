@@ -1,0 +1,132 @@
+{
+  "recorded_at": "2026-09-09T14:59:46.806420+00:00",
+  "checks": [
+    {
+      "name": "yaml:compose.yaml",
+      "status": "PASS",
+      "detail": "Parsed with PyYAML 6.0.3; does not validate Docker/Actions semantics"
+    },
+    {
+      "name": "yaml:compose.test.yaml",
+      "status": "PASS",
+      "detail": "Parsed with PyYAML 6.0.3; does not validate Docker/Actions semantics"
+    },
+    {
+      "name": "yaml:compose.live-smoke.yaml",
+      "status": "PASS",
+      "detail": "Parsed with PyYAML 6.0.3; does not validate Docker/Actions semantics"
+    },
+    {
+      "name": "yaml:.github/workflows/ci.yml",
+      "status": "PASS",
+      "detail": "Parsed with PyYAML 6.0.3; does not validate Docker/Actions semantics"
+    },
+    {
+      "name": "loopback-only-published-ports",
+      "status": "PASS",
+      "detail": "Static Compose ports inspected"
+    },
+    {
+      "name": "migration-before-writers",
+      "status": "PASS",
+      "detail": "Writers depend on successful migration"
+    },
+    {
+      "name": "shared-pdf-volume",
+      "status": "PASS",
+      "detail": "API and worker mount same named volume"
+    },
+    {
+      "name": "long-running-healthchecks",
+      "status": "PASS",
+      "detail": "All long-running services declare checks; actual execution not verified"
+    },
+    {
+      "name": "build-input:backend/pyproject.toml",
+      "status": "PASS",
+      "detail": "Required referenced build/run input exists"
+    },
+    {
+      "name": "build-input:backend/uv.lock",
+      "status": "PASS",
+      "detail": "Required referenced build/run input exists"
+    },
+    {
+      "name": "build-input:frontend/package.json",
+      "status": "PASS",
+      "detail": "Required referenced build/run input exists"
+    },
+    {
+      "name": "build-input:frontend/package-lock.json",
+      "status": "PASS",
+      "detail": "Required referenced build/run input exists"
+    },
+    {
+      "name": "build-input:backend/alembic.ini",
+      "status": "PASS",
+      "detail": "Required referenced build/run input exists"
+    },
+    {
+      "name": "build-input:backend/alembic/env.py",
+      "status": "PASS",
+      "detail": "Required referenced build/run input exists"
+    },
+    {
+      "name": "build-input:backend/alembic/versions/0001_initial.py",
+      "status": "PASS",
+      "detail": "Required referenced build/run input exists"
+    },
+    {
+      "name": "build-input:fixtures/project/fixture_vi.pdf",
+      "status": "PASS",
+      "detail": "Required referenced build/run input exists"
+    },
+    {
+      "name": "build-input:fixtures/project/fixture_en.pdf",
+      "status": "PASS",
+      "detail": "Required referenced build/run input exists"
+    },
+    {
+      "name": "build-input:scripts/scalability_smoke.py",
+      "status": "PASS",
+      "detail": "Required referenced build/run input exists"
+    },
+    {
+      "name": "build-input:scripts/live_smoke.py",
+      "status": "PASS",
+      "detail": "Required referenced build/run input exists"
+    },
+    {
+      "name": "python-cli:scripts/backup.py",
+      "status": "PASS",
+      "detail": "Python AST parsing and --help only; no Docker backup/restore executed"
+    },
+    {
+      "name": "python-cli:scripts/restore.py",
+      "status": "PASS",
+      "detail": "Python AST parsing and --help only; no Docker backup/restore executed"
+    },
+    {
+      "name": "nginx-entrypoint-shell-syntax",
+      "status": "PASS",
+      "detail": "sh -n passed; nginx configuration was not executed"
+    },
+    {
+      "name": "example-env-matches-settings",
+      "status": "PASS",
+      "detail": {
+        "unknown_keys": []
+      }
+    },
+    {
+      "name": "ci-forces-real-integration",
+      "status": "PASS",
+      "detail": "PostgreSQL pgvector and Redis service containers declared; workflow execution unverified"
+    }
+  ],
+  "docker_available": false,
+  "limitations": [
+    "Static checks only. Docker build/start, container health, container backup/restore and hosted CI were not executed.",
+    "Referenced modules were still being integrated by other agents; application functionality is reported separately."
+  ]
+}

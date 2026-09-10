@@ -1,0 +1,25 @@
+# Run only through a separate project name to isolate all test database/PDF data.
+# docker compose -p subject-hub-test -f compose.yaml -f compose.test.yaml run --build --rm tests
+services:
+  tests:
+    profiles: [test]
+    image: subject-knowledge-hub-backend:local
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      DATABASE_URL: postgresql+psycopg://hub:${POSTGRES_PASSWORD:-hub_local_dev}@postgres:5432/hub
+      REDIS_URL: redis://redis:6379/15
+      STORAGE_DIR: /data/pdfs
+      OPENAI_API_KEY: ''
+      TEST_MODE: 'true'
+      RUN_INTEGRATION: '1'
+      OPENAI_EMBEDDING_DIMENSIONS: ${OPENAI_EMBEDDING_DIMENSIONS:-1536}
+    volumes:
+      - pdf-data:/data/pdfs
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+    command: [pytest, -m, 'not live and not scalability']

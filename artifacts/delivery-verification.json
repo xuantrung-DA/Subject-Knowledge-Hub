@@ -1,0 +1,67 @@
+{
+  "at": "2026-09-09T15:14:10.043667+00:00",
+  "status": "PASS",
+  "required_files": [
+    {
+      "check": "README.md",
+      "status": "PASS"
+    },
+    {
+      "check": "docs/acceptance_vi.md",
+      "status": "PASS"
+    },
+    {
+      "check": "docs/architecture.md",
+      "status": "PASS"
+    },
+    {
+      "check": "docs/evaluation.md",
+      "status": "PASS"
+    },
+    {
+      "check": "docs/test-report.md",
+      "status": "PASS"
+    },
+    {
+      "check": "docs/progress.md",
+      "status": "PASS"
+    },
+    {
+      "check": "backend/uv.lock",
+      "status": "PASS"
+    },
+    {
+      "check": "frontend/package-lock.json",
+      "status": "PASS"
+    },
+    {
+      "check": ".env.example",
+      "status": "PASS"
+    },
+    {
+      "check": "compose.yaml",
+      "status": "PASS"
+    },
+    {
+      "check": "backend/Dockerfile",
+      "status": "PASS"
+    },
+    {
+      "check": "frontend/Dockerfile",
+      "status": "PASS"
+    },
+    {
+      "check": "backend/app/main.py",
+      "status": "PASS"
+    },
+    {
+      "check": "backend/app/worker.py",
+      "status": "PASS"
+    }
+  ],
+  "yaml": "parsed",
+  "python": "AST parsed",
+  "fixture_hashes": "all match supplied manifest",
+  "secrets_check": "no real .env; runtime directories excluded from archive",
+  "note": "Source/package checks only; no Docker or live API execution."
+}

@@ -1,0 +1,30 @@
+name: release-reliability
+on:
+  workflow_dispatch:
+
+jobs:
+  recovery-and-scale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          cp .env.example .env
+          mkdir -p artifacts/reliability
+          chmod 777 artifacts/reliability
+      - name: Three real Celery process kill and recovery trials
+        run: >-
+          docker compose -p subject-hub-release -f compose.yaml -f compose.test.yaml run --build --rm
+          -v "$PWD/scripts:/app/scripts:ro" -v "$PWD/artifacts/reliability:/app/artifacts"
+          tests python /app/scripts/recovery_probe.py --output /app/artifacts/recovery.json
+      - name: Thousand-page parser, ingestion and PostgreSQL smoke
+        run: >-
+          docker compose -p subject-hub-release -f compose.yaml -f compose.test.yaml run --rm
+          -v "$PWD/scripts:/app/scripts:ro" -v "$PWD/artifacts/reliability:/app/artifacts"
+          tests python /app/scripts/scalability_smoke.py --pages 1000 --database --output /app/artifacts/scalability.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reliability-evidence
+          path: artifacts/reliability
+      - if: always()
+        run: docker compose -p subject-hub-release -f compose.yaml -f compose.test.yaml down --volumes

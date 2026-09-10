@@ -1,0 +1,133 @@
+{
+  "created_at": "2026-09-10T04:18:13.825173+00:00",
+  "tables": {
+    "alembic_version": {
+      "rows": 1,
+      "row_fingerprint_md5": "7d7dce3eea102eb7aeb3e7583514336a"
+    },
+    "chunks": {
+      "rows": 5770,
+      "row_fingerprint_md5": "ae7d28edada061f60a018a696e82ed92"
+    },
+    "conversations": {
+      "rows": 286,
+      "row_fingerprint_md5": "40927c7e8b893417f389caeb73feb741"
+    },
+    "document_pages": {
+      "rows": 1151,
+      "row_fingerprint_md5": "1b161362f0d97ac93b2206cdb2322eb2"
+    },
+    "document_versions": {
+      "rows": 130,
+      "row_fingerprint_md5": "2760d83b5a4fef09cdc7ed9a497c898b"
+    },
+    "documents": {
+      "rows": 126,
+      "row_fingerprint_md5": "41facad6b4397dc15599679e70e7f054"
+    },
+    "embedding_cache": {
+      "rows": 6072,
+      "row_fingerprint_md5": "d99a43a080a078d4165bf826b083d6ed"
+    },
+    "evaluation_results": {
+      "rows": 1343,
+      "row_fingerprint_md5": "49b4be2056d4e53440065542f7e3647b"
+    },
+    "evaluation_runs": {
+      "rows": 18,
+      "row_fingerprint_md5": "73fbfa7752bea5c4f8047c458329aeae"
+    },
+    "jobs": {
+      "rows": 149,
+      "row_fingerprint_md5": "360ad7c2fcb9c1ae1c906f10e1a3d347"
+    },
+    "messages": {
+      "rows": 608,
+      "row_fingerprint_md5": "3e7b93622c503779b52442da09124cd3"
+    },
+    "sessions": {
+      "rows": 11,
+      "row_fingerprint_md5": "2f55cdb5c2fc2c2beb8ce0e4ec7120f4"
+    },
+    "subjects": {
+      "rows": 15,
+      "row_fingerprint_md5": "75aab2c577c33c5aaec8708cc4207dfb"
+    },
+    "summaries": {
+      "rows": 3,
+      "row_fingerprint_md5": "f55243d0506ac0edcd831d7849d8f321"
+    },
+    "tool_runs": {
+      "rows": 7,
+      "row_fingerprint_md5": "309ca19a69440b62ecd3992b9626518a"
+    },
+    "usage_events": {
+      "rows": 1570,
+      "row_fingerprint_md5": "01b28fa0187b841f9da1db070af3a00a"
+    },
+    "users": {
+      "rows": 14,
+      "row_fingerprint_md5": "9e743e51235ef8fd156f04294272d2af"
+    }
+  },
+  "pdf_sha256": {
+    "0131548b-632f-4de0-931f-63cab362b019.pdf": "c32bdaad7c8ed4056ab1890365561942ec4ac1f93eb305ec0f5fedb9a8e94dec",
+    "025d116e-2730-45c7-ab82-76c6a6d6222e.pdf": "9a3d17bd9cce95ebc2ee1ddf8d9c41d96c717629939a034dc5ad3f31f1001997",
+    "0db92566-37f3-4329-b0d5-d3491b146c9e.pdf": "9ace02b61b7092ef4f1b73cabaac198bf71c0dba505aeaa0003f2c075520cc07",
+    "16772ad2-15c0-46c5-bfb2-00fcc27f06ce.pdf": "c32bdaad7c8ed4056ab1890365561942ec4ac1f93eb305ec0f5fedb9a8e94dec",
+    "23e899d5-61b2-4c71-9610-bf17547a5de8.pdf": "8e96f720ef7c4d1c3d1dc35aa40a24fdecf44cc3f413b7869086c8a34b2548d6",
+    "3746a7dd-8cd8-48ff-affb-885da49c745f.pdf": "6fe56510f8ce8a875ff37a1f7166573d3cfa4f7cd7b702c2f182c2683298a56f",
+    "39385120-d761-4039-a2aa-d3f5b1139087.pdf": "a0dce8601599aeefb3fdf197e6433e0d660a9674987b0dccebc9b1062af25252",
+    "3b2ee048-f646-4354-960b-c78406aa0310.pdf": "8e96f720ef7c4d1c3d1dc35aa40a24fdecf44cc3f413b7869086c8a34b2548d6",
+    "44ee69ee-0953-4c96-86e8-29dc203ea540.pdf": "81de22c01cabbf7e758ad14116c5f32286cccfa7696d6bdd9d022804f2ea8046",
+    "4e4a9fec-c7eb-444c-a57e-dbfb3f14e993.pdf": "9ace02b61b7092ef4f1b73cabaac198bf71c0dba505aeaa0003f2c075520cc07",
+    "54b31851-b60a-4595-ae57-bb6a508dd817.pdf": "f3cc9127c7e5098d07c0cbffd1f9a83b546f188ac73fa707964fba690db35330",
+    "611ff412-bc43-4680-9db9-0a40ea25d00a.pdf": "0ccc775e8b182c98131ae31567fd4125177d54fa34a5ae198ae741cf4d1e6aab",
+    "6d0c4e4a-5203-4446-b19a-4fdcfc05fb0b.pdf": "1842100f40336c3ab02dd2ed2b5bc953506bd25ebd4fadbceaeefb43009ebd03",
+    "75928e42-5bf6-4bf6-8772-07d2ead5abcf.pdf": "9ace02b61b7092ef4f1b73cabaac198bf71c0dba505aeaa0003f2c075520cc07",
+    "8226524a-25a1-4a60-9fbf-8b4246540cb7.pdf": "6fe56510f8ce8a875ff37a1f7166573d3cfa4f7cd7b702c2f182c2683298a56f",
+    "85db7cd1-4c45-4759-a68e-da62034e35f9.pdf": "eeeb6125eb36920a0e8287b1262ddca1488af5374f2ef646cc5254b76e5c7cab",
+    "8edfbd3e-eea5-41f2-b8c7-201956216318.pdf": "c32bdaad7c8ed4056ab1890365561942ec4ac1f93eb305ec0f5fedb9a8e94dec",
+    "8f96b915-47d7-4c86-b7e2-6914a2a756a3.pdf": "f3cc9127c7e5098d07c0cbffd1f9a83b546f188ac73fa707964fba690db35330",
+    "93df93da-90a4-4c69-aec0-45cc6e81a3d8.pdf": "d5b2dd2de481d72e50e8b80de0d6c0d4fb8fb1bd351fff1c9425d9967c37ff0e",
+    "9b2af99c-d0c8-447a-b064-a264694fb6c8.pdf": "046abd94e689eef734cdf67c58bbf20298660977bfb69b8b1f3bc787011d125b",
+    "a07552fe-bcaf-474e-a634-70b81bda5e62.pdf": "e010270e6dbc012048301e653413d8247e7a280f5457a931159822f6709e35fb",
+    "a0c6d376-723f-446a-80d8-2a9ccb298c92.pdf": "d5b2dd2de481d72e50e8b80de0d6c0d4fb8fb1bd351fff1c9425d9967c37ff0e",
+    "a452d51d-4ccf-457d-a990-4372c2e52baa.pdf": "c32bdaad7c8ed4056ab1890365561942ec4ac1f93eb305ec0f5fedb9a8e94dec",
+    "b96fdfee-c8a2-416a-9666-90eabb79a57c.pdf": "a0dce8601599aeefb3fdf197e6433e0d660a9674987b0dccebc9b1062af25252",
+    "ba5f9b9a-7a53-404e-8c79-0a700d4e935c.pdf": "81de22c01cabbf7e758ad14116c5f32286cccfa7696d6bdd9d022804f2ea8046",
+    "c24e3360-17d7-48d8-b44f-ff53c1cd2a31.pdf": "9ace02b61b7092ef4f1b73cabaac198bf71c0dba505aeaa0003f2c075520cc07",
+    "d52a6f63-0fc7-407f-8f81-7921b87fe09f.pdf": "eeeb6125eb36920a0e8287b1262ddca1488af5374f2ef646cc5254b76e5c7cab",
+    "d62a831a-3dc6-41b7-8807-b5f06f35c2ef.pdf": "9ace02b61b7092ef4f1b73cabaac198bf71c0dba505aeaa0003f2c075520cc07",
+    "d9be996b-1cf9-4a18-a0b5-38426b2b888c.pdf": "9a3d17bd9cce95ebc2ee1ddf8d9c41d96c717629939a034dc5ad3f31f1001997",
+    "e049e5a3-78cc-4a1c-808f-b66a54f96489.pdf": "046abd94e689eef734cdf67c58bbf20298660977bfb69b8b1f3bc787011d125b",
+    "e37a886a-926d-4ad9-b5ac-2dee23714ecb.pdf": "1c36a19c38c07e09f46cc65177fbb8c04ee5c8dce50d561e85c23bd7f8b128da",
+    "ee71d4a3-4cc8-4954-afff-95f6f3d1f629.pdf": "d5b2dd2de481d72e50e8b80de0d6c0d4fb8fb1bd351fff1c9425d9967c37ff0e",
+    "f439d2c2-91b0-4946-b2e7-7ada61152720.pdf": "c32bdaad7c8ed4056ab1890365561942ec4ac1f93eb305ec0f5fedb9a8e94dec",
+    "f87d2b55-8292-4dd0-a341-1e9c76ff89ee.pdf": "1842100f40336c3ab02dd2ed2b5bc953506bd25ebd4fadbceaeefb43009ebd03",
+    "fb0140ee-de1a-49af-9999-bba7c227e020.pdf": "0ccc775e8b182c98131ae31567fd4125177d54fa34a5ae198ae741cf4d1e6aab"
+  },
+  "active_jobs": 0,
+  "provider_usage": [
+    {
+      "model": "gpt-4.1-mini-2025-04-14",
+      "kind": "generation",
+      "events": 317,
+      "input_tokens": 592125,
+      "output_tokens": 20502,
+      "retries": 0,
+      "estimated_cost_usd": 0.2696532000000002
+    },
+    {
+      "model": "text-embedding-3-small",
+      "kind": "embedding",
+      "events": 1246,
+      "input_tokens": 756892,
+      "output_tokens": 0,
+      "retries": 0,
+      "estimated_cost_usd": 0.01513784
+    }
+  ],
+  "estimated_cost_usd": 0.2847910400000002,
+  "note": "Database row fingerprints compare trusted restore output; archive and PDFs use SHA256. Usage-based cost is an estimate, not an invoice."
+}

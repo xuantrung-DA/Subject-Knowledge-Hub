@@ -1,0 +1,518 @@
+{
+  "started_at": "2026-09-10T03:42:15.538035+00:00",
+  "status": "COMPLETE",
+  "strategy": "baseline",
+  "split": "dev",
+  "provider": "live_openai",
+  "execution": "production job functions, real PostgreSQL; no Celery throughput claim",
+  "manifest_sha256": "4a0d0ac031658903fd0ada72b66fc596db8dd4f212bd6e012eee4e7353d22b61",
+  "runs": {
+    "retrieval": {
+      "run_id": "accd35de-3284-47e1-80d9-54c5bb0bc580",
+      "job_id": "8c140e91-4bf9-4b7e-bfbb-cc00143f5515",
+      "status": "ready",
+      "report": {
+        "dataset_sha256": "6e2b4f43c79991fae29eef248ef9495bbfa2692b29bb158722c28ac82164e0fd",
+        "question_count": 30,
+        "config": {
+          "modes": [
+            "lexical",
+            "dense",
+            "hybrid"
+          ],
+          "generate_answers": false,
+          "limit": 100,
+          "top_k": 6,
+          "max_tokens": 10000,
+          "max_calls": 600,
+          "corpus_revision": 10,
+          "chat_model": "gpt-4.1-mini",
+          "context_budget": 1800,
+          "history_budget": 400,
+          "output_budget": 350,
+          "prompt_version": "v1"
+        },
+        "environment": {
+          "python": "3.12.11",
+          "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+          "git_revision": null
+        },
+        "generated_at": "2026-09-10T03:42:51.409421+00:00",
+        "summary": {
+          "lexical": {
+            "sample_size": 30,
+            "successful_samples": 30,
+            "errors": 0,
+            "evidence_recall_at_k": 0.0,
+            "evidence_recall_at_k_n": 24,
+            "evidence_precision_at_k": 0.0,
+            "evidence_precision_at_k_n": 24,
+            "mrr": 0.0,
+            "mrr_n": 24,
+            "answer_token_f1": null,
+            "answer_token_f1_n": 0,
+            "unanswerable_accuracy": null,
+            "unanswerable_accuracy_n": 0,
+            "citation_validity": null,
+            "citation_validity_n": 0,
+            "citation_marker_validity": null,
+            "citation_marker_validity_n": 0,
+            "tool_selection_recall": null,
+            "tool_selection_recall_n": 0,
+            "tool_error_rate": null,
+            "tool_error_rate_n": 0,
+            "latency_p50_ms": 5.734999999999999,
+            "latency_p95_ms": 10.673499999999986,
+            "latency_sample_size": 30,
+            "latency_reliable": true,
+            "total_input_tokens": 0,
+            "total_output_tokens": 0,
+            "total_cached_tokens": 0,
+            "total_provider_calls": 0,
+            "total_cost_usd": null
+          },
+          "dense": {
+            "sample_size": 30,
+            "successful_samples": 30,
+            "errors": 0,
+            "evidence_recall_at_k": 1.0,
+            "evidence_recall_at_k_n": 24,
+            "evidence_precision_at_k": 0.0763888888888889,
+            "evidence_precision_at_k_n": 24,
+            "mrr": 0.9791666666666666,
+            "mrr_n": 24,
+            "answer_token_f1": null,
+            "answer_token_f1_n": 0,
+            "unanswerable_accuracy": null,
+            "unanswerable_accuracy_n": 0,
+            "citation_validity": null,
+            "citation_validity_n": 0,
+            "citation_marker_validity": null,
+            "citation_marker_validity_n": 0,
+            "tool_selection_recall": null,
+            "tool_selection_recall_n": 0,
+            "tool_error_rate": null,
+            "tool_error_rate_n": 0,
+            "latency_p50_ms": 420.66499999999996,
+            "latency_p95_ms": 619.3485,
+            "latency_sample_size": 30,
+            "latency_reliable": true,
+            "total_input_tokens": 718,
+            "total_output_tokens": 0,
+            "total_cached_tokens": 0,
+            "total_provider_calls": 30,
+            "total_cost_usd": 1.436e-05
+          },
+          "hybrid": {
+            "sample_size": 30,
+            "successful_samples": 30,
+            "errors": 0,
+            "evidence_recall_at_k": 1.0,
+            "evidence_recall_at_k_n": 24,
+            "evidence_precision_at_k": 0.0763888888888889,
+            "evidence_precision_at_k_n": 24,
+            "mrr": 0.9791666666666666,
+            "mrr_n": 24,
+            "answer_token_f1": null,
+            "answer_token_f1_n": 0,
+            "unanswerable_accuracy": null,
+            "unanswerable_accuracy_n": 0,
+            "citation_validity": null,
+            "citation_validity_n": 0,
+            "citation_marker_validity": null,
+            "citation_marker_validity_n": 0,
+            "tool_selection_recall": null,
+            "tool_selection_recall_n": 0,
+            "tool_error_rate": null,
+            "tool_error_rate_n": 0,
+            "latency_p50_ms": 417.25,
+            "latency_p95_ms": 579.3569999999997,
+            "latency_sample_size": 30,
+            "latency_reliable": true,
+            "total_input_tokens": 718,
+            "total_output_tokens": 0,
+            "total_cached_tokens": 0,
+            "total_provider_calls": 30,
+            "total_cost_usd": 1.436e-05
+          }
+        },
+        "failures": [
+          {
+            "question_id": "sen-01",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "sen-02",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "sen-03",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "sen-04",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "sen-05",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "sen-06",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "sen-07",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "sen-08",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cedar-01",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cedar-03",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cedar-05",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cedar-07",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "truc-01",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "truc-03",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "truc-05",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cedar-02",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cedar-04",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cedar-06",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cedar-08",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "truc-02",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "truc-04",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "truc-07",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "truc-06",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "truc-08",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          }
+        ],
+        "limitations": [
+          "Project fixture regression is not an independent benchmark or expert-reviewed evaluation.",
+          "Answer token F1 is a deterministic lexical proxy, not semantic relevance, correctness, or faithfulness.",
+          "Citation validity checks supplied source membership and location, not whether the claim is supported; inspect result samples manually.",
+          "Refusal detection is a text heuristic; unanswerable accuracy needs manual verification.",
+          "No LLM judge is run; faithfulness and semantic content support are unmeasured (null).",
+          "Latency p50/p95 are descriptive; fewer than 20 successful samples are flagged as insufficient for a reliable performance conclusion.",
+          "Usage is provider-reported where available. Retries after a crash may incur unobservable provider charges; no zero-cost claim is made.",
+          "QASPER paragraph evaluation does not exercise the PDF parser or Vietnamese QA."
+        ],
+        "budget_reservations": {
+          "reserved_tokens": 3356,
+          "reserved_calls": 60
+        },
+        "job_usage": {
+          "input_tokens": 1436,
+          "output_tokens": 0,
+          "cached_tokens": 0,
+          "successful_provider_responses": 60,
+          "cache_hits": 0,
+          "retries_reported": 0,
+          "estimated_cost_usd": 2.872e-05,
+          "note": "Includes events for interrupted questions; reservations also count attempts whose usage was not returned."
+        }
+      }
+    },
+    "answers": {
+      "run_id": "f0413cc3-ffff-487f-a00b-679b776ee802",
+      "job_id": "de3d2219-69b3-4093-9c9c-a35358638353",
+      "status": "ready",
+      "report": {
+        "dataset_sha256": "6e2b4f43c79991fae29eef248ef9495bbfa2692b29bb158722c28ac82164e0fd",
+        "question_count": 30,
+        "config": {
+          "modes": [
+            "dense"
+          ],
+          "generate_answers": true,
+          "limit": 100,
+          "top_k": 6,
+          "max_tokens": 290000,
+          "max_calls": 600,
+          "corpus_revision": 10,
+          "chat_model": "gpt-4.1-mini",
+          "context_budget": 1800,
+          "history_budget": 400,
+          "output_budget": 350,
+          "prompt_version": "v1"
+        },
+        "environment": {
+          "python": "3.12.11",
+          "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+          "git_revision": null
+        },
+        "generated_at": "2026-09-10T03:44:11.762231+00:00",
+        "summary": {
+          "dense": {
+            "sample_size": 30,
+            "successful_samples": 29,
+            "errors": 1,
+            "evidence_recall_at_k": 1.0,
+            "evidence_recall_at_k_n": 23,
+            "evidence_precision_at_k": 0.07681159420289856,
+            "evidence_precision_at_k_n": 23,
+            "mrr": 0.9782608695652174,
+            "mrr_n": 23,
+            "answer_token_f1": 0.12767886436870393,
+            "answer_token_f1_n": 29,
+            "unanswerable_accuracy": 0.0,
+            "unanswerable_accuracy_n": 6,
+            "citation_validity": 1.0,
+            "citation_validity_n": 27,
+            "citation_marker_validity": 1.0,
+            "citation_marker_validity_n": 27,
+            "tool_selection_recall": null,
+            "tool_selection_recall_n": 0,
+            "tool_error_rate": null,
+            "tool_error_rate_n": 0,
+            "latency_p50_ms": 2359.53,
+            "latency_p95_ms": 4455.371999999995,
+            "latency_sample_size": 29,
+            "latency_reliable": true,
+            "total_input_tokens": 69913,
+            "total_output_tokens": 2662,
+            "total_cached_tokens": 0,
+            "total_provider_calls": 94,
+            "total_cost_usd": 0.03168062
+          }
+        },
+        "failures": [
+          {
+            "question_id": "truc-06",
+            "mode": "dense",
+            "error": {
+              "code": "openai_incomplete",
+              "message": "Câu trả lời bị cắt do giới hạn output. Hãy hỏi phạm vi ngắn hơn."
+            },
+            "metrics": {}
+          }
+        ],
+        "limitations": [
+          "Project fixture regression is not an independent benchmark or expert-reviewed evaluation.",
+          "Answer token F1 is a deterministic lexical proxy, not semantic relevance, correctness, or faithfulness.",
+          "Citation validity checks supplied source membership and location, not whether the claim is supported; inspect result samples manually.",
+          "Refusal detection is a text heuristic; unanswerable accuracy needs manual verification.",
+          "No LLM judge is run; faithfulness and semantic content support are unmeasured (null).",
+          "Latency p50/p95 are descriptive; fewer than 20 successful samples are flagged as insufficient for a reliable performance conclusion.",
+          "Usage is provider-reported where available. Retries after a crash may incur unobservable provider charges; no zero-cost claim is made.",
+          "QASPER paragraph evaluation does not exercise the PDF parser or Vietnamese QA."
+        ],
+        "budget_reservations": {
+          "reserved_tokens": 87718,
+          "reserved_calls": 94
+        },
+        "job_usage": {
+          "input_tokens": 69913,
+          "output_tokens": 2662,
+          "cached_tokens": 0,
+          "successful_provider_responses": 94,
+          "cache_hits": 0,
+          "retries_reported": 0,
+          "estimated_cost_usd": 0.03168062,
+          "note": "Includes events for interrupted questions; reservations also count attempts whose usage was not returned."
+        }
+      }
+    }
+  },
+  "subject_id": "a8ebb0e4-017e-44f5-8211-3ca405338695",
+  "email": "portfolio-3c5b5390c6f844f390f0e8c6e8976f4f@example.com",
+  "cumulative_corpus_usage": {
+    "input_tokens": 76190,
+    "output_tokens": 2662,
+    "provider_calls": 164,
+    "estimated_cost_usd": 0.03180616,
+    "unpriced_events": 0
+  },
+  "finished_at": "2026-09-10T03:44:11.799713+00:00"
+}

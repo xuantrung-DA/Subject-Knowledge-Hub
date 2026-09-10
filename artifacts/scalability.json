@@ -1,0 +1,126 @@
+{
+  "chunks": 955,
+  "embedding_input_tokens": 354500,
+  "retrieval_checks": [
+    {
+      "query": "nebularuby",
+      "expected_page": 1,
+      "expected_value": "17",
+      "top_pages": [
+        [
+          1,
+          2
+        ],
+        [
+          313,
+          314
+        ],
+        [
+          619,
+          620
+        ],
+        [
+          363,
+          364
+        ],
+        [
+          203,
+          204
+        ],
+        [
+          887,
+          888
+        ]
+      ],
+      "evidence_found": true
+    },
+    {
+      "query": "tundraopal",
+      "expected_page": 500,
+      "expected_value": "29",
+      "top_pages": [
+        [
+          500,
+          501
+        ],
+        [
+          499,
+          500
+        ],
+        [
+          538,
+          539
+        ],
+        [
+          703,
+          704
+        ],
+        [
+          278,
+          279
+        ],
+        [
+          877,
+          878
+        ]
+      ],
+      "evidence_found": true
+    },
+    {
+      "query": "quasaramber",
+      "expected_page": 1000,
+      "expected_value": "43",
+      "top_pages": [
+        [
+          999,
+          1000
+        ],
+        [
+          915,
+          916
+        ],
+        [
+          149,
+          150
+        ],
+        [
+          919,
+          920
+        ],
+        [
+          854,
+          855
+        ],
+        [
+          791,
+          792
+        ]
+      ],
+      "evidence_found": true
+    }
+  ],
+  "database_verified": false,
+  "retrieval_implementation": "streamed exact cosine over fake vectors; not pgvector",
+  "created_at": "2026-09-09T14:57:19.122428+00:00",
+  "status": "PASS",
+  "pages": 1000,
+  "pdf_size_bytes": 720673,
+  "generation_seconds": 0.279,
+  "ingestion_and_retrieval_seconds": 4.473,
+  "process_peak_rss_mb": 175.29,
+  "fake_embedding_calls": 23,
+  "fake_embedding_inputs": 955,
+  "max_embedding_batch_inputs": 44,
+  "max_embedding_batch_tokens": 15970,
+  "provider": "deterministic hash bag-of-words FAKE; no OpenAI network calls",
+  "live_openai_verified": false,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39"
+  },
+  "limitations": [
+    "Synthetic smoke is not representative of every real PDF.",
+    "Peak RSS includes Python, tokenizer and parser baseline; no whole-document text list is retained.",
+    "No live 1000-page OpenAI ingestion was performed."
+  ]
+}

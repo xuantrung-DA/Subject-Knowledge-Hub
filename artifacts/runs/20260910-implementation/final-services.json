@@ -1,0 +1,44 @@
+﻿[
+    {
+        "service":  "api",
+        "state":  "running",
+        "health":  "healthy",
+        "exit_code":  0,
+        "ports":  "127.0.0.1:18000-\u003e8000/tcp"
+    },
+    {
+        "service":  "migrate",
+        "state":  "exited",
+        "health":  "",
+        "exit_code":  0,
+        "ports":  ""
+    },
+    {
+        "service":  "postgres",
+        "state":  "running",
+        "health":  "healthy",
+        "exit_code":  0,
+        "ports":  "5432/tcp"
+    },
+    {
+        "service":  "redis",
+        "state":  "running",
+        "health":  "healthy",
+        "exit_code":  0,
+        "ports":  "6379/tcp"
+    },
+    {
+        "service":  "web",
+        "state":  "running",
+        "health":  "healthy",
+        "exit_code":  0,
+        "ports":  "127.0.0.1:13000-\u003e80/tcp"
+    },
+    {
+        "service":  "worker",
+        "state":  "running",
+        "health":  "healthy",
+        "exit_code":  0,
+        "ports":  "8000/tcp"
+    }
+]

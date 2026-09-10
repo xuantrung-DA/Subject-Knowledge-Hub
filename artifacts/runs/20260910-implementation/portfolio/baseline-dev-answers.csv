@@ -1,0 +1,48 @@
+question_id,mode,answer,latency_ms,error,evidence_recall_at_k,evidence_precision_at_k,mrr,answer_token_f1,unanswerable_accuracy,citation_validity,citation_content_support,tool_selection_recall,input_tokens,output_tokens
+sen-01,dense,"Mỗi yêu cầu của Sen nhận tối đa 24 bản ghi. Thông tin này được nêu rõ trong tài liệu của Sen: ""Mỗi yêu cầu Sen nhận tối đa 24 bản ghi"" [2].",2576.38,,1.0,0.06666666666666667,0.5,0.058823529411764705,,1.0,,,2104,46
+sen-02,dense,"Thời gian chờ xử lý của Sen là 7 giây. Thông tin này được nêu rõ trong phần xử lý của tài liệu Sen: ""Thời gian chờ xử lý của Sen là 7 giây"" [1].",2321.52,,1.0,0.06666666666666667,1.0,0.05555555555555555,,1.0,,,2080,52
+sen-03,dense,"Nhật ký của Sen được lưu trong 12 ngày. Ngoài ra, có ghi chú về TTL cache trong hai bản hướng dẫn: bản A ghi TTL cache là 45 giây, còn bản B ghi TTL cache là 60 giây, nhưng chưa xác định bản nào thay thế bản nào và người vận hành phải xác minh trước khi chọn TTL. Dữ liệu lưu ở vùng thử nghiệm local, không có cam kết vùng địa lý thương mại. Các thông tin này được lấy từ tài liệu Sen[1].",2601.51,,1.0,0.06666666666666667,1.0,0.02247191011235955,,1.0,,,2058,107
+sen-04,dense,Sen cho phép gửi lại tối đa 3 lần khi mất kết nối (lỗi mạng). Khoảng chờ giữa các lần thử lại tăng theo cấp số nhân. Lỗi dữ liệu không được thử lại và yêu cầu trùng bị loại bằng khóa request_id [1].,2638.86,,1.0,0.06666666666666667,1.0,0.044444444444444446,,1.0,,,2086,57
+sen-05,dense,"Trong bảng thử nghiệm của Sen, độ trễ mà 95% yêu cầu không vượt quá là 71 ms. Thông tin này được thể hiện trong bảng kết quả thử nghiệm của Sen: ""Latency p95 | 71 ms"" [1].",2287.4,,1.0,0.06666666666666667,1.0,0.10256410256410256,,1.0,,,2120,53
+sen-06,dense,"Dữ liệu đầu vào của dịch vụ Sen dùng định dạng JSON Lines và mã hóa UTF-8. Đây là dữ liệu kiểm thử tổng hợp, không phải thông số của sản phẩm thật[1].",6292.76,,1.0,0.06666666666666667,1.0,0.20512820512820512,,1.0,,,4452,371
+sen-07,dense,"Với Sen, giới hạn bản ghi mỗi yêu cầu là tối đa 24 bản ghi. Thời gian phục hồi đo được là 18 giây. Thời gian chờ xử lý (latency p95) là 71 ms theo bảng kết quả thử nghiệm của Sen. Các phép đo này dựa trên 200 yêu cầu, concurrency 1, và là dữ liệu kiểm thử tổng hợp, không phải thông số sản phẩm thật [1].",2367.14,,1.0,0.13333333333333333,1.0,0.13513513513513514,,1.0,,,2111,94
+sen-08,dense,"Các hướng dẫn cho dịch vụ Sen không thống nhất về giá trị TTL cache. Cụ thể:
+
+- Bản hướng dẫn A của Sen ghi TTL cache là 45 giây.
+- Bản hướng dẫn B của Sen ghi TTL cache là 60 giây.
+
+Hai bản này không ghi ngày hiệu lực và chưa xác định được bản nào thay thế cho bản nào. Do vậy, người vận hành phải tự xác minh trước khi chọn TTL. Tài liệu không cung cấp thông tin về việc có thể chọn bản mới hơn hay không, cũng như không có hướng dẫn rõ ràng để ưu tiên một bản cụ thể nào [1].",3018.52,,1.0,0.13333333333333333,1.0,0.24193548387096775,,1.0,,,2139,130
+sen-09,dense,"Tài liệu về dịch vụ Sen không cung cấp thông tin về giá thuê dịch vụ Sen mỗi tháng. Trong phần ghi chú của tài liệu Sen cũng ghi rõ: ""Không có thông tin về giá thuê, địa chỉ email hỗ trợ hoặc SLA trong tài liệu."" [1]",2466.76,,,,,0.2545454545454545,0.0,1.0,,,2090,57
+sen-10,dense,"Tài liệu của Sen không có thông tin về địa chỉ email hỗ trợ. Trên trang 5 của tài liệu Sen có ghi rõ: ""Không có thông tin về giá thuê, địa chỉ email hỗ trợ hoặc SLA trong tài liệu."" [1]",2206.87,,,,,0.2857142857142857,0.0,1.0,,,2048,53
+cedar-01,dense,The maximum number of records in one Cedar request is 32 records. This is specified in the Cedar service documentation for intake [1].,3023.76,,1.0,0.05,1.0,0.08333333333333333,,1.0,,,2296,28
+cedar-02,dense,Chưa tìm thấy đủ thông tin trong tài liệu của môn này để trả lời câu hỏi. Bạn có thể bổ sung tài liệu hoặc nêu rõ phạm vi cần tìm.,1997.04,,1.0,0.05,1.0,0.0,,,,,2281,26
+cedar-03,dense,"Cedar keeps its logs for 14 days. This is stated under the ""Cedar: storage"" section in the document, which specifies: ""Cedar retains logs for 14 days"" [1].",2157.99,,1.0,0.05,1.0,0.07142857142857142,,1.0,,,2277,43
+cedar-04,dense,"Cedar permits at most 4 repeat attempts after a network failure, using exponential backoff. Invalid data is never retried. Duplicate requests are rejected using request_id [1].",1943.14,,1.0,0.05,1.0,0.07407407407407407,,1.0,,,2298,37
+cedar-05,dense,"In the Cedar experiment, the response time that covers 95 percent of requests (Latency p95) is 73 milliseconds. This means 95% of the Cedar requests complete within 73 ms. This information comes from the Cedar measurement table in the provided documents [1].",2266.23,,1.0,0.05,1.0,0.09090909090909091,,1.0,,,2299,56
+cedar-06,dense,Chưa tìm thấy đủ thông tin trong tài liệu của môn này để trả lời câu hỏi. Bạn có thể bổ sung tài liệu hoặc nêu rõ phạm vi cần tìm.,5409.78,,1.0,0.05,1.0,0.0,,,,,4856,291
+cedar-07,dense,"For Cedar:
+
+- The per-request record limit is at most 32 records.
+- The measured recovery time is 22 seconds.
+
+These details come from the Cedar document's scope and intake section and measurement table respectively [1].",2227.25,,1.0,0.1,1.0,0.2,,1.0,,,2299,46
+cedar-08,dense,"The Cedar guides do not agree on the cache TTL. Guide A specifies a cache TTL of 60 seconds, while Guide B specifies a cache TTL of 75 seconds. Neither guide has an effective date, so it is unknown which one is newer and should take precedence. Operators need to verify the intended TTL themselves [1].",2305.98,,1.0,0.1,1.0,0.2153846153846154,,1.0,,,2320,66
+cedar-09,dense,"The documents provided about Cedar do not contain any information regarding the rental price or monthly cost. Specifically, the Cedar document states that it contains no rental price, support email address, or SLA [1]. Therefore, the subject's documents do not have enough information to answer how much renting Cedar costs per month.",2136.65,,,,,0.06896551724137931,0.0,1.0,,,2287,62
+cedar-10,dense,"The documents do not contain a support email address for Cedar. Specifically, the Cedar document states on page 5 that it contains no support email address or SLA information. Therefore, the support email address for Cedar is not available in the provided documents [1].",2889.78,,,,,0.12244897959183673,0.0,1.0,,,2287,52
+truc-01,dense,"Dịch vụ Trúc nhận tối đa 48 bản ghi trong một yêu cầu. Thông tin này được nêu rõ trong phần ""Trúc: phạm vi và tiếp nhận"" của tài liệu trúc.pdf: ""Mỗi yêu cầu Trúc nhận tối đa 48 bản ghi"" [1].",2359.53,,1.0,0.06666666666666667,1.0,0.045454545454545456,,1.0,,,2114,63
+truc-02,dense,Thời gian chờ xử lý của Trúc là 11 giây.[1],1779.64,,1.0,0.06666666666666667,1.0,0.16666666666666666,,1.0,,,2109,19
+truc-03,dense,"Nhật ký của Trúc được lưu trong 16 ngày. Ngoài ra, trong bản hướng dẫn A ghi TTL cache là 90 giây, còn bản hướng dẫn B ghi TTL cache là 105 giây, nhưng hai bản này không ghi ngày hiệu lực và chưa xác định được bản nào thay thế bản nào. Người vận hành phải xác minh trước khi chọn TTL cache[1].",2456.58,,1.0,0.06666666666666667,1.0,0.030303030303030304,,1.0,,,2087,81
+truc-04,dense,"Nếu mất kết nối, Trúc cho phép thử lại tối đa 5 lần. Khoảng chờ giữa các lần thử tăng theo cấp số nhân, và lỗi dữ liệu thì không được thử lại [1].",2102.4,,1.0,0.06666666666666667,1.0,0.05714285714285714,,1.0,,,2100,44
+truc-05,dense,"Trong bảng thử nghiệm của Trúc, độ trễ mà 95% yêu cầu không vượt quá là 75 ms. Đây là giá trị Latency p95 được ghi trong bảng kết quả thử nghiệm của Trúc [1].",2230.11,,1.0,0.06666666666666667,1.0,0.10810810810810811,,1.0,,,2140,48
+truc-06,dense,,4318.72,"{'code': 'openai_incomplete', 'message': 'Câu trả lời bị cắt do giới hạn output. Hãy hỏi phạm vi ngắn hơn.'}",,,,,,,,,2096,350
+truc-07,dense,"Với Trúc, giới hạn bản ghi mỗi yêu cầu là tối đa 48 bản ghi. Thời gian phục hồi đo được là 26 giây [1].",2002.99,,1.0,0.13333333333333333,1.0,0.3333333333333333,,1.0,,,2139,36
+truc-08,dense,"Các hướng dẫn Trúc không thống nhất về giá trị TTL cache. Cụ thể:
+
+- Bản hướng dẫn A ghi TTL cache là 90 giây.
+- Bản hướng dẫn B ghi TTL cache là 105 giây, khác so với bản A.
+
+Hai bản không ghi ngày hiệu lực và chưa xác định được bản nào thay thế bản nào. Người vận hành cần phải xác minh trước khi chọn TTL. Do đó, có thể chọn bản mới hơn (bản B 105 giây), nhưng phải tự xác nhận tính hợp lệ do tài liệu không rõ ràng về thứ tự ưu tiên các bản hướng dẫn này[1].",2690.26,,1.0,0.13333333333333333,1.0,0.24793388429752067,,1.0,,,2150,132
+truc-09,dense,"Tài liệu về dịch vụ Trúc không cung cấp thông tin về giá thuê dịch vụ mỗi tháng. Trong phần ghi chú chưa thống nhất của Trúc, có nói rõ: ""Không có thông tin về giá thuê, địa chỉ email hỗ trợ hoặc SLA trong tài liệu"" [1]. 
+
+Do đó, không có dữ liệu trong tài liệu đã cung cấp để trả lời câu hỏi về giá thuê dịch vụ Trúc mỗi tháng.",2547.27,,,,,0.175,0.0,1.0,,,2104,89
+truc-10,dense,"Tài liệu về Trúc không có chứa thông tin về địa chỉ email hỗ trợ. Trong phần ghi chú chưa thống nhất của Trúc cũng nêu rõ không có thông tin về giá thuê, địa chỉ email hỗ trợ hoặc SLA trong tài liệu [1]. Do đó, không có địa chỉ email hỗ trợ của Trúc trong các tài liệu này.",2399.6,,,,,0.20588235294117646,0.0,1.0,,,2086,73

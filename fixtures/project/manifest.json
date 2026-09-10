@@ -1,0 +1,41 @@
+{
+  "name": "Subject Knowledge Hub original regression",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "authorship": "Original synthetic text generated for this project; no external paper or private PDF.",
+  "question_count": 61,
+  "evidence_locations_checked": 59,
+  "evidence_validation": "Quotes checked against actual pypdf extraction at physical 1-based pages. Manual semantic expert review not performed.",
+  "base_corpus": [
+    "fixture_vi",
+    "fixture_en",
+    "conflict",
+    "injection"
+  ],
+  "lifecycle_corpus": [
+    "new_document",
+    "replacement",
+    "temporary"
+  ],
+  "files": {
+    "conflict.pdf": "a81ca650065d752c4588e97bf47a095d9c099a8852bee629669816f10d77cb89",
+    "corrupt.pdf": "c32bdaad7c8ed4056ab1890365561942ec4ac1f93eb305ec0f5fedb9a8e94dec",
+    "empty.pdf": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "encrypted.pdf": "674bfe7c08aac9a89ce8ebaafd2de3126fd0e7eca403c60f6a1e269eb27f645e",
+    "fixture_en.pdf": "d5b2dd2de481d72e50e8b80de0d6c0d4fb8fb1bd351fff1c9425d9967c37ff0e",
+    "fixture_vi.pdf": "9ace02b61b7092ef4f1b73cabaac198bf71c0dba505aeaa0003f2c075520cc07",
+    "injection.pdf": "97947b541d558ef0b7e6a729603eb186a8942b3defe8cbe0131434c478dc52fd",
+    "lifecycle.json": "defb40019cfc2efd35280d765956e8c9aa1c3106441d7c65af9459fa80b674d2",
+    "mixed.pdf": "0d95452125973ac5067142cde9dc98ee0fdccf5334942824e1fb5cddabe0ef04",
+    "new_document.pdf": "82d6c0608df84532eaa1d527706df556c7629a5ac923533d27ee7efc8f63891d",
+    "regression.jsonl": "a4fb8c81fef019eb34840b784b30cb6f8b80e0985b10d7eb7028b0f33182c859",
+    "replacement.pdf": "62115c590521a307bcea1df1b63519f7e6bea24083f752d7a7c2a5b6cc1a3f3a",
+    "scan_only.pdf": "b3e44df802e407df3d586bb3d4b3a7db17bc868565f04a061077f7d8de3e44bd",
+    "small_eval.jsonl": "b59ed4e77b690e0a794d4df8329c3369f8339144e29cd92a032762565859c2ed",
+    "temporary.pdf": "fd57522ab94dbc52558ce429f440cd3a6f4547458a0d73b4f29894dde3606249"
+  },
+  "limitations": [
+    "Synthetic project regression, not independent benchmark.",
+    "The 1000-page fixture has short distinct text pages; it is a scalability smoke only."
+  ]
+}

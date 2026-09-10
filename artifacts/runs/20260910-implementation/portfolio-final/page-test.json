@@ -1,0 +1,828 @@
+{
+  "started_at": "2026-09-10T04:02:30.697909+00:00",
+  "status": "COMPLETE",
+  "strategy": "page",
+  "split": "test",
+  "provider": "live_openai",
+  "execution": "production job functions, real PostgreSQL; no Celery throughput claim",
+  "manifest_sha256": "4a0d0ac031658903fd0ada72b66fc596db8dd4f212bd6e012eee4e7353d22b61",
+  "runs": {
+    "retrieval": {
+      "run_id": "d8a18067-8abc-409e-9de2-b5700c938427",
+      "job_id": "9c0cbfb1-1ae9-458a-90f9-e5b3e60b3a5a",
+      "status": "ready",
+      "report": {
+        "dataset_sha256": "e6bc877e581eac2ba5999a3a12646f8391e4ea28a5a039276f226d1611a3ae6b",
+        "question_count": 70,
+        "config": {
+          "modes": [
+            "lexical",
+            "dense",
+            "hybrid"
+          ],
+          "generate_answers": false,
+          "limit": 100,
+          "top_k": 6,
+          "max_tokens": 10000,
+          "max_calls": 600,
+          "corpus_revision": 10,
+          "chat_model": "gpt-4.1-mini",
+          "context_budget": 1800,
+          "history_budget": 400,
+          "output_budget": 350,
+          "prompt_version": "v2"
+        },
+        "environment": {
+          "python": "3.12.11",
+          "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+          "git_revision": null
+        },
+        "generated_at": "2026-09-10T04:03:37.308214+00:00",
+        "summary": {
+          "lexical": {
+            "sample_size": 70,
+            "successful_samples": 70,
+            "errors": 0,
+            "evidence_recall_at_k": 0.0,
+            "evidence_recall_at_k_n": 56,
+            "evidence_precision_at_k": 0.0,
+            "evidence_precision_at_k_n": 56,
+            "mrr": 0.0,
+            "mrr_n": 56,
+            "answer_token_f1": null,
+            "answer_token_f1_n": 0,
+            "unanswerable_accuracy": null,
+            "unanswerable_accuracy_n": 0,
+            "citation_validity": null,
+            "citation_validity_n": 0,
+            "citation_marker_validity": null,
+            "citation_marker_validity_n": 0,
+            "tool_selection_recall": null,
+            "tool_selection_recall_n": 0,
+            "tool_error_rate": null,
+            "tool_error_rate_n": 0,
+            "latency_p50_ms": 4.6850000000000005,
+            "latency_p95_ms": 6.006999999999999,
+            "latency_sample_size": 70,
+            "latency_reliable": true,
+            "total_input_tokens": 0,
+            "total_output_tokens": 0,
+            "total_cached_tokens": 0,
+            "total_provider_calls": 0,
+            "total_cost_usd": null
+          },
+          "dense": {
+            "sample_size": 70,
+            "successful_samples": 70,
+            "errors": 0,
+            "evidence_recall_at_k": 1.0,
+            "evidence_recall_at_k_n": 56,
+            "evidence_precision_at_k": 0.20833333333333331,
+            "evidence_precision_at_k_n": 56,
+            "mrr": 0.9255952380952381,
+            "mrr_n": 56,
+            "answer_token_f1": null,
+            "answer_token_f1_n": 0,
+            "unanswerable_accuracy": null,
+            "unanswerable_accuracy_n": 0,
+            "citation_validity": null,
+            "citation_validity_n": 0,
+            "citation_marker_validity": null,
+            "citation_marker_validity_n": 0,
+            "tool_selection_recall": null,
+            "tool_selection_recall_n": 0,
+            "tool_error_rate": null,
+            "tool_error_rate_n": 0,
+            "latency_p50_ms": 418.82500000000005,
+            "latency_p95_ms": 573.1215,
+            "latency_sample_size": 70,
+            "latency_reliable": true,
+            "total_input_tokens": 1403,
+            "total_output_tokens": 0,
+            "total_cached_tokens": 0,
+            "total_provider_calls": 70,
+            "total_cost_usd": 2.806e-05
+          },
+          "hybrid": {
+            "sample_size": 70,
+            "successful_samples": 70,
+            "errors": 0,
+            "evidence_recall_at_k": 1.0,
+            "evidence_recall_at_k_n": 56,
+            "evidence_precision_at_k": 0.20833333333333331,
+            "evidence_precision_at_k_n": 56,
+            "mrr": 0.9255952380952381,
+            "mrr_n": 56,
+            "answer_token_f1": null,
+            "answer_token_f1_n": 0,
+            "unanswerable_accuracy": null,
+            "unanswerable_accuracy_n": 0,
+            "citation_validity": null,
+            "citation_validity_n": 0,
+            "citation_marker_validity": null,
+            "citation_marker_validity_n": 0,
+            "tool_selection_recall": null,
+            "tool_selection_recall_n": 0,
+            "tool_error_rate": null,
+            "tool_error_rate_n": 0,
+            "latency_p50_ms": 429.74,
+            "latency_p95_ms": 601.124,
+            "latency_sample_size": 70,
+            "latency_reliable": true,
+            "total_input_tokens": 1403,
+            "total_output_tokens": 0,
+            "total_cached_tokens": 0,
+            "total_provider_calls": 70,
+            "total_cost_usd": 2.806e-05
+          }
+        },
+        "failures": [
+          {
+            "question_id": "maple-01",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "maple-02",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "maple-03",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "maple-04",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "maple-05",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "maple-06",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "maple-07",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "maple-08",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "lan-01",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "lan-02",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "lan-03",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "lan-04",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "lan-05",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "lan-06",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "lan-07",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "lan-08",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "birch-01",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "birch-02",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "birch-03",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "birch-04",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "birch-05",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "birch-06",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "birch-07",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "birch-08",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cuc-01",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cuc-02",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cuc-03",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cuc-04",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cuc-05",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cuc-06",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cuc-07",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "cuc-08",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "willow-01",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "willow-02",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "willow-03",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "willow-04",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "willow-05",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "willow-06",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "willow-07",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "willow-08",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "dao-01",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "dao-02",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "dao-03",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "dao-04",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "dao-05",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "dao-06",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "dao-07",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "dao-08",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "elm-01",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "elm-02",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "elm-03",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "elm-04",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "elm-05",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "elm-06",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "elm-07",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          },
+          {
+            "question_id": "elm-08",
+            "mode": "lexical",
+            "error": null,
+            "metrics": {
+              "evidence_recall_at_k": 0.0,
+              "evidence_precision_at_k": 0.0,
+              "mrr": 0.0
+            }
+          }
+        ],
+        "limitations": [
+          "Project fixture regression is not an independent benchmark or expert-reviewed evaluation.",
+          "Answer token F1 is a deterministic lexical proxy, not semantic relevance, correctness, or faithfulness.",
+          "Citation validity checks supplied source membership and location, not whether the claim is supported; inspect result samples manually.",
+          "Refusal detection is a text heuristic; unanswerable accuracy needs manual verification.",
+          "No LLM judge is run; faithfulness and semantic content support are unmeasured (null).",
+          "Latency p50/p95 are descriptive; fewer than 20 successful samples are flagged as insufficient for a reliable performance conclusion.",
+          "Usage is provider-reported where available. Retries after a crash may incur unobservable provider charges; no zero-cost claim is made.",
+          "QASPER paragraph evaluation does not exercise the PDF parser or Vietnamese QA."
+        ],
+        "budget_reservations": {
+          "reserved_tokens": 7286,
+          "reserved_calls": 140
+        },
+        "job_usage": {
+          "input_tokens": 2806,
+          "output_tokens": 0,
+          "cached_tokens": 0,
+          "successful_provider_responses": 140,
+          "cache_hits": 0,
+          "retries_reported": 0,
+          "estimated_cost_usd": 5.612e-05,
+          "note": "Includes events for interrupted questions; reservations also count attempts whose usage was not returned."
+        }
+      }
+    },
+    "answers": {
+      "run_id": "8f0a69ad-f605-4919-998a-2ce471145039",
+      "job_id": "d02070ad-962f-4051-8290-c074ab925f22",
+      "status": "ready",
+      "report": {
+        "dataset_sha256": "e6bc877e581eac2ba5999a3a12646f8391e4ea28a5a039276f226d1611a3ae6b",
+        "question_count": 70,
+        "config": {
+          "modes": [
+            "dense"
+          ],
+          "generate_answers": true,
+          "limit": 100,
+          "top_k": 6,
+          "max_tokens": 690000,
+          "max_calls": 600,
+          "corpus_revision": 10,
+          "chat_model": "gpt-4.1-mini",
+          "context_budget": 1800,
+          "history_budget": 400,
+          "output_budget": 350,
+          "prompt_version": "v2"
+        },
+        "environment": {
+          "python": "3.12.11",
+          "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+          "git_revision": null
+        },
+        "generated_at": "2026-09-10T04:06:25.007291+00:00",
+        "summary": {
+          "dense": {
+            "sample_size": 70,
+            "successful_samples": 70,
+            "errors": 0,
+            "evidence_recall_at_k": 1.0,
+            "evidence_recall_at_k_n": 56,
+            "evidence_precision_at_k": 0.20833333333333331,
+            "evidence_precision_at_k_n": 56,
+            "mrr": 0.9255952380952381,
+            "mrr_n": 56,
+            "answer_token_f1": 0.14032821983573435,
+            "answer_token_f1_n": 70,
+            "unanswerable_accuracy": 0.9285714285714286,
+            "unanswerable_accuracy_n": 14,
+            "citation_validity": 1.0,
+            "citation_validity_n": 65,
+            "citation_marker_validity": 1.0,
+            "citation_marker_validity_n": 65,
+            "tool_selection_recall": null,
+            "tool_selection_recall_n": 0,
+            "tool_error_rate": null,
+            "tool_error_rate_n": 0,
+            "latency_p50_ms": 1931.625,
+            "latency_p95_ms": 4575.425499999999,
+            "latency_sample_size": 70,
+            "latency_reliable": true,
+            "total_input_tokens": 130947,
+            "total_output_tokens": 4227,
+            "total_cached_tokens": 0,
+            "total_provider_calls": 154,
+            "total_cost_usd": 0.05858568
+          }
+        },
+        "failures": [],
+        "limitations": [
+          "Project fixture regression is not an independent benchmark or expert-reviewed evaluation.",
+          "Answer token F1 is a deterministic lexical proxy, not semantic relevance, correctness, or faithfulness.",
+          "Citation validity checks supplied source membership and location, not whether the claim is supported; inspect result samples manually.",
+          "Refusal detection is a text heuristic; unanswerable accuracy needs manual verification.",
+          "No LLM judge is run; faithfulness and semantic content support are unmeasured (null).",
+          "Latency p50/p95 are descriptive; fewer than 20 successful samples are flagged as insufficient for a reliable performance conclusion.",
+          "Usage is provider-reported where available. Retries after a crash may incur unobservable provider charges; no zero-cost claim is made.",
+          "QASPER paragraph evaluation does not exercise the PDF parser or Vietnamese QA."
+        ],
+        "budget_reservations": {
+          "reserved_tokens": 166071,
+          "reserved_calls": 154
+        },
+        "job_usage": {
+          "input_tokens": 130947,
+          "output_tokens": 4227,
+          "cached_tokens": 0,
+          "successful_provider_responses": 154,
+          "cache_hits": 0,
+          "retries_reported": 0,
+          "estimated_cost_usd": 0.05858568,
+          "note": "Includes events for interrupted questions; reservations also count attempts whose usage was not returned."
+        }
+      }
+    }
+  },
+  "subject_id": "115b9a20-5b54-4a64-b48a-a27ae9a1c56d",
+  "email": "portfolio-8e5bfea18e184477a043d603894241a1@example.com",
+  "cumulative_corpus_usage": {
+    "input_tokens": 250615,
+    "output_tokens": 8740,
+    "provider_calls": 582,
+    "estimated_cost_usd": 0.10887618,
+    "unpriced_events": 0
+  },
+  "finished_at": "2026-09-10T04:06:25.092512+00:00"
+}

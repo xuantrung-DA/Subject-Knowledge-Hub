@@ -1,0 +1,23 @@
+# Opt-in small live smoke envelope. These settings apply to this whole test stack.
+services:
+  api:
+    environment:
+      MAX_QUESTION_TOKENS: "8000"
+      MAX_QUESTION_CALLS: "5"
+      MAX_CONTEXT_TOKENS: "1800"
+      MAX_HISTORY_TOKENS: "400"
+      MAX_OUTPUT_TOKENS: "350"
+      MAX_INPUT_TOKENS: "4000"
+      MAX_TOOL_OUTPUT_TOKENS: "1800"
+      MAX_INGESTION_TOKENS: "25000"
+      MAX_INGESTION_CALLS: "20"
+      MAX_SUMMARY_TOKENS: "25000"
+      MAX_SUMMARY_CALLS: "12"
+      CHAT_RATE_LIMIT_PER_MINUTE: "30"
+  worker:
+    environment:
+      MAX_INGESTION_TOKENS: "25000"
+      MAX_INGESTION_CALLS: "20"
+      MAX_SUMMARY_TOKENS: "25000"
+      MAX_SUMMARY_CALLS: "12"
+      MAX_OUTPUT_TOKENS: "350"

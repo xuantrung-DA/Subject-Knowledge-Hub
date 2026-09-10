@@ -1,0 +1,46 @@
+{
+  "provider": "explicit deterministic fixture; no OpenAI",
+  "trials": [
+    {
+      "trial": 1,
+      "job_id": "0ffbdb42-7b75-4faa-bade-5da073a9185b",
+      "status": "PASS",
+      "recovery_seconds": 11.059,
+      "pages": 32,
+      "chunks": 32,
+      "unique_chunk_ordinals": 32,
+      "attempts": 2,
+      "committed_embeddings_preserved": 8,
+      "embedding_attempts": 5
+    },
+    {
+      "trial": 2,
+      "job_id": "80a1fb18-9e12-4c4a-8acc-6c63b1121ed4",
+      "status": "PASS",
+      "recovery_seconds": 10.557,
+      "pages": 32,
+      "chunks": 32,
+      "unique_chunk_ordinals": 32,
+      "attempts": 2,
+      "committed_embeddings_preserved": 8,
+      "embedding_attempts": 5
+    },
+    {
+      "trial": 3,
+      "job_id": "2591d385-8f28-4bce-b35d-640a4c18a4fa",
+      "status": "PASS",
+      "recovery_seconds": 11.067,
+      "pages": 32,
+      "chunks": 32,
+      "unique_chunk_ordinals": 32,
+      "attempts": 2,
+      "committed_embeddings_preserved": 8,
+      "embedding_attempts": 5
+    }
+  ],
+  "status": "PASS",
+  "fault": "SIGKILL entire Celery process group during second embedding batch",
+  "pages_per_trial": 32,
+  "job_stale_seconds": 10,
+  "job_reconcile_seconds": 1
+}

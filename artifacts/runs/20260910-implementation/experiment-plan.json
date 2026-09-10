@@ -1,0 +1,21 @@
+{
+  "registered_at": "2026-09-10",
+  "status": "registered before portfolio dev or test execution",
+  "hypothesis": "Keeping PDF page boundaries makes citations open the specific evidence page and reduces irrelevant context versus merging short pages into 600-token chunks.",
+  "variable": "chunk_page_boundaries false versus true; within-page token size and overlap unchanged",
+  "corpus": "fixtures/portfolio/manifest.json, original synthetic 10 runbooks, 100 templated questions, 50 physical pages",
+  "development": "30 questions from sen, cedar, truc",
+  "held_out": "70 questions from seven disjoint documents; run only after locking configuration",
+  "retrieval_modes": ["lexical", "dense", "hybrid"],
+  "top_k": 6,
+  "context_tokens": 1800,
+  "acceptance": "Prefer page boundaries if exact-page browser test passes, dev evidence recall loses at most 5 percentage points, and no new scope or lifecycle regression. Report negative results and all errors.",
+  "primary_metrics": ["evidence_recall_at_k", "evidence_precision_at_k", "mrr", "mean provider input tokens", "citation page range width"],
+  "quality_review": "Mechanical evidence metrics; content review by AI assistant is recorded separately and is not independent human validation.",
+  "authorized_total_api_budget_usd": 10,
+  "allocations_usd": {"http_smoke_and_browser": 1, "portfolio_dev_comparison": 2, "portfolio_held_out_comparison": 3, "qasper": 2, "reserve_for_fixes": 2},
+  "prices_usd_per_million": {"generation_input": 0.4, "generation_output": 1.6, "embedding_input": 0.02},
+  "price_source": "https://developers.openai.com/api/docs/pricing",
+  "price_verified_at": "2026-09-10",
+  "budget_method": "Bounded token reservations including retry ceilings before paid operations; save each run and sum reported usage separately. Allocations are ceilings, not reported spending."
+}
