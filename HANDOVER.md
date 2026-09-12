@@ -1,6 +1,6 @@
 # Technical handover — Subject Knowledge Hub
 
-Updated 2026-09-10. **Read this file first**, then open only the modules relevant to the requested change. It is a map of the implementation, not a requirement to reread all source. Search the function names below with `rg`; line numbers change after formatting.
+Updated 2026-09-12. **Read this file first**, then open only the modules relevant to the requested change. It is a map of the implementation, not a requirement to reread all source. Search the function names below with `rg`; line numbers change after formatting.
 
 Repository: https://github.com/xuantrung-DA/Subject-Knowledge-Hub
 Owner's goal: a working Vietnamese/English PDF RAG portfolio application with reproducible CV metrics. No demo video. The supplied deployment is local Docker Compose.
@@ -239,6 +239,8 @@ All entries below live in `scripts/`. AI/benchmark scripts generally run inside 
 docker compose -p subject-hub-test -f compose.yaml -f compose.test.yaml run --build --rm tests
 docker compose -p subject-hub-test -f compose.yaml -f compose.test.yaml down
 ```
+
+Pytest declares `pythonpath = ["."]` in backend/pyproject.toml, relative to the backend root. This lets the CI command `uv run --frozen pytest` import `app` without Docker's `PYTHONPATH=/app`; do not remove it when changing test execution.
 
 RUN_INTEGRATION=1 makes unavailable DB/Redis fail instead of skip. Never run integration/recovery against user data. Down retains volumes; use -v only for an intentional reset of the selected test project.
 
