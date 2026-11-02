@@ -19,6 +19,17 @@ Built with **React, TypeScript, FastAPI, PostgreSQL/pgvector, Celery, Redis, and
 
 ## Measured results
 
+**Evidence boundary:** this release demonstrates local application and recovery
+behavior. It does not establish general answer accuracy or production SLA.
+On the recorded QASPER subset, lexical retrieval achieved **0% Recall@6** and
+hybrid matched dense; the lexical branch has no demonstrated benefit on that
+subset. Three synthetic answerable questions were falsely refused, and
+independent human claim-support grading is unfinished. See [known limits](#known-limits)
+before reusing any number in a CV. Documentation maintenance does not rerun the
+historical provider-backed benchmarks or change their frozen artifacts.
+`SOURCE_MANIFEST.json` identifies the dated implementation snapshot named inside
+it; it is not regenerated to relabel documentation changes as that benchmark.
+
 These are local measurements from 2026-09-10. Dataset scope and negative results are documented in the [benchmark report](docs/benchmark-report.md).
 
 | Experiment | Result | Scope |
